@@ -10,57 +10,10 @@
     <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro">
 
     <title>Tem na esquina</title>
+
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
 
-        ul {
-            list-style: none;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        header {
-            background-color: black;
-            color: white;
-            height: 60px;
-        }
-
-
-        nav ul li {
-            display: inline-block;
-            line-height: 60px;
-            padding: 0 20px;
-
-
-        }
-
-        .flex-space-around {
-            display: flex;
-            justify-content: space-around;
-        }
-
-
-        .banner {
-            height: 500px;
-            width: 100%;
-            background-color: #666;
-        }
-
-        .titulo{
-            text-align: center;
-        }
-
-        .list-pacotes ul{
-            background-color: #999;
-            padding:40px 100px;
-        }
-        
     </style>
 
 </head>
@@ -69,14 +22,15 @@
 
     <header>
         <div class="container flex-space-around">
-            <h1>LOGO</h1>
+            <h1 id="logo">LOGO</h1>
             <nav>
                 <ul>
-                    <li>Categoria</li>
-                    <li>Contato</li>
-                    <li>Sobre</li>
-                    <li>Seja parceiro</li>
-                    <li>Login</li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="categorias.html">Categoria</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="seja_parceiro.html">seja_parceiro</a></li>
+                    <li><a href="login.html">login</a></li>
                 </ul>
             </nav>
         </div>
@@ -93,49 +47,98 @@
     </section>
 
     <section>
-        <h2 class="titulo">Categorias</h2>
-        <div class="categotias">
-            <figure>
-                <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="Uma imagem impressionante">
-                <figcaption>Legenda para a imagem impressionante</figcaption>
+        <div class="container">
+            <h2 class="titulo">Categorias</h2>
+            <div class="categotias">
+
+                <figure>
+                    <!-- <img src="imagens/layoutminimercado.png"> -->
+                    <figcaption>Mercado</figcaption>
+                </figure>
+                <figure>
+                    <!-- <img src="imagens/layoutminimercado.png"> -->
+                    <figcaption>Mercado</figcaption>
+                </figure>
+                <figure>
+                    <!-- <img src="imagens/layoutminimercado.png"> -->
+                    <figcaption>Mercado</figcaption>
+                </figure>
+                <figure>
+                    <!-- <img src="imagens/layoutminimercado.png"> -->
+                    <figcaption>Mercado</figcaption>
+                </figure>
+
+                <!-- <figure>
+                <img src="imagens/layoutminimercado.png">
+                <figcaption>Mercado</figcaption>
             </figure>
 
             <figure>
-                <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="Uma imagem impressionante">
-                <figcaption>Legenda para a imagem impressionante</figcaption>
+                <img src="imagens/layoutminimercado.png">
+                <figcaption>Mercado</figcaption>
             </figure>
 
             <figure>
-                <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="Uma imagem impressionante">
-                <figcaption>Legenda para a imagem impressionante</figcaption>
-            </figure>
+                <img src="imagens/layoutminimercado.png">
+                <figcaption>Mercado</figcaption>
+            </figure> -->
 
-            <figure>
-                <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="Uma imagem impressionante">
-                <figcaption>Legenda para a imagem impressionante</figcaption>
-            </figure>
 
-            <figure>
-                <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="Uma imagem impressionante">
-                <figcaption>Legenda para a imagem impressionante</figcaption>
-            </figure>
 
-            <figure>
-                <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="Uma imagem impressionante">
-                <figcaption>Legenda para a imagem impressionante</figcaption>
-            </figure>
 
-            <figure>
-                <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="Uma imagem impressionante">
-                <figcaption>Legenda para a imagem impressionante</figcaption>
-            </figure>
+            </div>
 
-            <figure>
-                <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="Uma imagem impressionante">
-                <figcaption>Legenda para a imagem impressionante</figcaption>
-            </figure>
+            <div class="categotias">
+                <a href="">
+                    <figure>
+                        <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
 
+
+            </div>
         </div>
+        <!-- <div class="categotias">
+
+            <figure>
+                <img src="imagens/layoutminimercado.png">
+                <figcaption>Mercado</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/layoutminimercado.png">
+                <figcaption>Mercado</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/layoutminimercado.png">
+                <figcaption>Mercado</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/layoutminimercado.png">
+                <figcaption>Mercado</figcaption>
+            </figure>
+
+
+
+            
+        </div> -->
     </section>
 
 
@@ -144,19 +147,35 @@
             <h2 class="titulo">Pacotes</h2>
 
             <div class="list-pacotes ">
-                
+
                 <div class="flex-space-around">
                     <ul>
                         <h3>Pacotes</h3>
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <h4>R$ 0,00</h4>
+                        <button>CONTRATAR</button>
+                    </ul>
+                    <ul>
+                        <h3>Pacotes</h3>
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
-                        <li>Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <h4>R$ 0,00</h4>
+                        <button>CONTRATAR</button>
                     </ul>
                     <ul>
                         <h3>Pacotes</h3>
@@ -169,18 +188,8 @@
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
-                    </ul>
-                    <ul>
-                        <h3>Pacotes</h3>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
+                        <h4>R$ 0,00</h4>
+                        <button>CONTRATAR</button>
                     </ul>
                 </div>
             </div>

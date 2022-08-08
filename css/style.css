@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    line-height: 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4C89A8;
+    color: white;
+    height: 60px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 20px;
+
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.banner {
+    height: 500px;
+    width: 100%;
+    background-color: #666;
+}
+
+.titulo {
+    /* text-align: center; */
+}
+
+
+
+.categotias {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.categotias figure {
+    margin: 20px;
+    position: relative;
+    background-image: url(../imagens/layoutminimercado.png);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    filter: grayscale(60%);
+    background-size: cover;
+}
+
+.categotias img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    opacity: 0.7;
+    background-blend-mode: darken;
+    background-color: black;
+}
+
+.categotias figcaption {
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+
+
+.list-pacotes h3,
+.list-pacotes ul li,
+.list-pacotes h4 {
+    text-align: center;
+}
+
+.list-pacotes-not {
+    text-decoration: line-through;
+}
+
+.list-pacotes ul {
+    background-color: #999;
+    padding: 20px 70px;
+}
+
+
+
+/* Pacotes */
+
+.menu-pacotes {
+    width: 100%;
+}
+
+.menu-pacotes ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-pacotes ul li {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.info-pacotes {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.info-pacotes {
+    padding: 15px 10px;
+}
+
+.pacote-info-text {
+    padding: 0 8px 0 0;
+}
+
+
+/* .card-info-pacote{
+margin: 15px 20px;
+} */
+
+.info-pacote-1 {
+    background-color: darkgray;
+}
+
+.card-info-pacote {
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.card-info-pacote ul {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pacote-gold {
+    border-left: 5px solid #CFB53B;
+}
+
+.pacote-brass {
+    border-left: 5px solid #A95522;
+}
+
+.pacote-free {
+    border-left: 5px solid #a9a9a9;
+}
+
+.bg-pacote-gold {
+    /* background-color:  #CFB53B; */
+    background-color: #cfb53b99
+}
+
+.bg-pacote-brass {
+    /* background-color:  #A95522; */
+    background-color: #a955226b;
+}
+
+.bg-pacote-free {
+    /* background-color:  #a9a9a9; */
+    background-color: #a9a9a980;
+}
+
+
+
+.col-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card-cateroria {
+    margin-bottom: 20px;
+}
+
+.card-cateroria img {
+    padding-top: 70px;
+    width: 100%;
+}
+
+.card-info-pacote {
+    position: relative;
+}
+
+.tag-oferta {
+    background-color: #FFDF00;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-align: center;
+}
+
+.tag-promocao {
+    background-color: #4C89A8;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 40px;
+
+}
+
+.card-footer {
+    background-color: dimgray;
+    padding: 6px 5px;
+}
