@@ -1,6 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-link {
+    color: white;
 }
 
 #logo {
@@ -22,7 +31,32 @@ header {
     height: 60px;
 }
 
+footer {
+    text-align: center;
+    border-top: 1px dotted black;
+}
 
+footer ul li {
+    display: inline-block;
+    padding: 15px 0;
+}
+
+footer p {
+    padding: 15px 0;
+}
+
+/* .teste{
+float: left;
+padding: 40px 10px;
+background-color: #333;
+}*/
+
+/* .dotted-spaced{
+    background-image: linear-gradient(to bottom, #333 10%, rgba(255,255,255,0)0%);
+    background-position: top;
+    background-size: 1px 10px;
+    background-repeat: repeat-y;
+}  */
 nav ul li {
     display: inline-block;
     line-height: 60px;
@@ -36,7 +70,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: white;
 }
 
@@ -52,9 +86,9 @@ nav a:hover{
     background-color: #666;
 }
 
-.titulo {
-    /* text-align: center; */
-}
+/* .titulo {
+    text-align: center;
+} */
 
 
 
@@ -248,4 +282,73 @@ margin: 15px 20px;
 .card-footer {
     background-color: dimgray;
     padding: 6px 5px;
+}
+
+
+
+/* PAGINA DE LOGIN - PEDRO */
+
+#estrutura {
+    background-color: dimgray;
+    width: 35%;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 210px;
+    padding: 15px;
+
+}
+
+#estrutura img {
+    width: 50%;
+
+}
+
+#formulario {
+
+    width: 100%;
+    justify-content: center;
+
+}
+
+.rodape {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.input-form {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 6px;
+}
+
+.input-form label {
+    width: 100%;
+}
+
+.input-form input {
+    width: 100%;
+    font-size: 16px;
+    padding: 2px;
+    margin-top: 5px;
+}
+
+.input-form input[type='submit'] {
+    width: 35%;
+    /* float: right; */
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
 }
