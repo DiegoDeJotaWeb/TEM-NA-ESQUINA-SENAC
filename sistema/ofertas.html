@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="menu">
+            <div id="logo">Logo</div>
+            <nav>
+
+                <ul style="padding-left: 30px;">
+                    <li style="    position: relative;"><i class="fas fa-bars" onclick="myFunction()"></i></li>
+                    <li>
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <i class="far fa-comments"></i>
+                            <span class="badge badge-danger navbar-badge">3</span>
+                        </a>
+                    </li>
+                    <li>o</li>
+                    <li>o</li>
+                    <li>o</li>
+                </ul>
+                <ul style="padding-right: 30px;">
+                    <!-- <li>teste</li> -->
+                    <li>Diego Rodrigues</li>
+                    <li><i class="fa-solid fa-user-gear"></i></li>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="menu-lateral">
+            <ul class="nav nav-pills nav-sidebar flex-column">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-house">0</i>
+                        <p>
+                            Deshboard
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-clipboard">0</i>
+                        <p>
+                            Cadastros
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>
+                            Produtos
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>
+                            Comentarios
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-comments"></i>
+                        <p>
+                            Mensagens
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                            Suporte
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+        <div class="box-conteudo">
+            <div class="conteudo">
+                <div class="breadcrumb">
+                    <h1>Dashboard</h1>
+                    <p>Home / Dashboard</p>
+                </div>
+                <style>
+                    table {
+                        width: 100%;
+                        /* border: 1px solid blue; */
+                    }
+
+                    tr {
+                        display: grid;
+                        grid-template-columns: repeat(7, 1fr);
+                    }
+
+                    th,
+                    td {
+                        /* border: 1px solid red; */
+                        text-align: left;
+                        padding-left: 10px;
+                    }
+
+                    tr th,
+                    tr td {
+                        height: 30px;
+                        line-height: 30px;
+                    }
+
+                    th {
+                        background-color: white;
+                        border: 1px solid black;
+
+                    }
+
+                    tr td {
+                        border-bottom: 1px solid black;
+                    }
+
+                    .pesquisa {
+                        display: flex;
+                        justify-content: end;
+
+                    }
+
+                    .pesquisa td {
+                        border: none;
+                    }
+
+                    .icon-acoes {
+                        color: black;
+                    }
+
+                    .icon-acoes:hover {
+                        color: rgb(48, 47, 47);
+                    }
+
+                    .paginacao {
+                        text-align: center;
+                    }
+
+                    .paginacao a {
+                        color: black;
+                    }
+                </style>
+                <table>
+                    <tr class="pesquisa">
+                        <td>
+                            <label for="">Buscar </label>
+                            <input type="text">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Nome do produto</th>
+                        <th>Valor sem desconto</th>
+                        <th>Valor com desconto</th>
+                        <th>Data inicio</th>
+                        <th>Data final</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+
+                    <tr>
+                        <td>Produto 1</td>
+                        <td>R$ 100,00</td>
+                        <td>R$ 90,00</td>
+                        <td>25/08/2022</td>
+                        <td>25/08/2022</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="" class="icon-acoes"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="" class="icon-acoes"> <i class="fa-solid fa-trash-can"></i></a>
+                            <a href="" class="icon-acoes"> <i class="fa-solid fa-eye"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Produto 1</td>
+                        <td>R$ 100,00</td>
+                        <td>R$ 90,00</td>
+                        <td>25/08/2022</td>
+                        <td>25/08/2022</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="" class="icon-acoes"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="" class="icon-acoes"> <i class="fa-solid fa-trash-can"></i></a>
+                            <a href="" class="icon-acoes"> <i class="fa-solid fa-eye"></i></a>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Produto 1</td>
+                        <td>R$ 100,00</td>
+                        <td>R$ 90,00</td>
+                        <td>25/08/2022</td>
+                        <td>25/08/2022</td>
+                        <td>Ativo</td>
+                        <td>
+                            <a href="" class="icon-acoes"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="" class="icon-acoes"> <i class="fa-solid fa-trash-can"></i></a>
+                            <a href="" class="icon-acoes"> <i class="fa-solid fa-eye"></i></a>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div class="paginacao">
+                    <ul class="">
+                        <li class="page-item"><a class="page-link" href="#">«</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">»</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <p id="myDIV">Desenvolvido por TEM NA ESQUINA- 2022</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var element = document.getElementById("myDIV");
+            element.classList.toggle("mystyle");
+        }
+
+
+    </script>
+
+<style>
+    .mystyle {
+        display: none;
+    }
+    </style>
+</body>
+
+</html>
