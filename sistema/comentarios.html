@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema</title>
-
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/script.js" defer></script>
 
 
 </head>
@@ -53,20 +53,18 @@
 
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">
-                        <i class="fa-solid fa-house">0</i>
+                        <i class="fa-solid fa-house"></i>
                         <p>
                             Deshboard
-                            <span class="right badge badge-danger">New</span>
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">
-                        <i class="fa-solid fa-clipboard">0</i>
+                        <i class="fa-solid fa-clipboard"></i>
                         <p>
                             Cadastros
-                            <span class="right badge badge-danger">New</span>
                         </p>
                     </a>
                 </li>
@@ -76,7 +74,6 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                         <p>
                             Produtos
-                            <span class="right badge badge-danger">New</span>
                         </p>
                     </a>
                 </li>
@@ -86,7 +83,7 @@
                         <i class="fa-solid fa-comment"></i>
                         <p>
                             Comentarios
-                            <span class="right badge badge-danger">New</span>
+                            
                         </p>
                     </a>
                 </li>
@@ -96,7 +93,7 @@
                         <i class="fa-solid fa-comments"></i>
                         <p>
                             Mensagens
-                            <span class="right badge badge-danger">New</span>
+                           
                         </p>
                     </a>
                 </li>
@@ -122,7 +119,6 @@
             .col-2-grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-column-gap: 15px;
             }
 
             .form-cadastro {
@@ -137,10 +133,24 @@
                 margin-bottom: 10px;
             }
 
-            .form-cadastro input {
-                width: 100%;
+            .form-cadastro textarea {
+                width: 90%;
                 display: block;
-                padding: 0.375rem 0;
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            }
+
+            .form-cadastro input {
+                width: 90%;
+                display: block;
+                padding: 0.375rem 0.75rem;
                 font-size: 1rem;
                 line-height: 1.5;
                 color: #495057;
@@ -169,6 +179,17 @@
                 border-radius: 0.25rem;
                 transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
             }
+
+
+            .box-comentario {
+                background-color: #fff;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+
+            .pedir-remocao {
+                cursor: pointer;
+            }
         </style>
         <div class="box-conteudo">
             <div class="conteudo">
@@ -176,45 +197,93 @@
                     <h1>Cadastro de oferta</h1>
                     <p>Home / Cadastro de oferta</p>
                 </div>
-                <form action="" method="get">
-                    <div class="col-2-grid">
-                        <div class="form-cadastro">
-                            <label for="">Nome do produto</label>
-                            <input type="text">
-                        </div>
-                        <div class="form-cadastro">
-                            <label for="">Foto</label>
-                            <input type="file">
-                        </div>
-                    </div>
-                    <div class="col-2-grid">
-                        <div class="form-cadastro">
-                            <label for="">Valor sem desconto</label>
-                            <input type="text">
-                        </div>
-                        <div class="form-cadastro">
-                            <label for="">Valor com desconto</label>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="col-2-grid">
-                        <div class="form-cadastro">
-                            <label for="">Data de inicio</label>
-                            <input type="text">
-                        </div>
-                        <div class="form-cadastro">
-                            <label for="">Data de termino</label>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <input type="submit" value="Salvar" class="btn">
-                </form>
+
+                <div class="box-comentario">
+                    <h2>Nome do autor</h2>
+                    <h3>22/08/2022 - 00:00</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint quos itaque facilis deserunt,
+                        optio, laborum vel in recusandae, voluptatibus explicabo hic delectus labore? Accusantium
+                        expedita ipsum laboriosam omnis magnam?</p>
+                    <p class="pedir-remocao" id="open-modal">Pedir remoção</p>
+                </div>
+
+                <div class="box-comentario">
+                    <h2>Nome do autor</h2>
+                    <h3>22/08/2022 - 00:00</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint quos itaque facilis deserunt,
+                        optio, laborum vel in recusandae, voluptatibus explicabo hic delectus labore? Accusantium
+                        expedita ipsum laboriosam omnis magnam?</p>
+                    <p class="pedir-remocao" id="open-modal">Pedir remoção</p>
+                </div>
+
+                <div class="box-comentario">
+                    <h2>Nome do autor</h2>
+                    <h3>22/08/2022 - 00:00</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint quos itaque facilis deserunt,
+                        optio, laborum vel in recusandae, voluptatibus explicabo hic delectus labore? Accusantium
+                        expedita ipsum laboriosam omnis magnam?</p>
+                    <p class="pedir-remocao" id="open-modal">Pedir remoção</p>
+                </div>
+
+                <div class="box-comentario">
+                    <h2>Nome do autor</h2>
+                    <h3>22/08/2022 - 00:00</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint quos itaque facilis deserunt,
+                        optio, laborum vel in recusandae, voluptatibus explicabo hic delectus labore? Accusantium
+                        expedita ipsum laboriosam omnis magnam?</p>
+                    <p class="pedir-remocao" id="open-modal">Pedir remoção</p>
+                </div>
+
+                <div class="box-comentario">
+                    <h2>Nome do autor</h2>
+                    <h3>22/08/2022 - 00:00</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint quos itaque facilis deserunt,
+                        optio, laborum vel in recusandae, voluptatibus explicabo hic delectus labore? Accusantium
+                        expedita ipsum laboriosam omnis magnam?</p>
+                    <p class="pedir-remocao" id="open-modal">Pedir remoção</p>
+                </div>
+
+                <div class="box-comentario">
+                    <h2>Nome do autor</h2>
+                    <h3>22/08/2022 - 00:00</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint quos itaque facilis deserunt,
+                        optio, laborum vel in recusandae, voluptatibus explicabo hic delectus labore? Accusantium
+                        expedita ipsum laboriosam omnis magnam?</p>
+                    <p class="pedir-remocao" id="open-modal">Pedir remoção</p>
+                </div>
 
             </div>
 
         </div>
 
     </section>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>Pedir remoção</h2>
+            <p id="close-modal">X</p>
+        </div>
+        <div class="modal-body">
+            <p>
+                Justifique seu pedido de remoção do comentario, seu pedido leva em tormo de 2 dias uteis para ser
+                removido ou não.
+            </p>
+
+            <form action="">
+                <div class="form-cadastro">
+                    <label for="">Justifique seu pedido!</label>
+                    <textarea name="" id="" ></textarea>
+                </div>
+            </form>
+            <hr>
+
+
+            <div class="modal-footer">
+                <button id="close-modal">Fechar</button>
+                <button id="close-modal">Enviar</button>
+            </div>
+        </div>
+    </div>
     <footer>
         <p id="myDIV">Desenvolvido por TEM NA ESQUINA- 2022</p>
     </footer>
@@ -230,6 +299,10 @@
     <style>
         .mystyle {
             display: none;
+        }
+
+        .footer p {
+            background-color: red;
         }
     </style>
 </body>
