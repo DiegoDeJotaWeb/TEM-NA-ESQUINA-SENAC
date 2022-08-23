@@ -13,11 +13,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <style>
-nav ul li:hover{
-    background: red;
-    transform: skewY(5.5deg);
-    transform-origin: 0%;
-}
+
     </style>
 
 </head>
@@ -44,33 +40,34 @@ nav ul li:hover{
     <div class="banner"></div>
 
     <section>
-        <h2 class="titulo">Anuncios</h2>
-        <div class="anuncios">
-
-        </div>
-    </section>
-
-    <section>
         <div class="container">
             <h2 class="titulo">Categorias</h2>
             <div class="categotias">
 
-                <figure>
-                    <!-- <img src="imagens/layoutminimercado.png"> -->
-                    <figcaption>Mercado</figcaption>
-                </figure>
-                <figure>
-                    <!-- <img src="imagens/layoutminimercado.png"> -->
-                    <figcaption>Mercado</figcaption>
-                </figure>
-                <figure>
-                    <!-- <img src="imagens/layoutminimercado.png"> -->
-                    <figcaption>Mercado</figcaption>
-                </figure>
-                <figure>
-                    <!-- <img src="imagens/layoutminimercado.png"> -->
-                    <figcaption>Mercado</figcaption>
-                </figure>
+                <a href="">
+                    <figure>
+                        <!-- <img src="imagens/layoutminimercado.png"> -->
+                        <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <!-- <img src="imagens/layoutminimercado.png"> -->
+                        <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <!-- <img src="imagens/layoutminimercado.png"> -->
+                        <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <!-- <img src="imagens/layoutminimercado.png"> -->
+                        <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
 
                 <!-- <figure>
                 <img src="imagens/layoutminimercado.png">
@@ -144,7 +141,75 @@ nav ul li:hover{
             
         </div> -->
     </section>
+    <style>
+        .anuncios img{
+            width: 95%;
+        }
+        .text-propaganda{
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: 15px 0;
+        }
+        .propaganda{
+            width: 100%;
+            background-color: rgb(114, 112, 112);
+        }
+        /*Apenas para ver visualmente, nâo colocar no css*/
+        .titulo{
+            text-align: center;
+            padding: 15px;
+        }
+        .titulo-h3{
+            text-align: center;
+            padding: 15px;
+        }
+        /*Titulo do Valor*/
+        .titulo-h4{
+            padding: 8px;
+        }
+        .botton{
+            width: 30%;
+            padding: 8px;
+            font-size: 23px;
+            margin: 10px;
+        }
+        .botton-pac{
+            width: 100%;
+            padding: 8px;
+            font-size: 15px;
+            margin: 12px auto;
+        }
+        /*Apenas para ser visual*/
+        .list-pacotes-not{
+            color: rgba(255, 0, 0, 0.5);
+        }
+    </style>
 
+    <section>
+        <h2 class="titulo">Anuncios</h2>
+        <div class="anuncios">
+            <div class="flex-space-around">
+
+                <div>
+                    <img src="imagens/layoutminimercado.png" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/layoutminimercado.png" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/layoutminimercado.png" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/layoutminimercado.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <section>
         <div class="container">
@@ -154,21 +219,27 @@ nav ul li:hover{
 
                 <div class="flex-space-around">
                     <ul>
-                        <h3>Pacotes</h3>
+                        <h3 class="titulo-h3">Grátis</h3>
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
+                        <li>Titulo</li>
+                        <li>Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
-                        <h4>R$ 0,00</h4>
-                        <button>CONTRATAR</button>
+                        <li class="list-pacotes-not">Titulo</li>
+                        <h4 class="titulo-h4">R$ 0,00</h4>
+                        <button class="botton-pac">CONTRATAR</button>
                     </ul>
                     <ul>
-                        <h3>Pacotes</h3>
+                        <h3 class="titulo-h3">Plus</h3>
+                        <li>Titulo</li>
+                        <li>Titulo</li>
+                        <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
@@ -178,11 +249,11 @@ nav ul li:hover{
                         <li class="list-pacotes-not">Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
-                        <h4>R$ 0,00</h4>
-                        <button>CONTRATAR</button>
+                        <h4 class="titulo-h4">R$ 0,00</h4>
+                        <button class="botton-pac">CONTRATAR</button>
                     </ul>
                     <ul>
-                        <h3>Pacotes</h3>
+                        <h3 class="titulo-h3">Plus +</h3>
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
@@ -192,8 +263,11 @@ nav ul li:hover{
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <li>Titulo</li>
-                        <h4>R$ 0,00</h4>
-                        <button>CONTRATAR</button>
+                        <li>Titulo</li>
+                        <li>Titulo</li>
+                        <li>Titulo</li>
+                        <h4 class="titulo-h4">R$ 0,00</h4>
+                        <button class="botton-pac">CONTRATAR</button>
                     </ul>
                 </div>
             </div>
@@ -201,10 +275,29 @@ nav ul li:hover{
     </section>
 
     <section>
-        <h2>Propagenda</h2>
+
+        <h2 class="titulo">Propagandas</h2>
+        <div class="propaganda">
+
+            <div class="text-propaganda">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolore, maiores possimus magni voluptatem ipsum repellendus ab illum vel corporis consequuntur velit officiis aliquid, dolores eaque tempore harum. Omnis, aperiam?
+                    Recusandae facilis natus sunt reprehenderit? Porro culpa, sunt minus ad sint facilis nesciunt in animi laudantium asperiores ut excepturi ratione, placeat distinctio esse autem reiciendis! Delectus ratione id vel cumque?
+                    Incidunt est animi, praesentium architecto in consequuntur repudiandae, magnam, quam nemo totam dolorum reiciendis itaque aliquam maxime cumque voluptate dolor? Sed dolorum veritatis magnam quam soluta asperiores eaque animi autem.
+                    Odit iusto ipsam explicabo, veniam et hic aut fugiat fugit voluptates officiis blanditiis! Aut eum quasi non rerum quaerat fugiat hic iusto nobis deleniti inventore distinctio eligendi, sequi repellendus itaque?
+                    Aliquam eaque consequuntur consectetur sequi optio harum quia laudantium fuga sunt exercitationem deserunt numquam dolorem officiis inventore delectus dolor, magni ducimus autem reprehenderit expedita repellendus rerum maiores. Illo, odio explicabo?
+                    Veritatis corrupti qui laboriosam mollitia accusantium nesciunt! Atque eius quaerat eos ratione, eum error modi repudiandae hic laborum minus exercitationem accusamus necessitatibus natus itaque nemo ipsum eligendi vel commodi et!
+                    Id ipsam enim soluta, nemo commodi assumenda! Aliquid culpa ipsa non soluta minima omnis ratione voluptas reprehenderit, dolorum atque enim magni vero. Qui provident nam aspernatur distinctio neque fugit id!
+                    Dicta qui omnis, sit accusamus sunt unde consectetur commodi pariatur. Laboriosam cumque at animi facere eius ea sed consectetur blanditiis cupiditate perferendis. Aut sunt nulla quas, quam obcaecati labore placeat.
+                </p>
+
+                <button class="botton">ASSINE JÁ</button>
+            </div>
+        </div>
+
     </section>
     <!-- <div class="dotted-spaced">222</div> -->
-   
+    
 <footer>
 
     <div>
