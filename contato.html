@@ -8,19 +8,87 @@
     <meta name="keywords" content="Classificados">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro">
-
     <title>Tem na esquina</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="icon" href="imagens/logo_icone.png" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap');
+    
+    *{
+        font-family:'Darker Grotesque', sans-serif;
+        font-weight: bold;
+    }
+.container_flex-space-around {
+    background-color: #FF6600;
+    border-bottom: solid 1px;
+    display: flex;
+    padding-left: 6%;
+    padding-top: 1%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+#logo img{
+    width: 50%;
+    margin-top: 5px;
+}
+#logo{
+    line-height: 25px;
+}
+/*Permitir que o menu fique por cima dos elementos*/
+.col-8-4 {
 
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+.form-contato-iten {
+    width: 50%;
+    padding: 5px;
+}
+
+.form-contato-iten label {
+    width: 100%;
+    
+
+}
+
+.form-contato-iten input {
+    width: 100%;
+    border-color: #3319FF;
+    
+
+}
+
+.form-contato-iten textarea {
+    width: 100%;
+    border-color: #3319FF;
+}
+
+.form-contato-iten button {
+    float: right;
+
+}
+body{
+    background-image: url(imagens/fundo.png);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} 
+.col-8-4_center ul{
+    padding-top: 50%;
+}
     </style>
 
 </head>
 
 <body>
     <header>
-        <div class="container flex-space-around">
+        <div class="container_flex-space-around">
             <a id="logo"><img src="imagens/logo.png" alt="Logomarca"></a>
             <nav>
                 <ul>
@@ -40,36 +108,6 @@
             <div class="anuncios">
             </div>
         </section>
-        <style>
-            .col-8-4 {
-                display: grid;
-                grid-template-columns: 8fr 4fr;
-            }
-
-            .form-contato {}
-
-            .form-contato-iten {
-                width: 50%;
-                padding: 5px;
-            }
-
-            .form-contato-iten label {
-                width: 100%;
-                
-            }
-
-            .form-contato-iten input {
-                width: 100%;
-            }
-
-            .form-contato-iten textarea {
-                width: 100%;
-            }
-
-            .form-contato-iten button {
-                float: right;
-            }
-        </style>
         <div class="col-8-4">
 
             <div class="form-contato">
@@ -98,8 +136,8 @@
                 </form>
             </div>
 
-            <div>
-                <ul>
+            <div class="col-8-4_center">
+                <ul style="padding-top: 50%;">
                     <li>Telefone: (00) 0 0000-0000</li>
                     <li>Telefone: (00) 0 0000-0000</li>
                     <li>Telefone: (00) 0 0000-0000</li>
