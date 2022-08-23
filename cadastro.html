@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Classificados de comércios regionais">
+    <meta name="keywords" content="Classificados">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro">
+
+    <title>Tem na esquina</title>
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container flex-space-around">
+            <h1 id="logo">LOGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="categorias.html">Categoria</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="pacotes.html">Seja parceiro</a></li>
+                    <li><a href="login.html">login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 class="titulo">Pacotes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorem eum placeat nostrum fuga quibusdam
+                culpa possimus consequuntur maxime cumque. Eligendi quas aliquid in, saepe exercitationem sit quos
+                commodi repudiandae?</p>
+        </div>
+    </section>
+
+    <style>
+
+    </style>
+
+    <section>
+        <div class="container">
+            <div class="menu-pacotes">
+
+                <ul>
+                    <li class="bg-pacote-free">Pessoa Física</li>
+                    <li class="bg-pacote-gold">Pessoa Jurídica</li>
+                </ul>
+
+
+            </div>
+
+
+            <style>
+                .form-cadastro label,
+                .form-cadastro input {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 7px;
+
+
+                }
+
+                .form-cadastro {
+                    margin-right: 30%;
+                    width: 100%;
+                    padding: 15px;
+                }
+
+                .termo-uso {
+                    text-align: center;
+                    align-items: center;
+                }
+
+                .botao {
+                    margin-left: 85%;
+                }
+
+                .flex-grid-2 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                .flex-grid-3 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+
+                .estrutura-geral{
+                    background-color: #C6C3C3;
+                }
+            </style>
+
+            <form class="estrutura-geral">
+                <div class="flex-grid-2">
+                    <div class="form-cadastro">
+                        <label for="cadastro-nome">Nome: </label>
+                        <input type="Nome" class="cadastro" id="cadastro-nome" aria-describedby="cadastro"
+                            placeholder="Nome">
+                    </div>
+                    <div class="form-cadastro">
+                        <label for="cadastro-sobrenome">Sobrenome: </label>
+                        <input type="sobrenome" class="form-cadastro" id="cadastro-sobrenome" placeholder="Sobrenome">
+                    </div>
+                </div>
+
+                <div class="flex-grid-3">
+
+                    <div class="form-cadastro">
+                        <label for="cadastro-cpf">Telefone ( )</label>
+                        <input type="telefone" class="form-cadastro" id="cadastro-telefone" placeholder="Telefone">
+                    </div>
+                    <div class="form-cadastro">
+                        <label for="cadastro-senha">Senha: </label>
+                        <input type="senha" class="form-cadastro" id="cadastro-senha" placeholder="senha">
+                    </div>
+                    <div class="form-cadastro">
+                        <label for="cadastro-cpf">E-mail: </label>
+                        <input type="email" class="form-cadastro" id="cadastro-email" placeholder="email">
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="flex-grid-2">
+                    <div class="form-cadastro">
+                        <label for="cadastro-nomefan">Nome Fantasia: </label>
+                        <input type="fantasia" class="form-cadastro" id="fantasia" placeholder="Nome Fantasia">
+                    </div>
+                    <div class="form-cadastro">
+                        <label for="cadastro-cpf">Telefone ( )</label>
+                        <input type="telefone" class="form-cadastro" id="cadastro-telefone" placeholder="Telefone">
+                    </div>
+                </div>
+
+                <div class="flex-grid-3">
+                    <div class="form-cadastro">
+                        <label for="cadastro-end">Endereço: </label>
+                        <input type="endereco" class="form-cadastro" id="cadastro-endereco" placeholder="Endereço">
+                    </div>
+
+                    <div class="form-cadastro">
+                        <label for="cadastro-senha">Senha: </label>
+                        <input type="senha" class="form-cadastro" id="cadastro-senha" placeholder="senha">
+                    </div>
+                    <div class="form-cadastro">
+                        <label for="cadastro-cpf">E-mail: </label>
+                        <input type="email" class="form-cadastro" id="cadastro-email" placeholder="email">
+                    </div>
+                
+                </div>
+
+                
+
+                <div class="form-cadastro">
+                    <label for="cadastro-cpf">Descrever sua empresa com poucas palavras: </label>
+                    <!-- <input type="Descreva" class="form-cadastro" id="cadastro-email" placeholder="Descreva" > -->
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        </div>
+        <div class="termo-uso">
+            <p>Aceita os termos de uso <input type="checkbox"></p>
+            <p>Aceita os Termos de uso <input type="checkbox"></p>
+
+        </div>
+        <div class="botao">
+            <button type="cadastrar" class="form-cadastrar">Cadastrar</button>
+        </div>
+
+        <style>
+            .classificacao li {
+                display: inline-block;
+            }
+
+            .classificacao img {
+                width: 10px;
+                padding-top: 0;
+            }
+        </style>
+
+        <footer>
+
+            <div>
+                <ul class="redes">
+                    <li><a href="">facebook| </a></li>
+                    <li><a href=""> Instagram| </a></li>
+                    <li><a href=""> Linkedin| </a></li>
+                    <li><a href=""> Twitter| </a></li>
+                    <li><a href=""> YouTube </a></li>
+                </ul>
+
+
+            </div>
+            <p>Desenvolvido Tem na Esquina
+                - 2022
+            </p>
+
+        </footer>
+
+</body>
