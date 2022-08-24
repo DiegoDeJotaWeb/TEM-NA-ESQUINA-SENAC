@@ -55,14 +55,14 @@
             <div class="menu-pacotes">
 
                 <ul>
-                    <li class="bg-pacote-free">Gratis</li>
-                    <li class="bg-pacote-brass">Bronze</li>
-                    <li class="bg-pacote-gold">Gold</li>
+                    <li class="bg-pacote-free" onclick="btnPacote1()">Gratis</li>
+                    <li class="bg-pacote-brass" onclick="btnPacote2()">Bronze</li>
+                    <li class="bg-pacote-gold" onclick="btnPacote3()">Gold</li>
                 </ul>
 
 
             </div>
-            <div class="info-pacotes info-pacote-1 bg-pacote-free">
+            <div class="info-pacotes info-pacote-1 bg-pacote-free" id="pacote-1">
                 <div class="pacote-info-text">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad rerum, at nulla ratione
                         adipisci, nemo aspernatur cupiditate facilis non qui ipsa quibusdam eaque expedita reiciendis
@@ -119,7 +119,7 @@
             </div>
 
 
-            <div class="info-pacotes info-pacote-1 bg-pacote-brass">
+            <div class="info-pacotes info-pacote-1 bg-pacote-brass" id="pacote-2">
                 <div class="pacote-info-text">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad rerum, at nulla ratione
                         adipisci, nemo aspernatur cupiditate facilis non qui ipsa quibusdam eaque expedita reiciendis
@@ -169,55 +169,264 @@
                 </div>
             </div>
 
+            <div class="bg-pacote-gold" id="pacote-3">
+                <div class="info-pacotes info-pacote-3 ">
+                    <div class="pacote-info-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad rerum, at nulla ratione
+                            adipisci, nemo aspernatur cupiditate facilis non qui ipsa quibusdam eaque expedita
+                            reiciendis
+                            atque, aut quam repudiandae?</p>
 
-            <div class="info-pacotes info-pacote-1 bg-pacote-gold">
-                <div class="pacote-info-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad rerum, at nulla ratione
-                        adipisci, nemo aspernatur cupiditate facilis non qui ipsa quibusdam eaque expedita reiciendis
-                        atque, aut quam repudiandae?</p>
+                        <h3>R$ 0,00</h3>
+                        <button>Contratar</button>
+                    </div>
+                    <div>
+                        <div class="card-cateroria pacote-gold">
+                            <div class="card-info-pacote ">
+                                <div class="col-2">
+                                    <div>
+                                        <h2>Nome da empresa</h2>
+                                        <h4>Categoria</h4>
+                                        <hr>
+                                        <ul>
+                                            <li>texto</li>
+                                            <li>texto</li>
+                                            <li>texto</li>
+                                            <li>texto</li>
+                                            <li>texto</li>
+                                            <li>texto</li>
+                                        </ul>
 
-                    <h3>R$ 0,00</h3>
-                    <button>Contratar</button>
+                                    </div>
+                                    <div>
+                                        <h3 class="tag-oferta">OFERTA</h3><br>
+                                        <h3 class="tag-promocao">PROMOÇÃO</h3>
+
+                                        <img src="imagens/layoutminimercado.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-footer ">
+                                <ul class="classificacao">
+                                    <li><img src="imagens/estrela.png" alt=""></li>
+                                    <li><img src="imagens/estrela.png" alt=""></li>
+                                    <li><img src="imagens/estrela.png" alt=""></li>
+                                    <li><img src="imagens/estrela.png" alt=""></li>
+                                    <li><img src="imagens/estrela.png" alt=""></li>
+                                    <li> | texto</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
-                <div>
-                    <div class="card-cateroria pacote-gold">
-                        <div class="card-info-pacote ">
-                            <div class="col-2">
-                                <div>
-                                    <h2>Nome da empresa</h2>
-                                    <h4>Categoria</h4>
-                                    <hr>
-                                    <ul>
-                                        <li>texto</li>
-                                        <li>texto</li>
-                                        <li>texto</li>
-                                        <li>texto</li>
-                                        <li>texto</li>
-                                        <li>texto</li>
-                                    </ul>
 
-                                </div>
-                                <div>
-                                    <h3 class="tag-oferta">OFERTA</h3><br>
-                                    <h3 class="tag-promocao">PROMOÇÃO</h3>
+                <style>
+                    .banner-pag-cliente {
+                        width: 100%;
+                        height: 300px;
+                        background-color: red;
+                    }
 
-                                    <img src="imagens/layoutminimercado.png" alt="">
-                                </div>
+                    .info-empresa {
+                        padding: 15px;
+                        background: white;
+                    }
+
+                    .col-grid-4 {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-column-gap: 15px;
+                    }
+
+                    .produtos-info{
+                        background: white;
+    padding: 15px;
+                    }
+
+                    .produtos-info img {
+                        width: 100%;
+                    }
+
+                    .col-cupom {
+                        display: grid;
+                        grid-template-columns: 3fr 1fr;
+                        padding: 15px;
+                        background: gray;
+                    }
+
+                    .comentario-pag-info {
+                        display: grid;
+                        grid-template-columns: 1fr 4fr;
+                        padding: 15px;
+                        background-color: beige;
+                        margin-bottom: 15px;
+                    }
+                    .comentarios-info{
+                        background-color: white;
+                        padding: 15px;
+                    }
+
+                    .comentario-pag-info img {
+                        width: 100%;
+
+                    }
+
+                    .btn-pag-info{
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    
+                    .valor-desconto{
+                        text-decoration: line-through;
+                    }
+                </style>
+
+                <div style="width: 97%;margin: 0 auto;">
+                    <div class="nome" style="background-color:white ;padding: 15px;">
+                        <h2>Nome da empresa</h2>
+                        <h3>CATEGORIA</h3>
+
+                        <hr>
+                    </div>
+
+                    <div class="banner-pag-cliente"></div>
+
+                    <div class="info-empresa">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti vero
+                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
+                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit eos
+                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat vitae?
+                        </p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti vero
+                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
+                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit eos
+                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat vitae?
+                        </p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti vero
+                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
+                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit eos
+                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat vitae?
+                        </p>
+
+
+                    </div>
+                    <div class="produtos-info">
+                        <h2>Produtos</h2>
+                        <div class="col-grid-4">
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4>R$ 50,00</h4>
                             </div>
 
-                        </div>
-                        <div class="card-footer ">
-                            <ul class="classificacao">
-                                <li><img src="imagens/estrela.png" alt=""></li>
-                                <li><img src="imagens/estrela.png" alt=""></li>
-                                <li><img src="imagens/estrela.png" alt=""></li>
-                                <li><img src="imagens/estrela.png" alt=""></li>
-                                <li><img src="imagens/estrela.png" alt=""></li>
-                                <li> | texto</li>
-                            </ul>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="produtos-info">
+                        <h2>Ofertas</h2>
+                        <div class="col-grid-4">
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+                        </div>
+                    </div>
+              
+
+                <div class="cupom">
+                    <div class="col-cupom">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta perferendis natus unde
+                            corrupti repellat consectetur, a at ipsa ducimus culpa est quod ratione totam expedita sit
+                            rerum quos ad ullam.</p>
+                        <div>
+                            <button>Gerar</button>
+                            <p>Clique para gerar cupom</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="comentarios-info">
+                    <h2>Comentarios</h2>
+                    <div class="comentario-pag-info">
+                        <img src="imagens/layoutminimercado.png" alt="">
+                        <div>
+                            <h2>Nome </h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas vero,
+                                laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                        </div>
+                    </div>
+
+                    <div class="comentario-pag-info">
+                        <img src="imagens/layoutminimercado.png" alt="">
+                        <div>
+                            <h2>Nome </h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas vero,
+                                laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                        </div>
+                    </div>
+
+                    <div class="comentario-pag-info">
+                        <img src="imagens/layoutminimercado.png" alt="">
+                        <div>
+                            <h2>Nome </h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas vero,
+                                laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-pag-info">
+                    <button>Ver mais</button>
+                    <button>Fale direto com a empresa</button>
+                    <button>Comentar</button>
                 </div>
             </div>
         </div>
@@ -232,13 +441,45 @@
                 <li><a href=""> Twitter| </a></li>
                 <li><a href=""> YouTube </a></li>
             </ul>
-    
-    
+
+
         </div>
         <p>Desenvolvido Tem na Esquina
             - 2022
         </p>
-    
+
     </footer>
-        
+    <style>
+        #pacote-2,
+        #pacote-3 {
+            display: none;
+        }
+
+        .menu-pacotes ul li {
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function btnPacote1() {
+            document.getElementById('pacote-1').style.display = "grid";
+            document.getElementById('pacote-2').style.display = "none";
+            document.getElementById('pacote-3').style.display = "none";
+
+        }
+
+        function btnPacote2() {
+            document.getElementById('pacote-1').style.display = "none";
+            document.getElementById('pacote-2').style.display = "grid";
+            document.getElementById('pacote-3').style.display = "none";
+
+        }
+
+        function btnPacote3() {
+            document.getElementById('pacote-1').style.display = "none";
+            document.getElementById('pacote-2').style.display = "none";
+            document.getElementById('pacote-3').style.display = "grid";
+
+        }
+    </script>
 </body>
