@@ -8,7 +8,7 @@
     <title>Sistema</title>
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+  
 
 
 </head>
@@ -16,12 +16,14 @@
 <body>
 
     <header>
-        <div class="menu">
-            <div id="logo">Logo</div>
-            <nav>
+        <div class="menu" id="menu">
+            <div id="logo"><img src="imagens/tem-na-esquina.png" alt=""></div>
+            <!-- <nav style="background: #161d31;"> -->
 
+            <nav>
                 <ul style="padding-left: 30px;">
-                    <li style="    position: relative;"><i class="fas fa-bars" onclick="myFunction()"></i></li>
+                    <li class="pr" style="position: relative;" onclick="mostraMenuLateral()"><i class="fas fa-bars"></i>
+                    </li>
                     <li>
                         <a class="nav-link" data-toggle="dropdown" href="#">
                             <i class="far fa-comments"></i>
@@ -33,22 +35,27 @@
                     <li>o</li>
                 </ul>
                 <ul style="padding-right: 30px;">
-                    <!-- <li>teste</li> -->
-                    <li>Diego Rodrigues</li>
-                    <li><i class="fa-solid fa-user-gear"></i></li>
-                    <ul>
-                        <li></li>
-                    </ul>
+                    <li onclick="toggleFullScreen()"><i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+                    <li class="pl">Diego Rodrigues</li>
+                    <li id="menu-user" class="pl" onclick="menuUser('menu-superior-toggle-user')"><i
+                            class="fa-solid fa-user-gear"></i>
+                        <ul id="menu-superior-toggle-user">
+                            <li><a href="">item menu</a></li>
+                            <li><a href="">item menu</a></li>
+                            <li><a href="">item menu</a></li>
+                            <li><a href="">SAIR</a></li>
+                        </ul>
+                    </li>
                 </ul>
-
             </nav>
         </div>
     </header>
+ 
 
 
 
-    <section>
-        <div class="menu-lateral">
+    <section class="menu-lateral-corpo" id="menu-lateral-corpo">
+        <div class="menu-lateral" id="menu-lateral">
             <ul class="nav nav-pills nav-sidebar flex-column">
 
                 <li class="nav-item">
@@ -56,25 +63,26 @@
                         <i class="fa-solid fa-house"></i>
                         <p>
                             Deshboard
-                          
+
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                    <a href="javascrip:;" class="nav-link" onclick="MudaVisualizacaoMenu('menu-lateral-toggle');">
                         <i class="fa-solid fa-clipboard"></i>
                         <p>
                             Cadastros
-                           
+
                         </p>
+                        <i id="seta-lado" class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
 
-                    <ul style="background-color: red;">
+                    <ul id="menu-lateral-toggle">
                         <li><a href="cadastro-produtos.html">Produtos</a></li>
-                        <li><a href="cadastro-ofertas.html">Ofertar</a></li>                      
-                        <li><a href="contato.html">Contato</a></li>                      
-                        <li><a href="informacoes.html">Informações</a></li>                       
+                        <li><a href="cadastro-ofertas.html">Ofertar</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="informacoes.html">Informações</a></li>
                     </ul>
                 </li>
 
@@ -83,7 +91,7 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                         <p>
                             Produtos
-                           
+
                         </p>
                     </a>
                 </li>
@@ -93,7 +101,7 @@
                         <i class="fa-solid fa-comment"></i>
                         <p>
                             Comentarios
-                           
+
                         </p>
                     </a>
                 </li>
@@ -103,7 +111,7 @@
                         <i class="fa-solid fa-comments"></i>
                         <p>
                             Mensagens
-                          
+
                         </p>
                     </a>
                 </li>
@@ -117,10 +125,6 @@
                         </p>
                     </a>
                 </li>
-
-
-
-
             </ul>
         </div>
 
@@ -288,32 +292,17 @@
 
 
             <div class="modal-footer">
-                <button id="close-modal">Fechar</button>
-                <button id="close-modal">Enviar</button>
+                <button id="remove-modal">Fechar</button>
+                <button id="save-modal">Enviar</button>
             </div>
         </div>
     </div>
     <footer>
-        <p id="myDIV">Desenvolvido por TEM NA ESQUINA- 2022</p>
+        <p>Desenvolvido por TEM NA ESQUINA- 2022</p>
     </footer>
-    <script src="libs/fontawesome-free-6.1.2-web/js/all.min.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script> -->
-    <script>
-        function myFunction() {
-            var element = document.getElementById("myDIV");
-            element.classList.toggle("mystyle");
-        }
-    </script>
-
-    <style>
-        .mystyle {
-            display: none;
-        }
-
-        .footer p {
-            background-color: red;
-        }
-    </style>
+    <!-- <script src="libs/fontawesome-free-6.1.2-web/js/all.min.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

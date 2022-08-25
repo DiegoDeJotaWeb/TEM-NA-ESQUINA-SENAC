@@ -1,21 +1,9 @@
-* {
-    font-family: Helvetica;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+
+ 
   
-  body {
-    padding: 1rem;
-  }
-  
-  h1 {
-    margin-bottom: 1rem;
-  }
-  
+ 
   button {
     padding: 0.6rem 1.2rem;
-    background-color: #888;
     color: #fff;
     border: none;
     border-radius: 0.25rem;
@@ -25,7 +13,7 @@
   }
   
   #open-modal {
-    background-color: #007bff;
+   cursor: pointer;
   }
   
   button:hover {
@@ -85,3 +73,10 @@
     top: 0;
   }
   
+  #save-modal{
+    background-color: var(--success);
+  }
+
+  #remove-modal{
+    background-color: var(--danger);
+  }

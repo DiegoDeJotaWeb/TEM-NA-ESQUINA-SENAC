@@ -10,41 +10,53 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    
+
 </head>
 
 <body>
 
     <header>
-        <div class="menu">
-            <div id="logo">Logo</div>
-            <nav>
+        <div class="menu" id="menu">
+            <div id="logo"><img src="imagens/tem-na-esquina-branco.png" alt=""></div>
+            <!-- <nav style="background: #161d31;"> -->
 
-                <ul style="padding-left: 30px;">
-                    <li style="    position: relative;"><i class="fas fa-bars"></i></li>
-                    <li>
+            <nav>
+                <ul style="padding-left: 30px;color: #fff;">
+                    <li class="pr" style="position: relative;" onclick="mostraMenuLateral()"><i class="fas fa-bars"></i>
+                    </li>
+                    <li class="pr">
                         <a class="nav-link" data-toggle="dropdown" href="#">
                             <i class="far fa-comments"></i>
                             <span class="badge badge-danger navbar-badge">3</span>
                         </a>
                     </li>
-                    <li>o</li>
-                    <li>o</li>
-                    <li>o</li>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                   
                 </ul>
-                <ul style="padding-right: 30px;">
-                    <!-- <li>teste</li> -->
-                    <li>Diego Rodrigues</li>
-                    <li><i class="fa-solid fa-user-gear"></i></li>
+                <ul style="padding-right: 30px;color: #fff;">
+
+                    <i class="fa-solid fa-toggle-off"></i>
+                    <i class="fa-solid fa-toggle-on"></i>
+                    <li onclick="toggleFullScreen()"><i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+                    <li class="pl">Diego Rodrigues</li>
+                    <li id="menu-user" class="pl" onclick="menuUser('menu-superior-toggle-user')"><i
+                            class="fa-solid fa-user-gear"></i>
+                        <ul id="menu-superior-toggle-user">
+                            <li><a href="">item menu</a></li>
+                            <li><a href="">item menu</a></li>
+                            <li><a href="">item menu</a></li>
+                            <li><a href="">SAIR</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+ 
 
 
-
-    <section>
-        <div class="menu-lateral">
+    <section class="menu-lateral-corpo" id="menu-lateral-corpo">
+        <div class="menu-lateral" id="menu-lateral">
             <ul class="nav nav-pills nav-sidebar flex-column">
 
                 <li class="nav-item">
@@ -52,25 +64,35 @@
                         <i class="fa-solid fa-house"></i>
                         <p>
                             Deshboard
-                          
+
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                    <a href="javascrip:;" class="nav-link" onclick="MudaVisualizacaoMenu('menu-lateral-toggle');">
                         <i class="fa-solid fa-clipboard"></i>
                         <p>
                             Cadastros
-                           
+
                         </p>
+                        <i id="seta-lado" class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
 
-                    <ul style="background-color: red;">
-                        <li><a href="cadastro-produtos.html">Produtos</a></li>
-                        <li><a href="cadastro-ofertas.html">Ofertar</a></li>                      
-                        <li><a href="contato.html">Contato</a></li>                      
-                        <li><a href="informacoes.html">Informações</a></li>                       
+                    <style>
+                        #menu-lateral-toggle li i{
+                            color: #fff;
+                            padding: 0 10px;
+                        }
+                        
+                        
+                        </style>
+
+                    <ul id="menu-lateral-toggle">
+                        <li><i class="fa-brands fa-ello"></i><a href="cadastro-produtos.html">Produtos</a></li>
+                        <li><i class="fa-solid fa-circle-dot"></i><a href="cadastro-ofertas.html">Ofertar</a></li>
+                        <li><i class="fa-solid fa-genderless"></i><a href="contato.html">Contato</a></li>
+                        <li><i class="fa-brands fa-hashnode"></i><i class="fa-brands fa-jira"></i><a href="informacoes.html">Informações</a></li>
                     </ul>
                 </li>
 
@@ -79,7 +101,7 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                         <p>
                             Produtos
-                           
+
                         </p>
                     </a>
                 </li>
@@ -89,7 +111,7 @@
                         <i class="fa-solid fa-comment"></i>
                         <p>
                             Comentarios
-                           
+
                         </p>
                     </a>
                 </li>
@@ -99,7 +121,7 @@
                         <i class="fa-solid fa-comments"></i>
                         <p>
                             Mensagens
-                          
+
                         </p>
                     </a>
                 </li>
@@ -113,50 +135,52 @@
                         </p>
                     </a>
                 </li>
-
-
-
-
             </ul>
         </div>
         <div class="box-conteudo">
-        <div class="conteudo">
-            <div class="breadcrumb">
-                <h1>Dashboard</h1>
-                <p>Home / Dashboard</p>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <h3>Produtos</h3>
-                    <p>99</p>
+            <div class="conteudo">
+                <div class="breadcrumb">
+                    <h1>Dashboard</h1>
+                    <p>Home / Dashboard</p>
                 </div>
-                <div class="card">
-                    <h3>Produtos</h3>
-                    <p>99</p>
-                </div>
-                <div class="card">
-                    <h3>Produtos</h3>
-                    <p>99</p>
-                </div>
-                <div class="card">
-                    <h3>Produtos</h3>
-                    <p>99</p>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Produtos</h3>
+                        <p>99</p>
+                    </div>
+                    <div class="card">
+                        <h3>Produtos</h3>
+                        <p>99</p>
+                    </div>
+                    <div class="card">
+                        <h3>Produtos</h3>
+                        <p>99</p>
+                    </div>
+                    <div class="card">
+                        <h3>Produtos</h3>
+                        <p>99</p>
+                    </div>
+
                 </div>
 
+                <div class="grafico-visitas">
+                    <img src="imagens/grafico-coluna-cke.jpg" alt="">
+                </div>
             </div>
 
-            <div class="grafico-visitas">
-                <img src="imagens/grafico-coluna-cke.jpg" alt="">
-            </div>
         </div>
-
-    </div>
 
     </section>
     <footer>
         <p>Desenvolvido por TEM NA ESQUINA- 2022</p>
     </footer>
+
+
+  <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+
+
+ 
 </body>
 
 </html>
