@@ -11,7 +11,7 @@
 
     <title>Tem na esquina</title>
 
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <style>
 
     </style>
@@ -85,7 +85,9 @@
                 }
 
                 .botao {
-                    margin-left: 85%;
+                    /* margin-left: 85%; */
+                    padding: 0 0 15px 0;
+                    text-align: center;
                 }
 
                 .flex-grid-2 {
@@ -98,7 +100,7 @@
                     grid-template-columns: 1fr 1fr 1fr;
                 }
 
-                .estrutura-geral{
+                .estrutura-geral {
                     background-color: #C6C3C3;
                 }
             </style>
@@ -161,15 +163,29 @@
                         <label for="cadastro-cpf">E-mail: </label>
                         <input type="email" class="form-cadastro" id="cadastro-email" placeholder="email">
                     </div>
-                
+
                 </div>
 
-                
+
 
                 <div class="form-cadastro">
                     <label for="cadastro-cpf">Descrever sua empresa com poucas palavras: </label>
                     <!-- <input type="Descreva" class="form-cadastro" id="cadastro-email" placeholder="Descreva" > -->
                     <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="container-termo-uso">
+                    <div class="termo-uso">
+                        <p>Aceita os termos de uso </p>
+                        <input type="checkbox">
+                    </div>
+                    <div class="termo-uso">
+                        <p>Aceita os Termos de uso </p>
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="botao ">
+                    <button type="cadastrar" class="form-cadastrar btn">Cadastrar</button>
                 </div>
 
             </form>
@@ -178,14 +194,9 @@
 
 
         </div>
-        <div class="termo-uso">
-            <p>Aceita os termos de uso <input type="checkbox"></p>
-            <p>Aceita os Termos de uso <input type="checkbox"></p>
-
+      
         </div>
-        <div class="botao">
-            <button type="cadastrar" class="form-cadastrar">Cadastrar</button>
-        </div>
+        
 
         <style>
             .classificacao li {
