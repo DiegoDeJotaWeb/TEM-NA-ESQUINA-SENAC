@@ -17,24 +17,26 @@
 
     <header>
         <div class="menu" id="menu">
-            <div id="logo"><img src="imagens/tem-na-esquina.png" alt=""></div>
+            <div id="logo"><img src="imagens/tem-na-esquina-branco.png" alt=""></div>
             <!-- <nav style="background: #161d31;"> -->
 
             <nav>
-                <ul style="padding-left: 30px;">
+                <ul style="padding-left: 30px;color: #fff;">
                     <li class="pr" style="position: relative;" onclick="mostraMenuLateral()"><i class="fas fa-bars"></i>
                     </li>
-                    <li>
-                        <a class="nav-link" data-toggle="dropdown" href="#">
+                    <li class="pr">
+                        <a class="nav-link" data-toggle="dropdown" href="mensagens.html">
                             <i class="far fa-comments"></i>
                             <span class="badge badge-danger navbar-badge">3</span>
                         </a>
                     </li>
-                    <li>o</li>
-                    <li>o</li>
-                    <li>o</li>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                   
                 </ul>
-                <ul style="padding-right: 30px;">
+                <ul style="padding-right: 30px;color: #fff;">
+
+                    <i class="fa-solid fa-toggle-off"></i>
+                    <i class="fa-solid fa-toggle-on"></i>
                     <li onclick="toggleFullScreen()"><i class="fa-solid fa-arrow-up-right-from-square"></i></li>
                     <li class="pl">Diego Rodrigues</li>
                     <li id="menu-user" class="pl" onclick="menuUser('menu-superior-toggle-user')"><i
@@ -50,6 +52,7 @@
             </nav>
         </div>
     </header>
+ 
 
 
     <section class="menu-lateral-corpo" id="menu-lateral-corpo">
@@ -76,11 +79,21 @@
                         <i id="seta-lado" class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
 
+                    <style>
+                        #menu-lateral-toggle li i{
+                            color: #fff;
+                            padding: 0 10px;
+                        }
+                        
+                        
+                        </style>
+
                     <ul id="menu-lateral-toggle">
-                        <li><a href="cadastro-produtos.html">Produtos</a></li>
-                        <li><a href="cadastro-ofertas.html">Ofertar</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="informacoes.html">Informações</a></li>
+                        <li><i class="fa-solid fa-genderless"></i><a href="cadastro-produtos.html">Produtos</a></li>
+                        <li><i class="fa-solid fa-genderless"></i><a href="cadastro-ofertas.html">Ofertar</a></li>
+                        <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cupom.html">Cupom</a></li>
+                        <li><i class="fa-solid fa-genderless"></i><a href="cadastro-contatos.html">Contato</a></li>
+                        <li><i class="fa-solid fa-genderless"></i><a href="cadastro-informacoes.html">Informações</a></li>
                     </ul>
                 </li>
 
@@ -89,7 +102,15 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                         <p>
                             Produtos
+                        </p>
+                    </a>
+                </li>
 
+                <li class="nav-item">
+                    <a href="cupom.html" class="nav-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>
+                            Cupom
                         </p>
                     </a>
                 </li>
@@ -125,7 +146,6 @@
                 </li>
             </ul>
         </div>
-
         <style>
             .col-2-grid {
                 display: grid;
