@@ -1,140 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        .l-section--hero {
-  background: url(imagens/layoutminimercado.png) no-repeat center center;
-  background-size: cover;
-width:100% ;
-height: 900px;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-.l-section--hero::before {
-  content: '';
-  height: 100%;
-  left: 0%;
-  position: absolute;
-  top: 100%;
-  transform-origin: right;
-  transform: skewY(10deg);
-  width: 100%;
-}
-
-.l-section--hero::after {
-  content: '';
-  height: 100%;
-  right: 0%;
-  position: absolute;
-  top: 100%;
-  transform-origin: left;
-  transform: skewY(-10deg);
-  width: 100%;
-}
-
-
-
-.l-section--hero::before,
-.l-section--hero::after {
-  background-color: #fff;
-}
-
-
-
-
-
-
-.box2 {
-  background-color: #FF895B;
-  position: relative;
-  height: 500px;
-}
-.box-2::before{
-    z-index: 999;
-}
-.box2:after {
-  background: inherit;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  transform: skewY(1.5deg);
-  transform-origin: 0%;
-}
-
-
-    </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
+<style>
+  #tema-claro {
+    display: none;
+  }
+</style>
+
 <body>
-    
-<section class="l-section l-section--hero">
-    <h1>lorem</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-
-<h1>lorem</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-</section>
-<div style="z-index:999;position: sticky;">
-<h1>lorem</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-</div>
 
 
+  <button onclick="trocaTemaClaro()" id="tema-claro">trocaTemaClaro</button>
+  <button onclick="trocaTemaEscuro()" id="tema-escuro">trocaTemaEscuro</button>
+  <script>
+    function trocaTemaClaro() {
+      document.querySelector('link').href = "css/style.css";
+      document.querySelector('#tema-claro').style.display = "none";
+      document.querySelector('#tema-escuro').style.display = "block";
+    }
 
-
-
-
-
-
-
-
-****************************************************************
-
-
-<div class="box2">
-            <div>
-                <h1>lorem</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-            </div>
-</div>
-
-
-<h1>lorem</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione molestiae commodi dolore ex voluptatum eum dicta, sequi id sunt officiis, fuga enim aperiam ad ipsum odit amet praesentium. Nostrum.</p>
+    function trocaTemaEscuro() {
+      document.querySelector('link').href = "css/tema-escuro.css";
+      document.querySelector('#tema-claro').style.display = "block";
+      document.querySelector('#tema-escuro').style.display = "none";
+    }
+  </script>
 </body>
+
 </html>

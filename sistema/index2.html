@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="section" style="display: grid;
+        grid-template-columns: 2fr 10fr;">
+            <div>
+                <div id="logo"><img src="imagens/tem-na-esquina-branco.png" alt=""></div>
+
+
+
+                <div class="menu-lateral" id="menu-lateral">
+                    <ul class="nav nav-pills nav-sidebar flex-column">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fa-solid fa-house"></i>
+                                <p>
+                                    Deshboard
+
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascrip:;" class="nav-link"
+                                onclick="MudaVisualizacaoMenu('menu-lateral-toggle');">
+                                <i class="fa-solid fa-clipboard"></i>
+                                <p>
+                                    Cadastros
+
+                                </p>
+                                <i id="seta-lado" class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+
+                            <style>
+                                #menu-lateral-toggle li i {
+                                    color: #fff;
+                                    padding: 0 10px;
+                                }
+                            </style>
+
+                            <ul id="menu-lateral-toggle">
+                                <li><i class="fa-solid fa-genderless"></i><a href="cadastro-produtos.html">Produtos</a>
+                                </li>
+                                <li><i class="fa-solid fa-genderless"></i><a href="cadastro-ofertas.html">Ofertar</a>
+                                </li>
+                                <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cupom.html">Cupom</a></li>
+                                <li><i class="fa-solid fa-genderless"></i><a href="cadastro-contatos.html">Contato</a>
+                                </li>
+                                <li><i class="fa-solid fa-genderless"></i><a
+                                        href="cadastro-informacoes.html">Informações</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="produtos.html" class="nav-link">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>
+                                    Produtos
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="cupom.html" class="nav-link">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>
+                                    Cupom
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="comentarios.html" class="nav-link">
+                                <i class="fa-solid fa-comment"></i>
+                                <p>
+                                    Comentarios
+
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fa-solid fa-comments"></i>
+                                <p>
+                                    Mensagens
+
+                                </p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>
+                                    Suporte
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <nav>
+                    <ul style="padding-left: 30px;color: #fff;">
+                        <li class="pr" style="position: relative;" onclick="mostraMenuLateral()"><i
+                                class="fas fa-bars"></i>
+                        </li>
+                        <li class="pr">
+                            <a class="nav-link" data-toggle="dropdown" href="mensagens.html">
+                                <i class="far fa-comments"></i>
+                                <span class="badge badge-danger navbar-badge">3</span>
+                            </a>
+                        </li>
+                        <li><i class="fa-solid fa-location-dot"></i></li>
+
+                    </ul>
+                    <ul style="padding-right: 30px;color: #fff;">
+
+                        <i class="fa-solid fa-toggle-off"></i>
+                        <i class="fa-solid fa-toggle-on"></i>
+                        <li onclick="toggleFullScreen()"><i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+                        <li class="pl">Diego Rodrigues</li>
+                        <li id="menu-user" class="pl" onclick="menuUser('menu-superior-toggle-user')"><i
+                                class="fa-solid fa-user-gear"></i>
+                            <ul id="menu-superior-toggle-user">
+                                <li><a href="">item menu</a></li>
+                                <li><a href="">item menu</a></li>
+                                <li><a href="">item menu</a></li>
+                                <li><a href="">SAIR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <div class="box-conteudo">
+                        <div class="conteudo">
+                            <div class="breadcrumb">
+                                <h1>Dashboard</h1>
+                                <p>Home / Dashboard</p>
+                            </div>
+                            <div class="cards">
+                                <div class="card">
+                                    <h3>Produtos</h3>
+                                    <p>99</p>
+                                </div>
+                                <div class="card">
+                                    <h3>Produtos</h3>
+                                    <p>99</p>
+                                </div>
+                                <div class="card">
+                                    <h3>Produtos</h3>
+                                    <p>99</p>
+                                </div>
+                                <div class="card">
+                                    <h3>Produtos</h3>
+                                    <p>99</p>
+                                </div>
+        
+                            </div>
+        
+                            <div class="grafico-visitas">
+                                <img src="imagens/grafico-coluna-cke.jpg" alt="">
+                            </div>
+                        </div>
+                        <footer>
+                            <p>Desenvolvido por TEM NA ESQUINA- 2022</p>
+                        </footer>
+        
+        
+                    </div>
+        
+                    
+        
+                </div>
+
+            </div>
+            <!--  -->
+        </div>
+
+
+
+
+
+
+
+
+
+        <br><br><br><br>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
