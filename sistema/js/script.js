@@ -23,9 +23,15 @@ const toggleModal = () => {
 
 
 
-function MudaVisualizacaoMenu(el) {
-    document.getElementById('seta-lado').classList.toggle('mostrar-seta-lado');
-    document.getElementById(el).classList.toggle('mostrar');
+function MudaVisualizacaoMenuCadastro(el) {
+    document.getElementById('seta-lado-cadastro').classList.toggle('mostrar-seta-lado-cadastro');
+    document.getElementById(el).classList.toggle('mostrar-cadastro');
+
+}
+
+function MudaVisualizacaoMenuSuporte(el) {
+    document.getElementById('seta-lado-suporte').classList.toggle('mostrar-seta-lado-suporte');
+    document.getElementById(el).classList.toggle('mostrar-suporte');
 
 }
 

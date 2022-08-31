@@ -15,6 +15,56 @@
 
 <body>
 
+    <style>
+        .info-suporte {
+            width: 20%;
+
+            padding: 15px;
+            float: right;
+            position: fixed;
+            right: 0;
+            top: 20px;
+            color: white;
+        }
+
+        .info-suporte span {
+            float: right;
+            font-size: 16px;
+            line-height: 37px;
+        }
+
+        .info-suporte h1 {
+            margin-bottom: 15px;
+        }
+
+        #info-suport-1 {
+            background-color: var(--danger);
+        }
+
+        #info-suport-2 {
+            background-color: var(--orange);
+        }
+
+        #info-suport-3 {
+            background-color: var(--secondary);
+        }
+    </style>
+
+    <!-- <div class="info-suporte " id="info-suport-3">
+        <h1>ATENÇÃO <span><i class="fa-solid fa-xmark"></i></span></h1>
+        <p>Falta 5 dias para expirar sua conta!</p>       
+    </div> -->
+
+    <!-- <div class="info-suporte" id="info-suport-2">
+        <h1>ATENÇÃO <span><i class="fa-solid fa-xmark"></i></span></h1>
+        <p>Falta 3 dias para expirar sua conta!</p>       
+    </div> -->
+
+    <!-- <div class="info-suporte" id="info-suport-1">
+        <h1>ATENÇÃO <span><i class="fa-solid fa-xmark"></i></span></h1>
+        <p>Sua conta expirou!</p>       
+    </div> -->
+
     <header>
         <div class="menu" id="menu">
             <div id="logo"><img src="imagens/tem-na-esquina-branco.png" alt=""></div>
@@ -30,8 +80,13 @@
                             <span class="badge badge-danger navbar-badge">3</span>
                         </a>
                     </li>
-                    <li><i class="fa-solid fa-location-dot"></i></li>
-                   
+                    <li class="pr">
+                        <a class="nav-link" data-toggle="dropdown" href="mensagens.html">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="badge badge-danger navbar-badge">3</span>
+                        </a>
+                    </li>
+
                 </ul>
                 <ul style="padding-right: 30px;color: #fff;">
 
@@ -52,7 +107,7 @@
             </nav>
         </div>
     </header>
- 
+
 
 
     <section class="menu-lateral-corpo" id="menu-lateral-corpo">
@@ -70,30 +125,30 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="javascrip:;" class="nav-link" onclick="MudaVisualizacaoMenu('menu-lateral-toggle');">
+                    <a href="javascrip:;" class="nav-link"
+                        onclick="MudaVisualizacaoMenuCadastro('menu-lateral-toggle-cadastro');">
                         <i class="fa-solid fa-clipboard"></i>
                         <p>
                             Cadastros
 
                         </p>
-                        <i id="seta-lado" class="fa fa-angle-right" aria-hidden="true"></i>
+                        <i id="seta-lado-cadastro" class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
 
                     <style>
-                        #menu-lateral-toggle li i{
+                        #menu-lateral-toggle-cadastro li i {
                             color: #fff;
                             padding: 0 10px;
                         }
-                        
-                        
-                        </style>
+                    </style>
 
-                    <ul id="menu-lateral-toggle">
+                    <ul id="menu-lateral-toggle-cadastro">
                         <li><i class="fa-solid fa-genderless"></i><a href="cadastro-produtos.html">Produtos</a></li>
                         <li><i class="fa-solid fa-genderless"></i><a href="cadastro-ofertas.html">Ofertar</a></li>
                         <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cupom.html">Cupom</a></li>
                         <li><i class="fa-solid fa-genderless"></i><a href="cadastro-contatos.html">Contato</a></li>
-                        <li><i class="fa-solid fa-genderless"></i><a href="cadastro-informacoes.html">Informações</a></li>
+                        <li><i class="fa-solid fa-genderless"></i><a href="cadastro-informacoes.html">Informações</a>
+                        </li>
                     </ul>
                 </li>
 
@@ -136,66 +191,155 @@
                 </li>
 
 
+        
+                <style>
+                    #menu-lateral-toggle-suporte li i {
+                        color: #fff;
+                        padding: 0 10px;
+                    }
+                </style>
+
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                    <a href="javascrip:;" class="nav-link"
+                        onclick="MudaVisualizacaoMenuSuporte('menu-lateral-toggle-suporte');">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>
                             Suporte
                         </p>
+                        <i id="seta-lado-suporte" class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+
+                    <style>
+                        #menu-lateral-toggle-suporte li i {
+                            color: #fff;
+                            padding: 0 10px;
+                        }
+                    </style>
+
+                    <ul id="menu-lateral-toggle-suporte">
+                        <li>
+                            <i class="fa-solid fa-genderless"></i>
+                            <a href="#">Pagamentos</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-genderless"></i>
+                            <a href="#">Mensagens</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                </li>
+
+
+
+
+                <style>
+                    .btn {
+                        background-color: var(--success);
+                        display: inline-block;
+                        font-weight: 400;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        border: 1px solid transparent;
+                        padding: 0.375rem 0.75rem;
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        border-radius: 0.25rem;
+                        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    }
+                </style>
+
+                <li class="nav-item" style="text-align: center;">
+                    <a href="index.html" class="nav-link">
+                        <button class="btn" style="width: 100%;">SEJA PREMIUM</button>
                     </a>
                 </li>
             </ul>
         </div>
         <div>
-        <div class="box-conteudo">
-            <div class="conteudo">
-                <div class="breadcrumb">
-                    <h1>Dashboard</h1>
-                    <p>Home / Dashboard</p>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <h3>Produtos</h3>
-                        <p>99</p>
+            <div class="box-conteudo">
+                <div class="conteudo">
+                    <div class="breadcrumb">
+                        <h1>Dashboard</h1>
+                        <p>Home / Dashboard</p>
                     </div>
-                    <div class="card">
-                        <h3>Produtos</h3>
-                        <p>99</p>
-                    </div>
-                    <div class="card">
-                        <h3>Produtos</h3>
-                        <p>99</p>
-                    </div>
-                    <div class="card">
-                        <h3>Produtos</h3>
-                        <p>99</p>
-                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <h3>Produtos</h3>
+                            <p>99</p>
+                        </div>
+                        <div class="card">
+                            <h3>Produtos</h3>
+                            <p>99</p>
+                        </div>
+                        <div class="card">
+                            <h3>Produtos</h3>
+                            <p>99</p>
+                        </div>
+                        <div class="card">
+                            <h3>Produtos</h3>
+                            <p>99</p>
+                        </div>
 
+                    </div>
+                    <style>
+                        .cards-grafico-info {
+                            display: grid;
+                            grid-template-columns: 8fr 4fr;
+                            column-gap: 15px;
+
+                        }
+
+                        .cards-grafico-info ol {
+                            margin-left: 20px;
+                        }
+                    </style>
+                    <div class="cards-grafico-info">
+                        <div class="card">
+                            <img src="imagens/grafico-coluna-cke.jpg" alt="">
+                        </div>
+                        <div class="card" style="text-align:left;padding:15px">
+                            <h3>Informações</h3>
+                            <p style="font-size:18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                                deserunt voluptates voluptatem dicta eveniet. Tempore hic vel ad ipsa eius excepturi
+                                doloribus repudiandae iste sint, unde corrupti animi in placeat?</p>
+                            <ol>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grafico-visitas">
-                    <img src="imagens/grafico-coluna-cke.jpg" alt="">
-                </div>
+
+
             </div>
-            
-           
-        
-        </div>
-      
+
             <footer>
                 <p>Desenvolvido por TEM NA ESQUINA- 2022</p>
             </footer>
 
         </div>
-    
-    </section>
-    
 
-  <script src="js/script.js"></script>
+    </section>
+
+
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 
 
- 
+
 </body>
 
 </html>

@@ -36,7 +36,8 @@ body::-webkit-scrollbar {
     --gray-dark: #343a40;
     --primary: #007bff;
     --secondary: #6c757d;
-    --success: #28a745;
+    --success: #40a958;
+    /* --success: #28a745; */
     --info: #17a2b8;
 }
 body {
@@ -84,16 +85,28 @@ header, header nav {
 }
 
 
-#menu-lateral-toggle {
+#menu-lateral-toggle-cadastro {
     transition: opacity 1.5s;
     display: none;
 
 }
 
-#menu-lateral-toggle.mostrar {
+#menu-lateral-toggle-cadastro.mostrar-cadastro {
     transition: opacity 1.5s;
     display: block;
 }
+
+#menu-lateral-toggle-suporte {
+    transition: opacity 1.5s;
+    display: none;
+
+}
+
+#menu-lateral-toggle-suporte.mostrar-suporte {
+    transition: opacity 1.5s;
+    display: block;
+}
+
 
 #menu-superior-toggle-user {
     display: none;
@@ -103,15 +116,20 @@ header, header nav {
     display: block;
 }
 
-#seta-lado{
+#seta-lado-cadastro,#seta-lado-suporte{
     line-height: 50px;
     float: right;
 }
 
-#seta-lado.mostrar-seta-lado {
+
+
+#seta-lado-cadastro.mostrar-seta-lado-cadastro {
     transform: rotate(90deg);
 }
 
+#seta-lado-suporte.mostrar-seta-lado-suporte {
+    transform: rotate(90deg);
+}
 
 #menu.gridTemplateColumns1 {
     grid-template-columns: 1fr !important;
@@ -212,10 +230,10 @@ nav {
 
 }
 
-.cards .card {
+ .card {
     background: white;
     /* margin: 15px; */
-
+border-radius: 5px;
     text-align: center;
 }
 
