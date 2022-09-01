@@ -39,6 +39,8 @@ body::-webkit-scrollbar {
     --success: #40a958;
     /* --success: #28a745; */
     --info: #17a2b8;
+    /* --color-white: #fff;
+    --bnt-white: #fff; */
 }
 body {
     background-color: #2c2c2c;
@@ -143,7 +145,7 @@ header, header nav {
     display: block;
     height: 70px;
     text-align: center;
-    border-bottom: 1px dotted #fff;
+    border-bottom: 1px dotted var(--white);
 }
 
 #logo img{
@@ -376,3 +378,8 @@ body {
 footer {
     margin-top: auto;
 } */
+
+
+
+/*------------------ PARTE DO LOGIN.HTML / LOGIN_EMPRESA.THML------------------*/
+
