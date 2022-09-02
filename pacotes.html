@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +7,30 @@
     <meta name="keywords" content="Classificados">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro">
-
-    <title>Tem na esquina</title>
-
+    <title>Pacotes</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-
-    </style>
-
+    <link rel="icon" href="imagens/logo_icone.png" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
     <header>
-        <div class="container flex-space-around">
-            <h1 id="logo">LOGO</h1>
+        <div class="container_flex-space-around">
+            <a id="logo"><img src="imagens/logo.png" alt="Logomarca"></a>
             <nav>
                 <ul>
-                    <li><a href="index.html">home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="categorias.html">Categoria</a></li>
-                    <li><a href="contato.html">contato</a></li>
-                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="pacotes.html">Seja parceiro</a></li>
-                    <li><a href="login.html">login</a></li>
+                    <li><a href="sistema/login.html">Login</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
-
     <section>
         <div class="container">
             <h2 class="titulo">Pacotes</h2>
@@ -45,11 +39,6 @@
                 commodi repudiandae?</p>
         </div>
     </section>
-
-    <style>
-
-    </style>
-
     <section>
         <div class="container">
             <div class="menu-pacotes">
@@ -69,7 +58,7 @@
                         atque, aut quam repudiandae?</p>
 
                     <h3>R$ 0,00</h3>
-                    <button>Contratar</button>
+                    <button class="btn">Contratar</button>
                 </div>
                 <div>
                     <div class="card-cateroria ">
@@ -93,16 +82,6 @@
                             </div>
 
                         </div>
-                        <style>
-                            .classificacao li {
-                                display: inline-block;
-                            }
-
-                            .classificacao img {
-                                width: 10px;
-                                padding-top: 0;
-                            }
-                        </style>
                         <div class="card-footer ">
                             <ul class="classificacao">
                                 <li><img src="imagens/estrela.png" alt=""></li>
@@ -126,7 +105,7 @@
                         atque, aut quam repudiandae?</p>
 
                     <h3>R$ 0,00</h3>
-                    <button>Contratar</button>
+                    <button class="btn">Contratar</button>
                 </div>
                 <div>
                     <div class="card-cateroria pacote-brass">
@@ -178,7 +157,7 @@
                             atque, aut quam repudiandae?</p>
 
                         <h3>R$ 0,00</h3>
-                        <button>Contratar</button>
+                        <button class="btn">Contratar</button>
                     </div>
                     <div>
                         <div class="card-cateroria pacote-gold">
@@ -223,68 +202,6 @@
 
 
                 </div>
-
-                <style>
-                    .banner-pag-cliente {
-                        width: 100%;
-                        height: 300px;
-                        background-color: red;
-                    }
-
-                    .info-empresa {
-                        padding: 15px;
-                        background: white;
-                    }
-
-                    .col-grid-4 {
-                        display: grid;
-                        grid-template-columns: repeat(4, 1fr);
-                        grid-column-gap: 15px;
-                    }
-
-                    .produtos-info{
-                        background: white;
-    padding: 15px;
-                    }
-
-                    .produtos-info img {
-                        width: 100%;
-                    }
-
-                    .col-cupom {
-                        display: grid;
-                        grid-template-columns: 3fr 1fr;
-                        padding: 15px;
-                        background: gray;
-                    }
-
-                    .comentario-pag-info {
-                        display: grid;
-                        grid-template-columns: 1fr 4fr;
-                        padding: 15px;
-                        background-color: beige;
-                        margin-bottom: 15px;
-                    }
-                    .comentarios-info{
-                        background-color: white;
-                        padding: 15px;
-                    }
-
-                    .comentario-pag-info img {
-                        width: 100%;
-
-                    }
-
-                    .btn-pag-info{
-                        display: grid;
-                        grid-template-columns: repeat(3, 1fr);
-                    }
-                    
-                    .valor-desconto{
-                        text-decoration: line-through;
-                    }
-                </style>
-
                 <div style="width: 97%;margin: 0 auto;">
                     <div class="nome" style="background-color:white ;padding: 15px;">
                         <h2>Nome da empresa</h2>
@@ -384,7 +301,7 @@
                             corrupti repellat consectetur, a at ipsa ducimus culpa est quod ratione totam expedita sit
                             rerum quos ad ullam.</p>
                         <div>
-                            <button>Gerar</button>
+                            <button class="btn">Gerar</button>
                             <p>Clique para gerar cupom</p>
                         </div>
                     </div>
@@ -424,9 +341,9 @@
                 </div>
 
                 <div class="btn-pag-info">
-                    <button>Ver mais</button>
-                    <button>Fale direto com a empresa</button>
-                    <button>Comentar</button>
+                    <button class="btn">Ver mais</button>
+                    <button class="btn">Fale direto com a empresa</button>
+                    <button class="btn">Comentar</button>
                 </div>
             </div>
         </div>
@@ -449,17 +366,6 @@
         </p>
 
     </footer>
-    <style>
-        #pacote-2,
-        #pacote-3 {
-            display: none;
-        }
-
-        .menu-pacotes ul li {
-            cursor: pointer;
-        }
-    </style>
-
     <script>
         function btnPacote1() {
             document.getElementById('pacote-1').style.display = "grid";

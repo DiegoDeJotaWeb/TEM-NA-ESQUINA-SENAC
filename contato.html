@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,84 +7,14 @@
     <meta name="keywords" content="Classificados">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro">
-    <title>Tem na esquina</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="imagens/logo_icone.png" sizes="64x64">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap');
-    
-    *{
-        font-family:'Darker Grotesque', sans-serif;
-        font-weight: bold;
-    }
-.container_flex-space-around {
-    background-color: #FF6600;
-    border-bottom: solid 1px;
-    display: flex;
-    padding-left: 6%;
-    padding-top: 1%;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-#logo img{
-    width: 50%;
-    margin-top: 5px;
-}
-#logo{
-    line-height: 25px;
-}
-/*Permitir que o menu fique por cima dos elementos*/
-.col-8-4 {
-
-    display: grid;
-    grid-template-columns: 8fr 4fr;
-}
-.form-contato-iten {
-    width: 50%;
-    padding: 5px;
-}
-
-.form-contato-iten label {
-    width: 100%;
-    
-
-}
-
-.form-contato-iten input {
-    width: 100%;
-    border-color: #3319FF;
-    
-
-}
-
-.form-contato-iten textarea {
-    width: 100%;
-    border-color: #3319FF;
-}
-
-.form-contato-iten button {
-    float: right;
-
-}
-body{
-    background-image: url(imagens/fundo.png);
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-} 
-.col-8-4_center ul{
-    padding-top: 50%;
-}
-    </style>
-
 </head>
-
 <body>
     <header>
         <div class="container_flex-space-around">
@@ -96,73 +25,88 @@ body{
                     <li><a href="categorias.html">Categoria</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="seja_parceiro.html">Seja parceiro</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="pacotes.html">Seja parceiro</a></li>
+                    <li><a href="sistema/login.html">Login</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="container">
-        <section>
-            <h2 class="titulo">Contatos</h2>
-            <div class="anuncios">
-            </div>
-        </section>
-        <div class="col-8-4">
-
-            <div class="form-contato">
-                <form action="#" method="POST">
-                    <div class="form-contato-iten">
-                        <label for="nome">Nome: </label>
-                        <input type="text" id="nome" name="nome">
-                    </div>
-                    <div class="form-contato-iten">
-                        <label for="nome">E-mail: </label>
-                        <input type="text" id="e-mail" name="nome">
-                    </div>
-                    <div class="form-contato-iten">
-                        <label for="nome">Nome: </label>
-                        <input type="text" id="nome" name="nome">
-                    </div>
-                    <div class="form-contato-iten">
-                        <label for="cel">Celular: </label>
-                        <input placeholder="(00) 0-0000-0000" type="tel" id="cel" name="cel">
-                    </div>
-                    <div class="form-contato-iten">
-                        <label for="mensagem">Mensagem: </label>
-                        <textarea name="mensagem" id="mensagem" cols="100" rows="5"></textarea>
-                    </div>
-                    <button type="submit" id="enviar" class="btn">ENVIAR</button>
-                </form>
-            </div>
-
-            <div class="col-8-4_center">
-                <ul style="padding-top: 50%;">
-                    <li>Telefone: (00) 0 0000-0000</li>
-                    <li>Telefone: (00) 0 0000-0000</li>
-                    <li>Telefone: (00) 0 0000-0000</li>
-                </ul>
-            </div>
-
+    <section>
+        <div class="container">
+            <h2 class="titulo">Contato</h2>
         </div>
-        <section>
-            <h2 class="titulo">Localização</h2>
-            <div class="anuncios">
+        <div class="anuncios">
+        </div>
+    </section>
+    <selection>
+        <div class="container">
+            <div class="menu-contato">
+                <div class="form-contato">
+                    <form action="#" method="POST">
+                        <div class="form-contato-iten">
+                            <label for="cadastro-nome">Nome: </label>
+                            <input type="Nome" aria-describedby="cadastro"
+                                placeholder="Nome">
+                        </div>
+                        <div class="form-contato-iten">
+                            <label for="cadastro-cpf">E-mail: </label>
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="form-contato-iten">
+                            <label for="nome">Empresa: </label>
+                            <input type="email" placeholder="Empresa">
+                        </div>
+                        <div class="form-contato-iten">
+                            <label for="cel">Celular: </label>
+                            <input type="email" placeholder="(00) 0-0000-0000">
+                        </div>
+                        <div class="form-contato-iten">
+                            <label for="mensagem">Mensagem: </label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="botao">
+                            <button type="submit" class="btn">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class=".menu-contato-center">
+                    <ul style="padding-top: 50%;">
+                        <li>Telefone: (00) 0 0000-0000</li>
+                        <li>Telefone: (00) 0 0000-0000</li>
+                        <li>Telefone: (00) 0 0000-0000</li>
+                    </ul>
+                </div>
+
             </div>
-        </section>
+            <section>
+                <h2 class="titulo">Localização</h2>
+                <div class="anuncios">
+                </div>
+            </section>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1227058192267!2d-46.69400408487186!3d-23.528088666249957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1660179809006!5m2!1spt-BR!2sbr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </selection>
+    <footer>
         <div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1227058192267!2d-46.69400408487186!3d-23.528088666249957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1660179809006!5m2!1spt-BR!2sbr"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <ul class="redes">
+                <li><a href="">facebook| </a></li>
+                <li><a href=""> Instagram| </a></li>
+                <li><a href=""> Linkedin| </a></li>
+                <li><a href=""> Twitter| </a></li>
+                <li><a href=""> YouTube </a></li>
+            </ul>
         </div>
-
-
-
-
-
-    </div>
+        <p>Desenvolvido Tem na Esquina
+            - 2022
+        </p>
+    </footer>
 </body>
 
 </html>

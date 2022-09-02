@@ -1,65 +1,47 @@
+/*------------------------- PADRÃO -------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
 }
 
+body {
+    background-image: url(../imagens/fundo.png);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 input,
 select,
 textarea {
-    
     width: 100%;
     display: block;
     padding: 0.375rem 0;
     padding-left: 10px;
     font-size: 1rem;
     line-height: 1.5;
-    color: #495057;
+    color: #000;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.btn {
-    background-color: red;
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.color-link {
-    color: white;
-}
-
-#logo {
-    line-height: 60px;
+    border-color: #3319FF;
 }
 
 ul {
     list-style: none;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
 }
 
 header {
@@ -82,24 +64,10 @@ footer p {
     padding: 15px 0;
 }
 
-/* .teste{
-float: left;
-padding: 40px 10px;
-background-color: #333;
-}*/
-
-/* .dotted-spaced{
-    background-image: linear-gradient(to bottom, #333 10%, rgba(255,255,255,0)0%);
-    background-position: top;
-    background-size: 1px 10px;
-    background-repeat: repeat-y;
-}  */
 nav ul li {
     display: inline-block;
     line-height: 60px;
     padding: 0 20px;
-
-
 }
 
 nav a {
@@ -111,11 +79,351 @@ nav a:hover {
     color: white;
 }
 
-.flex-space-around {
-    display: flex;
-    justify-content: space-around;
+.btn {
+    /*Padrão dos botões*/
+    background-color: #3319FF;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.container_flex-space-around {
+    /*Classe para o menu pilar*/
+    background-color: #FF6600;
+    border-bottom: solid 1px;
+    display: flex;
+    padding-left: 6%;
+    padding-top: 1%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo {
+    /*Id para o logo do menu*/
+    line-height: 25px;
+}
+
+#logo img {
+    width: 50%;
+    margin-top: 5px;
+}
+
+.container {
+    /*Classe para título e tabela de preenchimento do cadastro*/
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo {
+    /*Classe para padronizar os títulos da página/site*/
+    margin-top: 65px;
+}
+
+/*Necessário padronizar o footer ainda com pouco conteúdo
+Necessário diminuir o espaço entre as palavras do menu*/
+
+/*------------------------- PARTE DO CADASTRO.HTML -------------------------*/
+
+.menu-cadastro ul {
+    /*Padrão para aba das opções de cabeçalho da tabela*/
+    display: flex;
+    justify-content: center;
+}
+
+.menu-cadastro ul li {
+    /*Padrão para aba das opções de cabeçalho da tabela*/
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.bg-pessoa-fisica {
+    /*CSS das abas do cadastro - Pessoa Fisica*/
+    /* background-color:  #a9a9a9; */
+    background-color: #3319FF;
+    color: #fff;
+}
+
+.bg-pessoa-juridica {
+    /*CSS das abas do cadastro - Pessoa Juridica*/
+    /* background-color:  #CFB53B; */
+    background-color: #FF6600;
+    color: #fff;
+}
+
+.estrutura-geral {
+    /*Fundo da tabela de preenchimento do cadastro para teste e alinhamento*/
+    align-items: center;
+}
+
+.flex-grid-2 {
+    /*Linha com 2 preenchimentos*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flex-grid-3 {
+    /*Linha com 3 preenchimentos*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form-cadastro {
+    /*Fundo da tabela de preenchimento Final*/
+    margin-right: 30%;
+    width: 100%;
+    padding: 10px;
+    background-color: #3419ff;
+}
+
+.form-cadastro input,
+textarea {
+    /*Padrão para os campos de preenchimento da tabela*/
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-cadastro label {
+    /*Padrão do tamanho dos nichos de preenchimento*/
+    color: #fff;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.termo-uso {
+    /*Padrão para Checkbox*/
+    text-align: center;
+    align-items: center;
+    background-color: #3419ff;
+    color: #fff;
+    padding: 3px;
+}
+
+.botao {
+    /* margin-left: 85%; */
+    padding: 0 0 15px 0;
+    text-align: center;
+    margin: 5px;
+}
+
+/*Obs: 
+1 - Descer texto (menu pilar esta encobrindo)
+*/
+
+/*------------------------- PARTE DO CONTATOS.HTML -------------------------*/
+
+
+.menu-contato {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.menu-contato-center ul {
+    padding-top: 50%;
+}
+
+.form-contato {
+    margin-right: 30%;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-contato-iten {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-contato-iten {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-contato-iten label {
+    color: #000;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+/*Obs: 
+1 - Colocar os dados do Senac nop lado direito*/
+
+/*------------------ PARTE DO LOGIN.HTML / LOGIN_EMPRESA.THML------------------*/
+
+#menu-login {
+    width: 30%;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    padding: 15px;
+    background-color: #3319FF;
+}
+
+#menu-login label {
+    color: #fff;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+#color-link {
+    /*Ver como muda a cor do texto do link*/
+}
+
+/*------------------------- PARTE DO categorias.HTML -------------------------*/
+
+.card-cateroria {
+    margin-bottom: 20px;
+}
+
+.card-cateroria img {
+    padding-top: 70px;
+    width: 100%;
+}
+
+.info-pacote-1 {
+    background-color: darkgray;
+}
+
+.card-info-pacote {
+    background-color: whitesmoke;
+    padding: 10px;
+    border: solid #3319FF 1px;
+}
+
+.card-info-pacote ul {
+    display: block;
+}
+
+.pacote-gold {
+    border-left: 5px solid #CFB53B;
+}
+
+.pacote-brass {
+    border-left: 5px solid #A95522;
+}
+
+.pacote-free {
+    border-left: 5px solid #a9a9a9;
+}
+
+.bg-pacote-gold {
+    /* background-color:  #CFB53B; */
+    background-color: #cfb53b99
+}
+
+.bg-pacote-brass {
+    /* background-color:  #A95522; */
+    background-color: #a955226b;
+}
+
+.bg-pacote-free {
+    /* background-color:  #a9a9a9; */
+    background-color: #a9a9a980;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card-info-pacote {
+    position: relative;
+}
+
+.tag-oferta {
+    background-color: #3319FF;
+    color: #fff;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-align: center;
+}
+
+.tag-promocao {
+    background-color: #FF6600;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 40px;
+}
+
+.card-footer {
+    background-color: #3319FF;
+    color: #fff;
+    padding: 6px 5px;
+}
+
+/*------------------------- PARTE DO PACOTES.HTML -------------------------*/
+
+.menu-pacotes {
+    width: 100%;
+}
+
+.menu-pacotes ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-pacotes ul li {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.info-pacotes {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.info-pacotes {
+    padding: 15px 10px;
+}
+
+.pacote-info-text {
+    padding: 0 8px 0 0;
+}
+
+/* .card-info-pacote{
+margin: 15px 20px;
+} */
+.info-pacote-1 {
+    background-color: darkgray;
+}
+
+.card-info-pacote {
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.card-info-pacote ul {
+    display: block;
+}
+
+/*------------------------- PARTE DO PACOTES.HTML -------------------------*/
 
 .banner {
     height: 500px;
@@ -123,14 +431,7 @@ nav a:hover {
     background-color: #666;
 }
 
-/* .titulo {
-    text-align: center;
-} */
-
-
-
 .categotias {
-
     display: flex;
     justify-content: space-around;
 }
@@ -164,10 +465,7 @@ nav a:hover {
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     color: white;
     font-size: 1.5em;
-
 }
-
-
 
 .list-pacotes h3,
 .list-pacotes ul li,
@@ -184,220 +482,116 @@ nav a:hover {
     padding: 20px 70px;
 }
 
-
-
-/* Pacotes */
-
-.menu-pacotes {
-    width: 100%;
+.anuncios img {
+    width: 95%;
 }
 
-.menu-pacotes ul {
-    display: flex;
-    justify-content: center;
-}
-
-.menu-pacotes ul li {
+.text-propaganda {
     text-align: center;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     padding: 15px 0;
 }
 
-.info-pacotes {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.info-pacotes {
-    padding: 15px 10px;
-}
-
-.pacote-info-text {
-    padding: 0 8px 0 0;
-}
-
-
-/* .card-info-pacote{
-margin: 15px 20px;
-} */
-
-.info-pacote-1 {
-    background-color: darkgray;
-}
-
-.card-info-pacote {
-    background-color: whitesmoke;
-    padding: 10px;
-}
-
-.card-info-pacote ul {
-    display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.pacote-gold {
-    border-left: 5px solid #CFB53B;
-}
-
-.pacote-brass {
-    border-left: 5px solid #A95522;
-}
-
-.pacote-free {
-    border-left: 5px solid #a9a9a9;
-}
-
-.bg-pacote-gold {
-    /* background-color:  #CFB53B; */
-    background-color: #cfb53b99
-}
-
-.bg-pacote-brass {
-    /* background-color:  #A95522; */
-    background-color: #a955226b;
-}
-
-.bg-pacote-free {
-    /* background-color:  #a9a9a9; */
-    background-color: #a9a9a980;
-}
-
-
-
-.col-2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.card-cateroria {
-    margin-bottom: 20px;
-}
-
-.card-cateroria img {
-    padding-top: 70px;
+.propaganda {
     width: 100%;
+    background-color: rgb(114, 112, 112);
 }
 
-.card-info-pacote {
-    position: relative;
-}
-
-.tag-oferta {
-    background-color: #FFDF00;
-    width: 130px;
-    height: 30px;
-    line-height: 30px;
-    position: absolute;
-    right: 0;
-    top: 10px;
+/*Apenas para ver visualmente, nâo colocar no css*/
+.titulo-h3 {
     text-align: center;
-}
-
-.tag-promocao {
-    background-color: #4C89A8;
-    width: 130px;
-    height: 30px;
-    line-height: 30px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 40px;
-
-}
-
-.card-footer {
-    background-color: dimgray;
-    padding: 6px 5px;
-}
-
-
-
-/* PAGINA DE LOGIN - PEDRO */
-
-#estrutura {
-    background-color: dimgray;
-    width: 35%;
-    border-radius: 10px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 210px;
     padding: 15px;
-
 }
 
-#estrutura img {
-    width: 50%;
-
+/*Titulo do Valor*/
+.titulo-h4 {
+    padding: 8px;
 }
 
-#formulario {
+.botton {
+    width: 30%;
+    padding: 8px;
+    font-size: 23px;
+    margin: 10px;
+}
 
+.botton-pac {
     width: 100%;
-    justify-content: center;
-
+    padding: 8px;
+    font-size: 15px;
+    margin: 12px auto;
 }
 
-.rodape {
-    text-align: center;
+/*Apenas para ser visual*/
+.list-pacotes-not {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.flex-space-around {
     display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: space-around;
 }
-
-.input-form {
-    width: 60%;
-    margin: 0 auto;
-    text-align: left;
-    padding: 6px;
+#pacote-2,
+#pacote-3 {
+    display: none;
 }
-
-.input-form label {
+.menu-pacotes ul li {
+    cursor: pointer;
+}
+.classificacao li {
+    display: inline-block;
+}
+.classificacao img {
+    width: 10px;
+    padding-top: 0;
+}
+.banner-pag-cliente {
     width: 100%;
+    height: 300px;
+    background-color: red;
 }
-
-.input-form input {
-    width: 100%;
-    font-size: 16px;
-    padding: 2px;
-    margin-top: 5px;
+.info-empresa {
+    padding: 15px;
+    background: white;
 }
-
-.input-form input[type='submit'] {
-    width: 35%;
-    /* float: right; */
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-
-/* contato */
-.container-termo-uso{
-    width: 20%;
-    margin: 0 auto;
-}
-.termo-uso{
-    height: 60px;
+.col-grid-4 {
     display: grid;
-    grid-template-columns: 11fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+}
+produtos-info{
+    background: white;
+padding: 15px;
+}
+.produtos-info img {
+    width: 100%;
+}
+.col-cupom {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 15px;
+    background: gray;
+}
+.comentario-pag-info {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 15px;
+    background-color: beige;
+    margin-bottom: 15px;
+}
+.comentarios-info{
+    background-color: white;
+    padding: 15px;
+}
+.comentario-pag-info img {
+    width: 100%;
+
+}
+.btn-pag-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.valor-desconto{
+    text-decoration: line-through;
 }
