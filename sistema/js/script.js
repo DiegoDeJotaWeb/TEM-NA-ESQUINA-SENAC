@@ -40,6 +40,12 @@ function menuUser(el) {
     document.getElementById(el).classList.toggle('mostrar-menu-user');
 }
 
+// menu mensagens (some e mostra)
+function mostrarMenuMensagens(el) {
+    console.log('teste mensagem')
+    document.getElementById(el).classList.toggle('mostrar-menu-mensagens');
+}
+
 // menu laretal some e mostra
 function mostraMenuLateral() {
     document.getElementById('menu').classList.toggle('gridTemplateColumns1');
@@ -74,3 +80,18 @@ function toggleFullScreen() {
         }
     }
 }
+
+
+
+function trocaTemaClaro() {
+    // document.querySelector('link').href = "css/tema-claro.css";
+    document.querySelector('#tema-claro').style.display = "none";
+    document.querySelector('#tema-escuro').style.display = "inline";
+  }
+
+  function trocaTemaEscuro() {
+    // document.querySelector('link').href = "css/tema-escuro.css";
+    document.querySelector('#tema-claro').style.display = "inline";
+    document.querySelector('#tema-escuro').style.display = "none";
+  }
+

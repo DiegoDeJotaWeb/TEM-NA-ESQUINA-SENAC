@@ -62,6 +62,10 @@ textarea{
     resize:none;
 }
 
+.cursor-pointer{
+    cursor: pointer;
+}
+
 header, header nav {
     height: 70px;
 }
@@ -84,12 +88,26 @@ header, header nav {
     display: block;
 }
 
-
 #menu-lateral-toggle-cadastro {
     transition: opacity 1.5s;
     display: none;
 
 }
+
+#menu-lateral-toggle-cadastro li a{
+    display: inline!important;
+}
+
+#menu-lateral-toggle-cadastro li a:hover,#menu-lateral-toggle-cadastro li{
+    color: var(--secondary);
+    border-left: none!important;
+}
+
+#menu-lateral-toggle-cadastro:hover{
+    /* border-left: 2px #1e282c solid!important; */
+}
+
+
 
 #menu-lateral-toggle-cadastro.mostrar-cadastro {
     transition: opacity 1.5s;
@@ -113,6 +131,14 @@ header, header nav {
 }
 
 #menu-superior-toggle-user.mostrar-menu-user {
+    display: block;
+}
+
+#menu-mensagens {
+    display: none;
+}
+
+#menu-mensagens.mostrar-menu-mensagens {
     display: block;
 }
 
@@ -167,6 +193,29 @@ header, header nav {
 
 #menu-lateral ul li{
     line-height: 50px;
+    color: #fff;
+ 
+    /* border-left: 2px #161d31 solid; */
+    width: 100%;
+}
+
+.nav-pills li:hover {
+    border-left: 2px #3c8dbc solid!important;
+    color: var(--gray);
+    width: 100%;
+    background-color: #2c3b41;;
+}
+
+/* #menu-lateral li:hover{
+    color: #fff;
+    background: #1e282c;
+   
+    width: 100%;
+} */
+
+#menu-lateral ul li a{
+    padding: 0 15px;
+    display: block;
 }
 
 #menu-lateral.menuLateralMostrar {
@@ -198,7 +247,7 @@ nav {
 }
 
 .menu-lateral {
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .menu-lateral ul li {
@@ -315,6 +364,8 @@ footer p {
 .nav-item {
     margin-bottom: 0;
 }
+
+
 
 .nav-link {
     position: relative;
