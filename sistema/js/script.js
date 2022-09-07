@@ -38,13 +38,33 @@ function MudaVisualizacaoMenuSuporte(el) {
 // menu usuario (some e mostra)
 function menuUser(el) {
     document.getElementById(el).classList.toggle('mostrar-menu-user');
+    document.getElementById('fade-tela-menu-user').style.display = "block";
+}
+function menuUsers(el) {
+    document.getElementById(el).classList.toggle('mostrar-menu-user');
+    document.getElementById('fade-tela-menu-user').style.display = "none";
 }
 
 // menu mensagens (some e mostra)
 function mostrarMenuMensagens(el) {
-    console.log('teste mensagem')
+    document.getElementById('fade-tela-menu-mensagem').style.display = "block";
+
     document.getElementById(el).classList.toggle('mostrar-menu-mensagens');
 }
+
+
+// responder mensagem suporte -- clique na mensagem
+function respondeMensagem(el) {
+    document.getElementById(el).classList.toggle('caixa-resposta');
+}
+
+// 
+
+function mostrarMenuMensagem(el) {
+    document.getElementById('fade-tela-menu-mensagem').style.display = "none";
+    document.getElementById(el).classList.toggle('mostrar-menu-mensagens');
+}
+
 
 // menu laretal some e mostra
 function mostraMenuLateral() {
