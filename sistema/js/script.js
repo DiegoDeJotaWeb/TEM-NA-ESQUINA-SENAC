@@ -67,11 +67,12 @@ function mostrarMenuMensagem(el) {
 
 
 // menu laretal some e mostra
-function mostraMenuLateral() {
-    document.getElementById('menu').classList.toggle('gridTemplateColumns1');
-    document.getElementById('menu-lateral-corpo').classList.toggle('gridTemplateColumns2');
-    document.getElementById('logo').classList.toggle('logoMostrar');
-    document.getElementById('menu-lateral').classList.toggle('menuLateralMostrar');
+function mostraMenuLateral(el) {
+    document.getElementById('caixa-2').classList.toggle('gridTemplateColumns1');
+    // document.getElementById('menu-lateral-corpo').classList.toggle('gridTemplateColumns2');
+    // document.getElementById('logo').classList.toggle('logoMostrar');
+    document.getElementById('menu-lado').classList.toggle('menuLadoMostrar');
+    console.log('teste');
 }
 
 // Ativar tela cheia

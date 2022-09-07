@@ -1,19 +1,38 @@
-body::-webkit-scrollbar, .teste::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 15px;
     /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track, .teste::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: #161d31;
     /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb , .teste::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb  {
     background-color: #253155;
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
     border: 3px solid #161d31;
+    /* creates padding around scroll thumb */
+}
+
+.menu-lateral::-webkit-scrollbar, .box-conteudo::-webkit-scrollbar {
+    width: 4px;
+    /* width of the entire scrollbar */
+}
+
+.menu-lateral::-webkit-scrollbar-track, .box-conteudo::-webkit-scrollbar-track {
+    background: #253155;
+    /* color of the tracking area */
+}
+
+.menu-lateral::-webkit-scrollbar-thumb, .box-conteudo::-webkit-scrollbar-thumb {
+    background-color: #253155;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #253155;
     /* creates padding around scroll thumb */
 }
 
@@ -115,6 +134,7 @@ input {
 header,
 header nav {
     height: 70px;
+    width: 100%;
 }
 
 .menu {
@@ -206,13 +226,18 @@ header nav {
     transform: rotate(90deg);
 }
 
-#menu.gridTemplateColumns1 {
+#caixa-2.gridTemplateColumns1 {
     grid-template-columns: 1fr !important;
 }
 
-#menu-lateral-corpo.gridTemplateColumns2 {
-    grid-template-columns: 1fr !important;
+#caixa-2 {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
 }
+.menuLadoMostrar {
+    display: none;
+}
+
 
 #logo {
     display: block;
@@ -235,8 +260,8 @@ header nav {
 #menu-lateral {
     z-index: 999;
     display: block;
-    background-color: #161d31;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22) !important;
+    /* background-color: #161d31;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22) !important; */
 
 }
 
@@ -479,6 +504,7 @@ footer p {
 .box-conteudo {
     background-color: white;
     padding: 15px;
+    margin-bottom: 50px;
 }
 
 .breadcrumb {
@@ -902,4 +928,23 @@ hr {
 
 .relativo {
     position: relative;
+}
+
+
+
+/* MENSAGENS */
+
+.box-mensagem {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.pedir-remocao {
+    cursor: pointer;
+}
+
+.flex-mensagens {
+    display: flex;
+    justify-content: space-between;
 }

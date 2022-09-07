@@ -66,19 +66,14 @@
     </div> -->
 
     
-        <style>
-            .caixa-2 {
-                display: grid;
-                grid-template-columns: 2fr 10fr;
-            }
-        </style>
+       
 
-        <div class="caixa-2">
-            <div class="teste" style="height:  100vh;
-overflow: auto;">
+        <div class="caixa-2" id="caixa-2" style="background-color: green;height: 100vh;">
+            <div class="menu-lado" id="menu-lado" style="background-color: blue;    background-color: #161d31;
+            box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%) !important;z-index: 999;" >
                 <div id="logo"><img src="imagens/tem-na-esquina-branco.png" alt=""></div>
                 <!-- <nav style="background: #161d31;"> -->
-                <div class="menu-lateral" id="menu-lateral">
+                <div class="menu-lateral" id="menu-lateral" style="overflow: auto; height:100vh;overflow-x: hidden;">
                     <ul class="nav nav-pills nav-sidebar flex-column">
 
                         <li class="nav-item">
@@ -228,7 +223,7 @@ overflow: auto;">
             </div>
 
 
-            <div>
+            <div style="background-color: #fff;position:relative" >
                 <nav>
                     <ul style="padding-left: 30px;color: #fff;">
                         <li class="pr" style="position: relative;" onclick="mostraMenuLateral()"><i
@@ -296,43 +291,17 @@ display: none;
                     </ul>
                 </nav>
 
-                <div class="box-conteudo">
+                <div class="box-conteudo"  style="margin-bottom: 50p;overflow: auto;
+                height: 100vh;">
                     <div class="conteudo">
                         <div class="breadcrumb">
                             <h1>Dashboard</h1>
                             <p>Home / Dashboard</p>
                         </div>
-                        <div class="cards">
-                            <div class="card">
-                                <h3>Produtos</h3>
-                                <p>99</p>
-                            </div>
-                            <div class="card">
-                                <h3>Produtos</h3>
-                                <p>99</p>
-                            </div>
-                            <div class="card">
-                                <h3>Produtos</h3>
-                                <p>99</p>
-                            </div>
-                            <div class="card">
-                                <h3>Produtos</h3>
-                                <p>99</p>
-                            </div>
+                      
 
-                        </div>
-                        <style>
-                            .cards-grafico-info {
-                                display: grid;
-                                grid-template-columns: 8fr 4fr;
-                                column-gap: 15px;
-
-                            }
-
-                            .cards-grafico-info ol {
-                                margin-left: 20px;
-                            }
-                        </style>
+                        666
+                        666
 
                     </div>
 
@@ -340,7 +309,8 @@ display: none;
 
                 </div>
 
-                <footer>
+                <footer style="    position: absolute;
+                bottom: 0;">
                     <p>Desenvolvido por TEM NA ESQUINA- 2022</p>
                 </footer>
             </div>
@@ -352,14 +322,7 @@ display: none;
 
 
 
-    <section class="menu-lateral-corpo" id="menu-lateral-corpo">
 
-        <div>
-
-
-        </div>
-
-    </section>
 
 
     <script src="js/script.js"></script>
