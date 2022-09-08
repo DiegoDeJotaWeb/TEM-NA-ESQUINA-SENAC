@@ -126,6 +126,15 @@
                     </li>
 
                     <li class="nav-item">
+                        <a href="pedido-remocao-comentario.html" class="nav-link">
+                            <i class="fa-solid fa-eraser"></i>
+                            <p>
+                                Pedido comentario
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
                         <a href="tarefas.html" class="nav-link">
                             <i class="fa-regular fa-calendar-check"></i>
                             <p>
@@ -301,13 +310,14 @@ display: none;
                     </style>
 
                     <div class="cards-grafico-info">
-                        <div class="card">
-                            <!-- <img src="imagens/grafico-coluna-cke.jpg" alt=""> -->
+                        <div class="card pl pr pb pt">
                             <div>
-                                <canvas id="myChart"></canvas>
+                                <!-- <canvas id="qtdClienteGrafico"></canvas>
+                                <canvas id="qtdCupomGrafico"></canvas> -->
+                                <canvas id="qtdvisitaGrafico"></canvas>
                             </div>
                         </div>
-                        <div class="card" style="text-align:left;padding:15px">
+                        <div class="card pl pr" style="text-align:left">
                             <h3>Informações</h3>
                             <p style="font-size:18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
                                 deserunt voluptates voluptatem dicta eveniet. Tempore hic vel ad ipsa eius excepturi
@@ -352,45 +362,9 @@ display: none;
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script>
-        const labels = [
-            'Janeiro',
-            'Fevereiro',
-            'Março',
-            'Abril',
-            'Maio',
-            'Junho',
-            'Julho',
-            'Agosto',
-            'Setembro',
-            'Outubro',
-            'Novembro',
-            'Dezembro',
-        ];
-
-        const data = {
-            labels: labels,
-            datasets: [{
-                label: 'Titulo do meu grafico',
-                backgroundColor: '#0f1833',
-                borderColor: '#0f1833',
-                data: [0, 10, 5, 2, 20, 30, 45, 18, 32, 50, 36, 64],
-            }]
-        };
-
-        const config = {
-            type: 'bar',
-            data: data,
-            options: {}
-        };
-    </script>
-
-    <script>
-        const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
-    </script>
+    <!-- <script src="js/grafico-cliente.js"></script> -->
+    <!-- <script src="js/grafico-cupom.js"></script> -->
+    <script src="js/grafico-visitas.js"></script>
 
 </body>
 
