@@ -150,7 +150,7 @@
                         </a>
                     </li>
 
-                 
+
 
 
                     <style>
@@ -280,12 +280,12 @@ display: none;
                             <p>26</p>
                         </div>
 
-                        <div class="card">
+                        <div class="card" onclick="infoComentarios()">
                             <h3>Comentarios</h3>
                             <p>13</p>
                         </div>
 
-                        <div class="card">
+                        <div class="card" onclick="infoVisitas()">
                             <h3>Visitas</h3>
                             <p>235</p>
                         </div>
@@ -293,26 +293,195 @@ display: none;
                     </div>
 
                     <div class="col-4 mb">
-                        <div class="card">
+                        <div class="card" onclick="infoProdutos()">
                             <h3>Produtos</h3>
-                            <p>10</p>
+                            <p>5</p>
                         </div>
 
                         <div class="card">
                             <h3>Promoção</h3>
-                            <p>4</p>
+                            <p>2</p>
                         </div>
 
                         <div class="card">
                             <h3>Cupom</h3>
                             <p>10</p>
                         </div>
-                        <div class="card">
+                        <div class="card" onclick="infoCupomGerado()">
                             <h3>Cupom gerado</h3>
                             <p>120</p>
                         </div>
                     </div>
+                    <div class="informacoes-cliente mb">
+                        <div id="info-produtos-clientes">
 
+                            <div class="card pt pb pl pr">
+                                <h3>informações dos produtos</h3>
+                                <div class="col-5 ">
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <p style="font-size:15px">imagem</p>
+                                        <p style="font-size:15px">Nome</p>
+                                        <p style="font-size:15px">preço</p>
+                                    </div>
+
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <p style="font-size:15px">imagem</p>
+                                        <p style="font-size:15px">Nome</p>
+                                        <p style="font-size:15px">preço</p>
+                                    </div>
+
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <p style="font-size:15px">imagem</p>
+                                        <p style="font-size:15px">Nome</p>
+                                        <p style="font-size:15px">preço</p>
+                                    </div>
+
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <p style="font-size:15px">imagem</p>
+                                        <p style="font-size:15px">Nome</p>
+                                        <p style="font-size:15px">preço</p>
+                                    </div>
+
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <p style="font-size:15px">imagem</p>
+                                        <p style="font-size:15px">Nome</p>
+                                        <p style="font-size:15px">preço</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="informacoes-cliente">
+                        <div id="info-comentarios-clientes">
+
+                            <div class="card pt pb pl pr  mb">
+                                <h3>Comentarios</h3>
+                                <div class="col-2">
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <div class="col-2">
+                                            <p style="font-size:15px">Nome do autor</p>
+                                            <p style="font-size:15px">08/90/2022 16:01</p>
+                                        </div>
+                                        <p style="font-size:15px">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repellendus itaque adipisci veritatis cum quis atque illum nam odit,
+                                            facilis, architecto libero vel, necessitatibus possimus deleniti eveniet
+                                            corrupti provident ex quae!</p>
+                                    </div>
+
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <div class="col-2">
+                                            <p style="font-size:15px">Nome do autor</p>
+                                            <p style="font-size:15px">08/90/2022 16:01</p>
+                                        </div>
+                                        <p style="font-size:15px">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repellendus itaque adipisci veritatis cum quis atque illum nam odit,
+                                            facilis, architecto libero vel, necessitatibus possimus deleniti eveniet
+                                            corrupti provident ex quae!</p>
+                                    </div>
+
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <div class="col-2">
+                                            <p style="font-size:15px">Nome do autor</p>
+                                            <p style="font-size:15px">08/90/2022 16:01</p>
+                                        </div>
+                                        <p style="font-size:15px">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repellendus itaque adipisci veritatis cum quis atque illum nam odit,
+                                            facilis, architecto libero vel, necessitatibus possimus deleniti eveniet
+                                            corrupti provident ex quae!</p>
+                                    </div>
+
+                                    <div class="pt pb pl pr" style="background-color:var(--gray) ;">
+                                        <div class="col-2">
+                                            <p style="font-size:15px">Nome do autor</p>
+                                            <p style="font-size:15px">08/90/2022 16:01</p>
+                                        </div>
+                                        <p style="font-size:15px">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repellendus itaque adipisci veritatis cum quis atque illum nam odit,
+                                            facilis, architecto libero vel, necessitatibus possimus deleniti eveniet
+                                            corrupti provident ex quae!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="informacoes-cliente">
+                        <div id="info-visitas-clientes">
+
+                            <div class="card pt pb pl pr  mb">
+                                <h3>Grafico de visitas</h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="informacoes-cliente">
+                        <div id="info-cupom-gerado-clientes">
+
+                            <div class="card pt pb pl pr  mb">
+                                <h3>Grafico de cupom gerados</h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function infoProdutos() {
+                            document.getElementById('info-produtos-clientes').style.display = "block";
+                            document.getElementById('info-comentarios-clientes').style.display = "none";
+                            document.getElementById('info-visitas-clientes').style.display = "none";
+                            document.getElementById('info-cupom-gerado-clientes').style.display = "none";
+                        }
+
+                        function infoComentarios() {
+                            document.getElementById('info-produtos-clientes').style.display = "none";
+                            document.getElementById('info-comentarios-clientes').style.display = "block";
+                            document.getElementById('info-visitas-clientes').style.display = "none";
+                            document.getElementById('info-cupom-gerado-clientes').style.display = "none";
+                        }
+
+                        function infoVisitas() {
+                            document.getElementById('info-produtos-clientes').style.display = "none";
+                            document.getElementById('info-comentarios-clientes').style.display = "none";
+                            document.getElementById('info-visitas-clientes').style.display = "block";
+                            document.getElementById('info-cupom-gerado-clientes').style.display = "none";
+                        }
+
+                        function infoCupomGerado() {
+                            document.getElementById('info-produtos-clientes').style.display = "none";
+                            document.getElementById('info-comentarios-clientes').style.display = "none";
+                            document.getElementById('info-visitas-clientes').style.display = "none";
+                            document.getElementById('info-cupom-gerado-clientes').style.display = "block";
+                        }
+
+
+                    </script>
+
+                    <style>
+                        #info-produtos-clientes {
+                            display: none;
+                        }
+
+                        #info-comentarios-clientes {
+                            display: none;
+                        }
+
+                        #info-visitas-clientes {
+                            display: none;
+                        }
+
+                        #info-cupom-gerado-clientes{
+                            display: none;
+                        }
+                    </style>
                     <div class="col-2">
                         <div class="card pt pb pl pr" style="text-align:left;">
                             <h3>Dados cliente</h3>
