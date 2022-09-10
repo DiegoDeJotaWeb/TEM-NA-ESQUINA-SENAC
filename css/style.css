@@ -10,6 +10,46 @@
     font-weight: bold;
 }
 
+
+body::-webkit-scrollbar {
+    width: 15px;   
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #161d31;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb  {
+    background-color: #253155;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #161d31;
+    /* creates padding around scroll thumb */
+}  
+
+
+.pt{
+padding-top:15px ;
+}
+.pr{
+    padding-right:15px ;
+}
+
+.pb{
+    padding-bottom:15px ;
+}
+
+.pl{
+    padding-left:15px ;
+}
+
+.pAll{
+    padding: 15px;
+}
+
 a {
     text-decoration: none;
 }
@@ -100,15 +140,22 @@ nav a:hover {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.container_flex-space-around {
-    /*Classe para o menu pilar*/
+.menu-superior{
+    width: 100%;
     background-color: #FF6600;
     border-bottom: solid 1px;
+    position:sticky;
+    top:0;
+}
+
+.container_flex-space-around {
+    /*Classe para o menu pilar*/
+   
     display: flex;
     padding-left: 6%;
     padding-top: 1%;
-    position: fixed;
-    width: 100%;
+   justify-content: space-between;
+ 
     z-index: 1000;
 }
 
@@ -594,4 +641,35 @@ padding: 15px;
 }
 .valor-desconto{
     text-decoration: line-through;
+}
+
+
+/* COOKIES */
+
+
+.card-cookies {
+    display: grid;
+    grid-template-columns: 14fr 3fr;
+    position: absolute;
+    bottom: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%) !important;
+}
+
+.cookies-box {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+}
+
+.cookies {
+    z-index: 999;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-cookies{
+    line-height: 48px;
 }

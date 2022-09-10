@@ -8,10 +8,7 @@
     <title>Sistema</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;700;900&display=swap"
-        rel="stylesheet">
+
 
 
 </head>
@@ -108,7 +105,7 @@
                         </style>
 
                         <ul id="menu-lateral-toggle-cadastro">
-                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-usuarios.html">Usuario</a>
+                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cliente.html">Usuario</a>
                             </li>
                             <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cliente.html">Cliente</a>
                             </li>
@@ -116,38 +113,11 @@
                         </ul>
                     </li>
 
-
-                    <li class="nav-item">
-                        <a href="usuarios.html" class="nav-link">
-                            <i class="fa-solid fa-user-large"></i>
-                            <p>
-                                Usuarios
-                            </p>
-                        </a>
-                    </li>
                     <li class="nav-item">
                         <a href="clientes.html" class="nav-link">
                             <i class="fa-solid fa-user-large"></i>
                             <p>
                                 Clientes
-                            </p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="pedidos-remocao.html" class="nav-link">
-                            <i class="fa-solid fa-eraser"></i>
-                            <p>
-                                Pedidos de remoção
-                            </p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="tarefas.html" class="nav-link">
-                            <i class="fa-regular fa-calendar-check"></i>
-                            <p>
-                                Tarefas Usuários
                             </p>
                         </a>
                     </li>
@@ -158,15 +128,6 @@
                             <i class="fa-solid fa-ticket"></i>
                             <p>
                                 Cupom
-                            </p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="mensagens.html" class="nav-link">
-                            <i class="fa-solid fa-comments"></i>
-                            <p>
-                                Mensagem cliente
                             </p>
                         </a>
                     </li>
@@ -274,83 +235,61 @@ display: none;
                 height: 100vh;">
                 <div class="conteudo">
                     <div class="breadcrumb">
-                        <h1>Dashboard</h1>
-                        <p>Home / Dashboard</p>
+                        <h1>Pedido de remoção de comentario</h1>
+                        <p>Home / Pedido de remoção / Pedido de remoção</p>
                     </div>
-
-
-
-
-                    <div class="col-5 mb">
-
-                        <div class="card">
-                            <h3>Cliente</h3>
-                            <p>99</p>
-                        </div>
-
-                        <a href="cupom.html" style="color: var(--black);">
-                            <div class="card">
-                                <h3>Cupom</h3>
-                                <p>99</p>
-                            </div>
-                        </a>
-                        <a href="mensagens.html" style="color: var(--black);">
-                            <div class="card">
-                                <h3>Mensagem</h3>
-                                <p>99</p>
-                            </div>
-                        </a>
-                        <a href="mensagens.html" style="color: var(--black);">
-                            <div class="card">
-                                <h3>Newsletter</h3>
-                                <p>99</p>
-                            </div>
-                        </a>
-                        <div class="card">
-                            <h3>Visita</h3>
-                            <p>99</p>
-                        </div>
-
-                    </div>
+                    <!-- 
+                    <h4>Status: <span>Ativo</span></h4> -->
+                    <!-- <p style="font-size:15px">Plano: Premium </p> -->
 
 
                     <style>
-                        .cards-grafico-info {
-                            display: grid;
-                            grid-template-columns: 8fr 4fr;
-                            column-gap: 15px;
-
+                        .logo-cliente img {
+                            width: 100%;
                         }
 
-                        .cards-grafico-info ol {
-                            margin-left: 20px;
+                        .col-2-10 {
+                            display: grid;
+                            grid-template-columns: 2fr 10fr;
+                            padding: 15px 0 15px 0;
+
                         }
                     </style>
-
-                    <div class="cards-grafico-info">
-                        <div class="card pl pr pb pt">
-                            <div id="">
-                                <!-- <canvas id="qtdClienteGrafico"></canvas>
-                                <canvas id="qtdCupomGrafico"></canvas> -->
-                                <canvas id="qtdvisitaGrafico"></canvas>
-                            </div>
+                    <div class="col-2-10 ">
+                        <div class="logo-cliente">
+                            <img src="imagens/layoutminimercado.png" alt="">
                         </div>
-                        <div class="card pl pr" style="text-align:left">
-                            <h3>Informações</h3>
-                            <p style="font-size:18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                                deserunt voluptates voluptatem dicta eveniet. Tempore hic vel ad ipsa eius excepturi
-                                doloribus repudiandae iste sint, unde corrupti animi in placeat?</p>
-                            <ol>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                            </ol>
+                        <div class="pl">
+                            <h2>Mercadinho do seu Zé</h2>
+                            <h4>Representante: <span>José Maria</span></h4>
+                            <p>Premium - Ativo</p>
+                            <p>Pagamento: <span>Vencer</span></p>
                         </div>
                     </div>
 
+                    <div>
+                        <div class="card pt pb pl pr mb" style="text-align:left;">
+                            <h3>Comentario</h3>
+                            <p style="font-size:15px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt id explicabo accusamus autem magni voluptatum illo, pariatur rem quidem minus saepe, mollitia sunt ad asperiores quas! Fugiat cupiditate impedit sapiente!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card pt pb pl pr mb" style="text-align:left;">
+                            <h3>Pedido de remoção do comentario</h3>
+                            <p style="font-size:15px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt id explicabo accusamus autem magni voluptatum illo, pariatur rem quidem minus saepe, mollitia sunt ad asperiores quas! Fugiat cupiditate impedit sapiente!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-3 mb">
+                            <button class="btn">Aceitar</button>
+                            <button class="btn">Analisar</button>
+                            <button class="btn">Recusar</button>
+                        </div>
+                    </div>
+
+                
                 </div>
 
 
@@ -366,16 +305,17 @@ display: none;
 
     </div>
 
+
+
+
+
+
+
+
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- <script src="js/grafico-cliente.js"></script> -->
-    <!-- <script src="js/grafico-cupom.js"></script> -->
-    <script src="js/grafico-visitas.js"></script>
 
 </body>
 
