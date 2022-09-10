@@ -8,11 +8,54 @@
     <title>Sistema</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;700;900&display=swap"
-        rel="stylesheet">
 
+    <style>
+        .col-2-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 15px;
+        }
+
+        .form-cadastro {
+            width: 100%;
+            margin-bottom: 15px;
+
+        }
+
+        .form-cadastro label {
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .form-cadastro textarea {
+            width: 100%;
+            display: block;
+            padding: 0.375rem 0;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .form-cadastro input {
+            width: 100%;
+            display: block;
+            padding: 0.375rem 0;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+    </style>
 
 </head>
 
@@ -79,17 +122,17 @@
             <div class="menu-lateral" id="menu-lateral" style="overflow: auto; height:100vh;overflow-x: hidden;">
                 <ul class="nav nav-pills nav-sidebar flex-column">
 
-                    <li class="nav-item nav-item-ativo menu-item-ativo ">
-
+                    <li class="nav-item">
                         <a href="index.html" class="nav-link">
                             <i class="fa-solid fa-house"></i>
                             <p>
-                                Dashboard
+                                Deshboard
+
                             </p>
                         </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-ativo">
                         <a href="javascrip:;" class="nav-link"
                             onclick="MudaVisualizacaoMenuCadastro('menu-lateral-toggle-cadastro');">
                             <i class="fa-solid fa-clipboard"></i>
@@ -108,50 +151,27 @@
                         </style>
 
                         <ul id="menu-lateral-toggle-cadastro">
-                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-usuarios.html">Usuario</a>
+                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-produtos.html">Produtos</a>
                             </li>
-                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cliente.html">Cliente</a>
+                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-ofertas.html">Ofertar</a>
                             </li>
                             <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cupom.html">Cupom</a></li>
+                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-contatos.html">Contato</a>
+                            </li>
+                            <li><i class="fa-solid fa-genderless"></i><a
+                                    href="cadastro-informacoes.html">Informações</a>
+                            </li>
                         </ul>
                     </li>
 
-
                     <li class="nav-item">
-                        <a href="usuarios.html" class="nav-link">
-                            <i class="fa-solid fa-user-large"></i>
+                        <a href="produtos.html" class="nav-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
                             <p>
-                                Usuarios
+                                Produtos
                             </p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="clientes.html" class="nav-link">
-                            <i class="fa-solid fa-user-large"></i>
-                            <p>
-                                Clientes
-                            </p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="pedido-remocao-comentario.html" class="nav-link">
-                            <i class="fa-solid fa-eraser"></i>
-                            <p>
-                                Pedido comentario
-                            </p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="tarefas.html" class="nav-link">
-                            <i class="fa-regular fa-calendar-check"></i>
-                            <p>
-                                Tarefas Usuários
-                            </p>
-                        </a>
-                    </li>
-
 
                     <li class="nav-item">
                         <a href="cupom.html" class="nav-link">
@@ -163,10 +183,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="newsletter.html" class="nav-link">
+                        <a href="comentarios.html" class="nav-link">
                             <i class="fa-solid fa-comment"></i>
                             <p>
-                                Newsletter
+                                Comentarios
+
                             </p>
                         </a>
                     </li>
@@ -176,10 +197,20 @@
                             <i class="fa-solid fa-comments"></i>
                             <p>
                                 Mensagens
+
                             </p>
                         </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a href="mensagens.html" class="nav-link">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <p>
+                                Troca de pacote
+
+                            </p>
+                        </a>
+                    </li>
 
 
 
@@ -189,6 +220,50 @@
                             padding: 0 10px;
                         }
                     </style>
+
+                    <li class="nav-item">
+                        <a href="javascrip:;" class="nav-link"
+                            onclick="MudaVisualizacaoMenuSuporte('menu-lateral-toggle-suporte');">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>
+                                Suporte
+                            </p>
+                            <i id="seta-lado-suporte" class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+
+                        <style>
+                            #menu-lateral-toggle-suporte li i {
+                                color: #fff;
+                                padding: 0 10px;
+                            }
+                        </style>
+
+                        <ul id="menu-lateral-toggle-suporte">
+                            <li>
+                                <i class="fa-solid fa-genderless"></i>
+                                <a href="pagamentos.html">Pagamentos</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-genderless"></i>
+                                <a href="mensagens-suporte.html">Mensagens</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    </li>
+
+
+
+
+
+
+                    <li class="nav-item" style="text-align: center;">
+                        <a href="pagamento-carrinho.html" class="nav-link">
+                            <button class="btn" style="width: 100%;">SEJA PREMIUM</button>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -265,82 +340,109 @@ display: none;
                 height: 100vh;">
                 <div class="conteudo">
                     <div class="breadcrumb">
-                        <h1>Dashboard</h1>
-                        <p>Home / Dashboard</p>
+                        <h1>Cadastro de usuario</h1>
+                            <p>Home / Cadastro de usuario</p>
                     </div>
 
 
-
-
-                    <div class="col-5 mb">
-                        
-                        <div class="card">
-                            <h3>Cliente</h3>
-                            <p>99</p>
-                        </div>
-
-                        <a href="cupom.html" style="color: var(--black);">
-                        <div class="card">
-                            <h3>Cupom</h3>
-                            <p>99</p>
-                        </div>
-                        </a>
-                        <a href="mensagens.html" style="color: var(--black);">
-                            <div class="card">
-                                <h3>Mensagem</h3>
-                                <p>99</p>
+                    <form action="" method="get">
+                        <div class="col-2">
+                            <div class="form-cadastro">
+                                <label for="">Nome do usuario</label>
+                                <input type="text">
                             </div>
-                        </a>
-                        <a href="mensagens.html" style="color: var(--black);">
-                        <div class="card">
-                            <h3>Newsletter</h3>
-                            <p>99</p>
+                            <div class="form-cadastro">
+                                <label for="">CPF</label>
+                                <input type="text">
+                            </div>
+
                         </div>
-                        </a>
-                        <div class="card">
-                            <h3>Visita</h3>
-                            <p>99</p>
-                        </div>
-
-                    </div>
-
-
-                    <style>
-                        .cards-grafico-info {
-                            display: grid;
-                            grid-template-columns: 8fr 4fr;
-                            column-gap: 15px;
-
-                        }
-
-                        .cards-grafico-info ol {
-                            margin-left: 20px;
-                        }
-                    </style>
-
-                    <div class="cards-grafico-info">
-                        <div class="card pl pr pb pt">
-                            <div id="">
-                                <!-- <canvas id="qtdClienteGrafico"></canvas>
-                                <canvas id="qtdCupomGrafico"></canvas> -->
-                                <canvas id="qtdvisitaGrafico"></canvas>
+                        <div class="col-2">
+                            <div class="form-cadastro">
+                                <label for="">Data admissão</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Cargo</label>
+                                <input type="text">
                             </div>
                         </div>
-                        <div class="card pl pr" style="text-align:left">
-                            <h3>Informações</h3>
-                            <p style="font-size:18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                                deserunt voluptates voluptatem dicta eveniet. Tempore hic vel ad ipsa eius excepturi
-                                doloribus repudiandae iste sint, unde corrupti animi in placeat?</p>
-                            <ol>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                                <li>item</li>
-                            </ol>
+                        <div class="col-5">
+                            <div class="form-cadastro">
+                                <label for="">Banco</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Tipo</label>
+                                <select name="" id="">
+                                    <option value="">Corrente</option>
+                                    <option value="">Poupança</option>
+                                </select>
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Agencia</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Conta</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Chave PIX</label>
+                                <input type="text">
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="col-2">
+                            <div class="form-cadastro">
+                                <label for="">CEP</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Endereço</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="form-cadastro">
+                                <label for="">Bairro</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Cidade</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="form-cadastro">
+                                <label for="">Foto</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Administrador</label>
+                                <select name="" id="">
+                                    <option value="">Não</option>
+                                    <option value="">Sim</option>
+                                </select>
+                            </div>
+                            <div class="form-cadastro">
+                                <label for="">Senha</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="form-cadastro">
+                                <label for="">Obs.</label>
+                                <textarea name="" id=""></textarea>
+                            </div>
+
+                        </div>
+                        <input type="submit" value="Salvar" class="btn">
+                    </form>
+
 
                 </div>
 
@@ -368,12 +470,6 @@ display: none;
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- <script src="js/grafico-cliente.js"></script> -->
-    <!-- <script src="js/grafico-cupom.js"></script> -->
-    <script src="js/grafico-visitas.js"></script>
 
 </body>
 
