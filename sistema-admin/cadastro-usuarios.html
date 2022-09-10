@@ -122,17 +122,17 @@
             <div class="menu-lateral" id="menu-lateral" style="overflow: auto; height:100vh;overflow-x: hidden;">
                 <ul class="nav nav-pills nav-sidebar flex-column">
 
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-ativo menu-item-ativo ">
+
                         <a href="index.html" class="nav-link">
                             <i class="fa-solid fa-house"></i>
                             <p>
-                                Deshboard
-
+                                Dashboard
                             </p>
                         </a>
                     </li>
 
-                    <li class="nav-item nav-item-ativo">
+                    <li class="nav-item">
                         <a href="javascrip:;" class="nav-link"
                             onclick="MudaVisualizacaoMenuCadastro('menu-lateral-toggle-cadastro');">
                             <i class="fa-solid fa-clipboard"></i>
@@ -151,27 +151,50 @@
                         </style>
 
                         <ul id="menu-lateral-toggle-cadastro">
-                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-produtos.html">Produtos</a>
+                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-usuarios.html">Usuario</a>
                             </li>
-                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-ofertas.html">Ofertar</a>
+                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cliente.html">Cliente</a>
                             </li>
                             <li><i class="fa-solid fa-genderless"></i><a href="cadastro-cupom.html">Cupom</a></li>
-                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-contatos.html">Contato</a>
-                            </li>
-                            <li><i class="fa-solid fa-genderless"></i><a
-                                    href="cadastro-informacoes.html">Informações</a>
-                            </li>
                         </ul>
                     </li>
 
+
                     <li class="nav-item">
-                        <a href="produtos.html" class="nav-link">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="usuarios.html" class="nav-link">
+                            <i class="fa-solid fa-user-large"></i>
                             <p>
-                                Produtos
+                                Usuarios
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="clientes.html" class="nav-link">
+                            <i class="fa-solid fa-user-large"></i>
+                            <p>
+                                Clientes
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="pedidos-remocao.html" class="nav-link">
+                            <i class="fa-solid fa-eraser"></i>
+                            <p>
+                                Pedidos de remoção
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="tarefas.html" class="nav-link">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            <p>
+                                Tarefas Usuários
+                            </p>
+                        </a>
+                    </li>
+
 
                     <li class="nav-item">
                         <a href="cupom.html" class="nav-link">
@@ -183,11 +206,19 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="comentarios.html" class="nav-link">
+                        <a href="mensagens.html" class="nav-link">
+                            <i class="fa-solid fa-comments"></i>
+                            <p>
+                                Mensagem cliente
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="newsletter.html" class="nav-link">
                             <i class="fa-solid fa-comment"></i>
                             <p>
-                                Comentarios
-
+                                Newsletter
                             </p>
                         </a>
                     </li>
@@ -197,20 +228,10 @@
                             <i class="fa-solid fa-comments"></i>
                             <p>
                                 Mensagens
-
                             </p>
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="mensagens.html" class="nav-link">
-                            <i class="fa-solid fa-shuffle"></i>
-                            <p>
-                                Troca de pacote
-
-                            </p>
-                        </a>
-                    </li>
 
 
 
@@ -220,50 +241,6 @@
                             padding: 0 10px;
                         }
                     </style>
-
-                    <li class="nav-item">
-                        <a href="javascrip:;" class="nav-link"
-                            onclick="MudaVisualizacaoMenuSuporte('menu-lateral-toggle-suporte');">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>
-                                Suporte
-                            </p>
-                            <i id="seta-lado-suporte" class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-
-                        <style>
-                            #menu-lateral-toggle-suporte li i {
-                                color: #fff;
-                                padding: 0 10px;
-                            }
-                        </style>
-
-                        <ul id="menu-lateral-toggle-suporte">
-                            <li>
-                                <i class="fa-solid fa-genderless"></i>
-                                <a href="pagamentos.html">Pagamentos</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-genderless"></i>
-                                <a href="mensagens-suporte.html">Mensagens</a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-
-                    </li>
-
-
-
-
-
-
-                    <li class="nav-item" style="text-align: center;">
-                        <a href="pagamento-carrinho.html" class="nav-link">
-                            <button class="btn" style="width: 100%;">SEJA PREMIUM</button>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
