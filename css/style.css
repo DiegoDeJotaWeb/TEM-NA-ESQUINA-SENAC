@@ -85,9 +85,21 @@ ul {
 }
 
 header {
-    background-color: #4C89A8;
-    color: white;
-    height: 60px;
+       /* background-color: #4C89A8; */
+       color: white;
+       /* height: 60px; */
+       position: fixed;
+       top: 0;
+       width: 100%;
+       z-index: 999;
+}
+
+.margin-header{
+    margin-top: 92px!important;
+}
+
+.margin-header-banner{
+    margin-top: 184px!important;
 }
 
 footer {
@@ -144,8 +156,8 @@ nav a:hover {
     width: 100%;
     background-color: #FF6600;
     border-bottom: solid 1px;
-    position:sticky;
-    top:0;
+    /* position: fixed; */
+    /* top: 0;*/
 }
 
 .container_flex-space-around {
