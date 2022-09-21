@@ -679,6 +679,8 @@ produtos-info {
 .btn-pag-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    padding: 15px;
 }
 
 .valor-desconto {
