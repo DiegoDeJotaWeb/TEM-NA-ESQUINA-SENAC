@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;700;900&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -79,15 +80,15 @@
                 <ul class="nav nav-pills nav-sidebar flex-column">
 
                     <li class="nav-item nav-item-ativo menu-item-ativo ">
-                    
+
                         <a href="index.html" class="nav-link">
                             <i class="fa-solid fa-house"></i>
                             <p>
-                                Deshboard
+                                Dashboard
 
                             </p>
                         </a>
-                
+
                     </li>
 
                     <li class="nav-item ">
@@ -229,17 +230,17 @@
 
         <div style="background-color: #fff;position:relative">
             <nav>
-                <ul style="padding-left: 30px;color: #fff;">
+                <ul class="menu-superior-esquerdo" style="padding-left: 30px;color: #fff;">
                     <li class="pr" style="position: relative;" onclick="mostraMenuLateral()"><i
                             class="fas fa-bars cursor-pointer"></i>
                     </li>
-                    <li class="pr">
+                    <li class="pr item-menu-superior-esquerdo">
                         <a class="nav-link" data-toggle="dropdown" href="mensagens.html">
                             <i class="far fa-comments cursor-pointer"></i>
                             <span class="badge badge-danger navbar-badge">3</span>
                         </a>
                     </li>
-                    <li class="pr">
+                    <li class="pr item-menu-superior-esquerdo">
                         <a class="nav-link" data-toggle="dropdown" href="mensagens-suporte.html">
                             <i class="fa-solid fa-location-dot cursor-pointer"></i>
                             <span class="badge badge-danger navbar-badge">3</span>
@@ -302,8 +303,40 @@ display: none;
                         <p>Home / Dashboard</p>
                     </div>
 
+                    <style>
+                        @media only screen and (max-width: 1120px) {
+                            #menu-lateral ul li {
+                                font-size: 15px;
+                            }
+                        }
+                        @media only screen and (max-width: 768px) {
+                            .cards {
+                                grid-template-columns: 1fr 1fr;
+                            }
 
-                 
+                            .cards-grafico-info {
+
+                                grid-template-columns: 1fr!important;
+
+                            }
+
+
+                            .caixa-2 nav .item-menu-superior-esquerdo{
+                                display: none;
+                            }
+
+                            .menu-lado{
+                                /* display: none; */
+                            }
+                            
+                        }
+
+
+                        
+                    </style>
+
+
+
 
                     <div class="cards">
                         <div class="card">
@@ -344,7 +377,7 @@ display: none;
                             <!-- <img src="imagens/grafico-coluna-cke.jpg" alt=""> -->
                             <div>
                                 <canvas id="myChart"></canvas>
-                              </div>
+                            </div>
                         </div>
                         <div class="card" style="text-align:left;padding:15px">
                             <h3>Informações</h3>
@@ -387,50 +420,50 @@ display: none;
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 
-   
+
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
         const labels = [
-    'Janeiro',
-    'Fevereiro',
-    'Março',
-    'Abril',
-    'Maio',
-    'Junho',
-    'Julho',
-    'Agosto',
-    'Setembro',
-    'Outubro',
-    'Novembro',
-    'Dezembro',
-  ];
+            'Janeiro',
+            'Fevereiro',
+            'Março',
+            'Abril',
+            'Maio',
+            'Junho',
+            'Julho',
+            'Agosto',
+            'Setembro',
+            'Outubro',
+            'Novembro',
+            'Dezembro',
+        ];
 
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'Titulo do meu grafico',
-      backgroundColor: '#0f1833',
-      borderColor: '#0f1833',
-      data: [0, 10, 5, 2, 20, 30, 45, 18, 32, 50, 36, 64],
-    }]
-  };
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Titulo do meu grafico',
+                backgroundColor: '#0f1833',
+                borderColor: '#0f1833',
+                data: [0, 10, 5, 2, 20, 30, 45, 18, 32, 50, 36, 64],
+            }]
+        };
 
-  const config = {
-    type: 'bar',
-    data: data,
-    options: {}
-  };
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {}
+        };
     </script>
 
-<script>
-    const myChart = new Chart(
-      document.getElementById('myChart'),
-      config
-    );
-  </script>
-   
+    <script>
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+
 </body>
 
 </html>

@@ -428,8 +428,8 @@ nav {
 }
 
 .card p {
-    font-size: 50px;
-    padding: 0 0 20px 0;
+    /* font-size: 50px; */
+    /* padding: 0 0 20px 0; */
 }
 
 .card-header {
@@ -549,6 +549,7 @@ footer p {
 .breadcrumb {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .cards {
@@ -920,6 +921,11 @@ input{
 
 .pedir-remocao {
     cursor: pointer;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .flex-mensagens {

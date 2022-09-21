@@ -12,7 +12,7 @@
 
 
 body::-webkit-scrollbar {
-    width: 15px;   
+    width: 15px;
     /* width of the entire scrollbar */
 }
 
@@ -21,32 +21,49 @@ body::-webkit-scrollbar-track {
     /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb  {
+body::-webkit-scrollbar-thumb {
     background-color: #253155;
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
     border: 3px solid #161d31;
     /* creates padding around scroll thumb */
-}  
-
-
-.pt{
-padding-top:15px ;
-}
-.pr{
-    padding-right:15px ;
 }
 
-.pb{
-    padding-bottom:15px ;
+
+.pt {
+    padding-top: 15px;
 }
 
-.pl{
-    padding-left:15px ;
+.pr {
+    padding-right: 15px;
 }
 
-.pAll{
+.pb {
+    padding-bottom: 15px;
+}
+
+.pl {
+    padding-left: 15px;
+}
+
+.mt {
+    margin-top: 15px;
+}
+
+.mr {
+    margin-right: 15px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+.ml {
+    margin-left: 15px;
+}
+
+.pAll {
     padding: 15px;
 }
 
@@ -85,21 +102,21 @@ ul {
 }
 
 header {
-       /* background-color: #4C89A8; */
-       color: white;
-       /* height: 60px; */
-       position: fixed;
-       top: 0;
-       width: 100%;
-       z-index: 999;
+    /* background-color: #4C89A8; */
+    color: white;
+    /* height: 60px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
-.margin-header{
-    margin-top: 92px!important;
+.margin-header {
+    margin-top: 92px !important;
 }
 
-.margin-header-banner{
-    margin-top: 184px!important;
+.margin-header-banner {
+    margin-top: 184px !important;
 }
 
 footer {
@@ -152,7 +169,7 @@ nav a:hover {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.menu-superior{
+.menu-superior {
     width: 100%;
     background-color: #FF6600;
     border-bottom: solid 1px;
@@ -162,12 +179,12 @@ nav a:hover {
 
 .container_flex-space-around {
     /*Classe para o menu pilar*/
-   
+
     display: flex;
     padding-left: 6%;
     padding-top: 1%;
-   justify-content: space-between;
- 
+    justify-content: space-between;
+
     z-index: 1000;
 }
 
@@ -190,6 +207,9 @@ nav a:hover {
 .titulo {
     /*Classe para padronizar os títulos da página/site*/
     margin-top: 65px;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
 }
 
 /*Necessário padronizar o footer ainda com pouco conteúdo
@@ -294,30 +314,25 @@ textarea {
 }
 
 .menu-contato-center ul {
-    padding-top: 50%;
+    /* padding-top: 50%; */
 }
 
 .form-contato {
     margin-right: 30%;
     width: 100%;
-    padding: 10px;
 }
 
 .form-contato-iten {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 
-.form-contato-iten {
-    width: 100%;
-    padding: 10px;
-}
 
 .form-contato-iten label {
     color: #000;
     width: 100%;
     margin-bottom: 5px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /*Obs: 
@@ -591,47 +606,58 @@ margin: 15px 20px;
     display: flex;
     justify-content: space-around;
 }
+
 #pacote-2,
 #pacote-3 {
     display: none;
 }
+
 .menu-pacotes ul li {
     cursor: pointer;
 }
+
 .classificacao li {
     display: inline-block;
 }
+
 .classificacao img {
     width: 10px;
     padding-top: 0;
 }
+
 .banner-pag-cliente {
     width: 100%;
     height: 300px;
     background-color: red;
 }
+
 .info-empresa {
     padding: 15px;
     background: white;
 }
+
 .col-grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 15px;
 }
-produtos-info{
+
+produtos-info {
     background: white;
-padding: 15px;
+    padding: 15px;
 }
+
 .produtos-info img {
     width: 100%;
 }
+
 .col-cupom {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 15px;
     background: gray;
 }
+
 .comentario-pag-info {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -639,19 +665,23 @@ padding: 15px;
     background-color: beige;
     margin-bottom: 15px;
 }
-.comentarios-info{
+
+.comentarios-info {
     background-color: white;
     padding: 15px;
 }
+
 .comentario-pag-info img {
     width: 100%;
 
 }
-.btn-pag-info{
+
+.btn-pag-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.valor-desconto{
+
+.valor-desconto {
     text-decoration: line-through;
 }
 
@@ -682,6 +712,6 @@ padding: 15px;
     margin: 0 auto;
 }
 
-.btn-cookies{
+.btn-cookies {
     line-height: 48px;
 }
