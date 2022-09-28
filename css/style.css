@@ -215,18 +215,20 @@ nav a:hover {
     height: 100%;
 }
 
+.menu-bloco :hover {
+    color: #000;
+    background-color: yellow;
+}
+
+.menu-caixa :hover{
+    transform: skew(0deg);
+}
+
 .menu-caixa {
     background-color: #3419ff;
     margin: 0px 5px 0px 0px;
     transform: skew(340deg);
     border: solid rgba(255, 255, 255, 0.80) 1px;
-}
-
-.menu-caixa :hover {
-    color: #000;
-    transform: skew(0deg);
-    background-color: yellow;
-    transition: 100ms;
 }
 
 .menu-caixa li {
