@@ -215,7 +215,7 @@ nav a:hover {
     height: 100%;
 }
 
-.menu-bloco :hover {
+.menu-bloco :hover{
     color: #000;
     background-color: yellow;
 }
@@ -278,6 +278,11 @@ nav a:hover {
     width: 100%;
 }
 
+@keyframes caixa-icones {
+    from {width: 60px;}
+    to {width: 80px;}
+  }
+
 /*Necessário padronizar o footer ainda com pouco conteúdo
 Necessário diminuir o espaço entre as palavras do menu*/
 
@@ -287,12 +292,14 @@ div.social-caixa {
     position: fixed;
     left: -15px;
     top: 250px;
+    
 }
 
-div.social-caixa :hover {
-    width: 80px;
-    transition: 1s;
+div.social-caixa :hover,
+div.social-caixa i:hover{
+    animation: caixa-icones 300ms;
     color: #FF6600;
+    animation-fill-mode: forwards;
 }
 
 div.social-icons {
@@ -304,7 +311,7 @@ div.social-icons {
     background-color: white;
     text-align: center;
     transform: skew(340deg);
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 7px 0px;
     box-shadow: 3px 3px rgba(135, 135, 135, 0.2);
     color: #3419ff;
 
