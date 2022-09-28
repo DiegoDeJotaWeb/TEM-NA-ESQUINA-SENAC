@@ -24,17 +24,42 @@
                 <a id="logo"><img src="imagens/logo.png" alt="Logomarca"></a>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="categorias.html">Categoria</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="pacotes.html">Seja parceiro</a></li>
-                        <li><a href="sistema/login.html">Login</a></li>
+                        <div class="menu-bloco">
+                            <div class="menu-caixa">
+                                <li><a href="index.html">Home</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="categorias.html">Categoria</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="contato.html">Contato</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="sobre.html">Sobre</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="pacotes.html">Seja parceiro</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="sistema/login.html">Login</a></li>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <div class="social-caixa">
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
     <section class="margin-header">
         <div class="container">
             <h2 class="titulo">Contato</h2>
@@ -46,30 +71,32 @@
         <div class="container">
             <div class="menu-contato">
                 <div class="form-contato">
-                    <form action="#" method="POST">
-                        <div class="form-contato-iten">
-                            <label for="cadastro-nome">Nome: </label>
-                            <input type="Nome" aria-describedby="cadastro" placeholder="Nome">
-                        </div>
-                        <div class="form-contato-iten">
-                            <label for="cadastro-cpf">E-mail: </label>
-                            <input type="email" placeholder="E-mail">
-                        </div>
-                        <div class="form-contato-iten">
-                            <label for="nome">Empresa: </label>
-                            <input type="email" placeholder="Empresa">
-                        </div>
-                        <div class="form-contato-iten">
-                            <label for="cel">Celular: </label>
-                            <input type="email" placeholder="(00) 0-0000-0000">
-                        </div>
-                        <div class="form-contato-iten">
-                            <label for="mensagem">Mensagem: </label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="botao">
-                            <button type="submit" class="btn">Enviar</button>
-                        </div>
+                    <div>
+                        <form action="#" method="POST">
+                            <div class="form-contato-iten">
+                                <label for="cadastro-nome">Nome: </label>
+                                <input type="Nome" aria-describedby="cadastro" placeholder="Nome">
+                            </div>
+                            <div class="form-contato-iten">
+                                <label for="cadastro-cpf">E-mail: </label>
+                                <input type="email" placeholder="E-mail">
+                            </div>
+                            <div class="form-contato-iten">
+                                <label for="nome">Empresa: </label>
+                                <input type="email" placeholder="Empresa">
+                            </div>
+                            <div class="form-contato-iten">
+                                <label for="cel">Celular: </label>
+                                <input type="email" placeholder="(00) 0-0000-0000">
+                            </div>
+                            <div class="form-contato-iten">
+                                <label for="mensagem">Mensagem: </label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                    </div>
+                    <div class="botao">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
                     </form>
                 </div>
 
@@ -79,50 +106,48 @@
                         <div class="mb">
                             <h3>Contatos</h3>
                             <ul>
-                                <li style="font-size: 18px;">Telefone: <a href="tel:1199999999" target="_blank">(00) 0 0000-0000</a></li>
-                                <li style="font-size: 18px;">Telefone: <a href="cel:119999999" target="_blank">(00) 0 0000-0000</a></li>
-                                <li style="font-size: 18px;">Whatsapp: <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">(00) 0 0000-0000</a></li>
-                                <li style="font-size: 18px;">Email: <a href="mailto:contato@temnaesquina.com.br" target="_blank">contato@temnaesquina.com.br</a></li>
-                               
+                                <li style="font-size: 18px;">Telefone: <a href="tel:1199999999" target="_blank">(00) 0
+                                        0000-0000</a></li>
+                                <li style="font-size: 18px;">Telefone: <a href="cel:119999999" target="_blank">(00) 0
+                                        0000-0000</a></li>
+                                <li style="font-size: 18px;">Whatsapp: <a
+                                        href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">(00) 0
+                                        0000-0000</a></li>
+                                <li style="font-size: 18px;">Email: <a href="mailto:contato@temnaesquina.com.br"
+                                        target="_blank">contato@temnaesquina.com.br</a></li>
+
                                 <li style="font-size: 18px;">Rua Tito - Lapa, São Paulo - SP, 02675-031 </li>
                             </ul>
                         </div>
-                        <div class="mt">
+                        <!--<div class="mt">
                             <h3>Siga-nos!</h3>
                             <ul>
                                 <li style="font-size: 18px;"><a href="" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
                                 <li style="font-size: 18px;"><a href="" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
                                 <li style="font-size: 18px;"><a href="" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                            </ul>
+                            </ul>-->
+                        <h3 class="">Localização</h3>
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1227058192267!2d-46.69400408487186!3d-23.528088666249957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1660179809006!5m2!1spt-BR!2sbr"
+                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                         </div>
                     </div>
                 </div>
-
             </div>
-            <section>
-                <h2 class="titulo">Localização</h2>
-                <div class="anuncios">
-                </div>
-            </section>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1227058192267!2d-46.69400408487186!3d-23.528088666249957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1660179809006!5m2!1spt-BR!2sbr"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+        </div>
+        <section>
+
+            <div class="anuncios">
             </div>
+        </section>
+
         </div>
     </selection>
-    <footer>
-        <div>
-            <ul class="redes">
-                <li><a href="">facebook| </a></li>
-                <li><a href=""> Instagram| </a></li>
-                <li><a href=""> Linkedin| </a></li>
-                <li><a href=""> Twitter| </a></li>
-                <li><a href=""> YouTube </a></li>
-            </ul>
-        </div>
+    <footer id="fundo">
         <p>Desenvolvido Tem na Esquina
             - 2022
         </p>

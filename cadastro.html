@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,24 +16,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div class="menu-superior" >
+        <div class="menu-superior">
             <div class="container container_flex-space-around">
                 <a id="logo"><img src="imagens/logo.png" alt="Logomarca"></a>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="categorias.html">Categoria</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="pacotes.html">Seja parceiro</a></li>
-                        <li><a href="sistema/login.html">Login</a></li>
+                        <div class="menu-bloco">
+                            <div class="menu-caixa">
+                                <li><a href="index.html">Home</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="categorias.html">Categoria</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="contato.html">Contato</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="sobre.html">Sobre</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="pacotes.html">Seja parceiro</a></li>
+                            </div>
+                            <div class="menu-caixa">
+                                <li><a href="sistema/login.html">Login</a></li>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <div class="social-caixa">
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
     <section class="margin-header">
         <div class="container">
             <h2 class="titulo">Cadastro</h2>
@@ -53,8 +80,7 @@
                 <div class="flex-grid-2">
                     <div class="form-cadastro">
                         <label for="cadastro-nome">Nome:</label>
-                        <input type="Nome" aria-describedby="cadastro"
-                            placeholder="Nome">
+                        <input type="Nome" aria-describedby="cadastro" placeholder="Nome">
                     </div>
                     <div class="form-cadastro">
                         <label for="cadastro-sobrenome">Sobrenome:</label>
@@ -124,7 +150,7 @@
         </div>
     </section>
     <footer>
-        <div>
+        <!--<div>
             <ul class="redes">
                 <li><a href="">facebook| </a></li>
                 <li><a href=""> Instagram| </a></li>
@@ -132,11 +158,12 @@
                 <li><a href=""> Twitter| </a></li>
                 <li><a href=""> YouTube </a></li>
             </ul>
-        </div>
+        </div>-->
         <p>Desenvolvido Tem na Esquina
             - 2022
         </p>
     </footer>
+    <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -121,7 +121,8 @@ header {
 
 footer {
     text-align: center;
-    border-top: 1px dotted black;
+    border-top: 3px inset #3319FF;
+    background-color: #FF6600;
 }
 
 footer ul li {
@@ -179,12 +180,9 @@ nav a:hover {
 
 .container_flex-space-around {
     /*Classe para o menu pilar*/
-
     display: flex;
-    padding-left: 6%;
     padding-top: 1%;
     justify-content: space-between;
-
     z-index: 1000;
 }
 
@@ -195,7 +193,6 @@ nav a:hover {
 
 #logo img {
     width: 50%;
-    margin-top: 5px;
 }
 
 .container {
@@ -212,8 +209,111 @@ nav a:hover {
     text-transform: uppercase;
 }
 
+.menu-bloco {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-caixa {
+    background-color: #3419ff;
+    margin: 0px 5px 0px 0px;
+    transform: skew(340deg);
+    border: solid rgba(255, 255, 255, 0.80) 1px;
+}
+
+.menu-caixa :hover {
+    color: #000;
+    transform: skew(0deg);
+    background-color: yellow;
+    transition: 100ms;
+}
+
+.menu-caixa li {
+    transform: skew(20deg);
+    font-size: 1.07em;
+}
+
+/* COOKIES */
+
+.card-cookies {
+    display: grid;
+    grid-template-columns: 14fr 3fr;
+    position: absolute;
+    bottom: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%) !important;
+}
+
+.cookies-box {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+}
+
+.cookies {
+    z-index: 999;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-cookies {
+    line-height: 48px;
+}
+
+/*Id para por o footer no fim da página*/
+
+#fundo {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#fundo-pacotes{
+    position: absolute;
+    width: 100%;
+}
+
 /*Necessário padronizar o footer ainda com pouco conteúdo
 Necessário diminuir o espaço entre as palavras do menu*/
+
+/*Padrão para os icones flutuante do site*/
+
+div.social-caixa {
+    position: fixed;
+    left: -15px;
+    top: 250px;
+}
+
+div.social-caixa :hover {
+    width: 80px;
+    transition: 1s;
+    color: #FF6600;
+}
+
+div.social-icons {
+    position: static;
+    border: 1px solid rgba(180, 180, 180, 0.5);
+    border-radius: 5px;
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    transform: skew(340deg);
+    margin: 0px 0px 5px 0px;
+    box-shadow: 3px 3px rgba(135, 135, 135, 0.2);
+    color: #3419ff;
+
+}
+
+.social-icons i {
+    line-height: 35px;
+    transform: skew(20deg);
+    font-size: 20px;
+    margin: 0px 0px 0px 15px;
+}
 
 /*------------------------- PARTE DO CADASTRO.HTML -------------------------*/
 
@@ -320,6 +420,9 @@ textarea {
 .form-contato {
     margin-right: 30%;
     width: 100%;
+    background-color: #3319FF;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 .form-contato-iten {
@@ -329,7 +432,7 @@ textarea {
 
 
 .form-contato-iten label {
-    color: #000;
+    color: #fff;
     width: 100%;
     margin-bottom: 5px;
     /* padding: 10px; */
@@ -361,7 +464,7 @@ textarea {
     /*Ver como muda a cor do texto do link*/
 }
 
-/*------------------------- PARTE DO categorias.HTML -------------------------*/
+/*------------------------- PARTE DO CATEGORIAS.HTML -------------------------*/
 
 .card-cateroria {
     margin-bottom: 20px;
@@ -370,23 +473,55 @@ textarea {
 .card-cateroria img {
     padding-top: 70px;
     width: 100%;
-}
-
-.info-pacote-1 {
-    background-color: darkgray;
+    border-radius: 10px;
 }
 
 .card-info-pacote {
     background-color: whitesmoke;
     padding: 10px;
-    border: solid #3319FF 1px;
+    border: solid #3319FF 2px;
+    border-left: solid #CFB53B 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(180, 180, 180, 0.5);
 }
 
-.card-info-pacote ul {
+.card-info-pacote-gold {
+    background-color: whitesmoke;
+    padding: 10px;
+    border: solid #CFB53B 2px;
+    border-left: solid #CFB53B 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(180, 180, 180, 0.5);
+    position: relative;
+}
+
+.card-info-pacote-brass {
+    background-color: whitesmoke;
+    padding: 10px;
+    border: solid #A95522 2px;
+    border-left: solid #A95522 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(180, 180, 180, 0.5);
+    position: relative;
+}
+
+.card-info-pacote-free {
+    background-color: whitesmoke;
+    padding: 10px;
+    border: solid #a9a9a9 2px;
+    border-left: solid #a9a9a9 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(180, 180, 180, 0.5);
+    position: relative;
+}
+
+.card-info-pacote-gold ul,
+.card-info-pacote-brass ul,
+.card-info-pacote-free ul {
     display: block;
 }
 
-.pacote-gold {
+/*.pacote-gold {
     border-left: 5px solid #CFB53B;
 }
 
@@ -396,65 +531,73 @@ textarea {
 
 .pacote-free {
     border-left: 5px solid #a9a9a9;
-}
-
-.bg-pacote-gold {
-    /* background-color:  #CFB53B; */
-    background-color: #cfb53b99
-}
-
-.bg-pacote-brass {
-    /* background-color:  #A95522; */
-    background-color: #a955226b;
-}
-
-.bg-pacote-free {
-    /* background-color:  #a9a9a9; */
-    background-color: #a9a9a980;
-}
+}*/
 
 .col-2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.card-info-pacote {
-    position: relative;
-}
-
 .tag-oferta {
     background-color: #3319FF;
     color: #fff;
-    width: 130px;
+    width: 310px;
     height: 30px;
     line-height: 30px;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 10px;
     text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3px;
 }
 
 .tag-promocao {
     background-color: #FF6600;
-    width: 130px;
+    width: 310px;
     height: 30px;
     line-height: 30px;
     position: absolute;
-    right: 0;
+    right: 10px;
     text-align: center;
-    top: 40px;
+    top: 42px;
+    border-radius: 10px;
 }
 
 .card-footer {
     background-color: #3319FF;
     color: #fff;
     padding: 6px 5px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 /*------------------------- PARTE DO PACOTES.HTML -------------------------*/
 
 .menu-pacotes {
     width: 100%;
+    font-size: 20px;
+}
+
+.bg-pacote-gold {
+    /* background-color:  #CFB53B; */
+    background-color: #cfb53b99;
+    border-radius: 10px 10px 0px 0px;
+    border: solid #cfb53b99 1px;
+}
+
+.bg-pacote-brass {
+    /* background-color:  #A95522; */
+    background-color: #a955226b;
+    border-radius: 10px 10px 0px 0px;
+    border: solid #a955226b 1px;
+}
+
+.bg-pacote-free {
+    /* background-color:  #a9a9a9; */
+    background-color: #a9a9a980;
+    border-radius: 10px 10px 0px 0px;
+    border: solid #a9a9a980 1px;
 }
 
 .menu-pacotes ul {
@@ -468,13 +611,25 @@ textarea {
     padding: 15px 0;
 }
 
-.info-pacotes {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+.info-pacote-1 {
+    background-color: rgb(255, 255, 255);
+    border: solid darkgray 1px;
+}
+
+.info-pacote-2 {
+    background-color: rgb(255, 255, 255);
+    border: solid #a955226b 1px;
+}
+
+.info-pacote-3 {
+    background-color: rgb(255, 255, 255);
+    border: solid #cfb53b99 1px;
 }
 
 .info-pacotes {
-    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 15px 10px 10px 10px;
 }
 
 .pacote-info-text {
@@ -484,9 +639,6 @@ textarea {
 /* .card-info-pacote{
 margin: 15px 20px;
 } */
-.info-pacote-1 {
-    background-color: darkgray;
-}
 
 .card-info-pacote {
     background-color: whitesmoke;
@@ -496,8 +648,6 @@ margin: 15px 20px;
 .card-info-pacote ul {
     display: block;
 }
-
-/*------------------------- PARTE DO PACOTES.HTML -------------------------*/
 
 .banner {
     height: 500px;
@@ -649,6 +799,7 @@ produtos-info {
 
 .produtos-info img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .col-cupom {
@@ -673,7 +824,7 @@ produtos-info {
 
 .comentario-pag-info img {
     width: 100%;
-
+    border-radius: 10px;
 }
 
 .btn-pag-info {
@@ -687,33 +838,94 @@ produtos-info {
     text-decoration: line-through;
 }
 
+/*------------------------- PARTE DO SOBRE.HTML -------------------------*/
 
-/* COOKIES */
-
-
-.card-cookies {
-    display: grid;
-    grid-template-columns: 14fr 3fr;
-    position: absolute;
-    bottom: 0;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%) !important;
-}
-
-.cookies-box {
-    position: fixed;
-    bottom: 15px;
-    width: 100%;
-}
-
-.cookies {
-    z-index: 999;
-    position: relative;
+.accordionWrapper {
+    padding: 30px;
+    background: #fff;
     width: 80%;
-    margin: 0 auto;
+    overflow: hidden;
+
+    box-shadow: 0 1.5em 85px 0 rgb(0 0 0 / 20%);
+    margin: 15px auto;
 }
 
-.btn-cookies {
-    line-height: 48px;
+.accordionItem {
+    float: left;
+    display: block;
+    width: 100%;
+    font-family: "Open-sans", Arial, sans-serif;
+}
+
+.accordionItemHeading {
+    cursor: pointer;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    background: #3419ff;
+    color: #fff;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.accordionItem :hover{
+    background-color: #FF6600;
+}
+
+.accordionItemHeading i {
+    line-height: 32px;
+}
+
+.close .accordionItemContent {
+    height: 0px;
+    transition: height 1s ease-out;
+    -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    float: left;
+    display: block;
+}
+
+.open .accordionItemContent {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    display: block;
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease;
+    -ms-transition: -ms-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+}
+
+.open .accordionItemHeading {
+    margin: 0px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #bdc3c7;
+    color: #7f8c8d;
 }
