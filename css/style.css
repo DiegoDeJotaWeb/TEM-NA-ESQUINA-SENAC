@@ -72,10 +72,7 @@ a {
 }
 
 body {
-    background-image: url(../imagens/fundo.png);
     background-attachment: fixed;
-    margin: 0;
-    padding: 0;
     width: 100%;
 }
 
@@ -123,6 +120,7 @@ footer {
     text-align: center;
     border-top: 3px inset #3319FF;
     background-color: #FF6600;
+    bottom: 0;
 }
 
 footer ul li {
@@ -215,12 +213,12 @@ nav a:hover {
     height: 100%;
 }
 
-.menu-bloco :hover{
+.menu-bloco :hover {
     color: #000;
     background-color: yellow;
 }
 
-.menu-caixa :hover{
+.menu-caixa :hover {
     transform: skew(0deg);
 }
 
@@ -267,21 +265,26 @@ nav a:hover {
 
 /*Id para por o footer no fim da página*/
 
-#fundo {
+/*#fundo {
     position: absolute;
     bottom: 0px;
     width: 100%;
 }
 
-#fundo-pacotes{
+#fundo-pacotes {
     position: absolute;
     width: 100%;
 }
-
+*/
 @keyframes caixa-icones {
-    from {width: 60px;}
-    to {width: 80px;}
-  }
+    from {
+        width: 60px;
+    }
+
+    to {
+        width: 80px;
+    }
+}
 
 /*Necessário padronizar o footer ainda com pouco conteúdo
 Necessário diminuir o espaço entre as palavras do menu*/
@@ -292,11 +295,11 @@ div.social-caixa {
     position: fixed;
     left: -15px;
     top: 250px;
-    
+
 }
 
 div.social-caixa :hover,
-div.social-caixa i:hover{
+div.social-caixa i:hover {
     animation: caixa-icones 300ms;
     color: #FF6600;
     animation-fill-mode: forwards;
@@ -491,7 +494,7 @@ textarea {
     border: solid #3319FF 2px;
     border-left: solid #CFB53B 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px rgba(180, 180, 180, 0.5);
+
 }
 
 .card-info-pacote-gold {
@@ -880,7 +883,8 @@ produtos-info {
     display: flex;
     justify-content: space-between;
 }
-.accordionItem :hover{
+
+.accordionItem :hover {
     background-color: #FF6600;
 }
 
