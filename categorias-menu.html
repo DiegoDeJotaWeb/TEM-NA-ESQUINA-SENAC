@@ -58,8 +58,17 @@
             text-align: center;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            column-gap: 1px;
+            /* column-gap: 1px;
+            row-gap: 1px; */
+            
         }
+        .btn-menu-categoria{
+            border: 1px solid black;
+            background-color: red;
+            padding: 7px 0;
+        }
+
+       
 
         @media only screen and (max-width: 768px) {
             #caixa-menu-superior-categorias {
@@ -81,18 +90,28 @@
                 <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperiorCategorias()"
                     aria-hidden="true" style="font-size: 24px;color: black;"></i>
             </div>
-            <div class="mb mt" id="menu-categorias-categoria">
+            <div class="mb" id="menu-categorias-categoria">
 
-                <button class="btn">Todos</button>
-                <button class="btn">Categoria1</button>
-                <button class="btn">Categoria2</button>
+                <div class="btn-menu-categoria">Todos</div>
+                <div class="btn-menu-categoria">Categoria1</div>
+                <div class="btn-menu-categoria">Categoria2</div>
+                <div class="btn-menu-categoria">Categoria3</div>
+                <div class="btn-menu-categoria">Categoria4</div>
+                <div class="btn-menu-categoria">Categoria5</div>
+                <div class="btn-menu-categoria">Categoria6</div>
+                <div class="btn-menu-categoria">Categoria7</div>
+                <div class="btn-menu-categoria">Categoria8</div>
+                <div class="btn-menu-categoria">Outros</div>
+                <!-- <button class="btn">Todos</button>
+                <button class="btn">Categoria1</button> -->
+                <!-- <button class="btn">Categoria2</button>
                 <button class="btn">Categoria3</button>
                 <button class="btn">Categoria4</button>
                 <button class="btn">Categoria5</button>
                 <button class="btn">Categoria6</button>
                 <button class="btn">Categoria7</button>
-                <button class="btn">Categoria8</button>
-                <button class="btn">Outras</button>
+                <button class="btn">Categoria8</button> -->
+                <!-- <button class="btn">Outras</button> -->
             </div>
             <script>
                 function menuSuperiorCategorias() {
