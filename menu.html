@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Classificados de comércios regionais" />
+  <meta name="keywords" content="Classificados" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro" />
+  <title>Tem na esquina</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imagens/logo_icone.png" sizes="64x64" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="menu-superior">
+      <div class="container container_flex-space-around">
+
+        <a id="logo"><img src="imagens/logo.png" alt="Logomarca"></a>
+        <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
+        line-height: 64px;
+        text-align: end;
+        top: 4px;
+        position: absolute;
+        right: 24px;
+             "></i>
+        <nav>
+          <ul>
+
+
+            <li class="menu-caixa"><a href="index.html">Home</a></li>
+
+            <li class="menu-caixa"><a href="categorias.html">Categoria</a></li>
+
+            <li class="menu-caixa"><a href="contato.html">Contato</a></li>
+
+            <li class="menu-caixa"><a href="sobre.html">Sobre</a></li>
+
+            <li class="menu-caixa"><a href="pacotes.html">Seja parceiro</a></li>
+
+            <li class="menu-caixa"><a href="sistema/login.html">Login</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <style>
+     #logo img {
+    width: 100%;
+}
+    #icon-menu{
+      display: none;
+    }
+    nav {
+      text-align: end;
+    }
+
+    nav ul li {
+      display: inline-block;
+      line-height: 60px;
+      padding: 0 12px;
+    }
+
+    .menu-caixa:hover {
+      background-color: red;
+    }
+
+    .container_flex-space-around {
+      display: grid;
+      grid-template-columns: 2fr 10fr;
+    }
+
+    @media only screen and (max-width: 768px) {
+      body {
+        background-color: lightblue;
+      }
+
+      nav ul li {
+        display: none;
+        width: 100%;
+      }
+
+      .container_flex-space-around {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        width: 90%;
+      }
+      #icon-menu{
+      display: block;
+    }
+    #logo img {
+    width: 30%;
+}
+    }
+
+    .block {
+      display: block;
+    }
+  </style>
+
+  <script>
+    function menuSuperior() {
+      console.log('teste');
+      menu = document.querySelectorAll('.menu-caixa');
+
+      for (i = 0; i < menu.length; i++) {
+        menu[i].classList.toggle('block');
+        // console.log(menu[i].style.display = 'block');
+      }
+
+
+
+      // .style.display = 'block';
+
+      // document.getElementById('menu-superior-portal ul').style.display = 'block';
+    }
+  </script>
+  <div class="social-caixa">
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook-f"></i>
+    </div>
+    <div class="social-icons">
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="social-icons">
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </div>
+  <section class="margin-header">
+    <div class="container pb">
+      <h1 class="titulo pb">Sobre</h1>
+      <h2>TEM NA ESQUINA</h2>
+      <p>
+        O maior portal de busca por Serviços e Estabelecimentos do Brasil*.
+      </p>
+
+      <p>
+        O site foi feito para você encontrar informações sobre
+        estabelecimentos de forma rápida e eficaz de acordo com sua
+        localização.
+      </p>
+
+      <p>
+        A TEM NA ESQUINA está disponível em versão para computadores,
+        smartphones e tablets, para você encontrar o que precisa em qualquer
+        hora e em qualquer lugar.
+      </p>
+
+      <p>
+        Se você possui uma empresa,
+        <a href="pacotes.html">confira as vantagens de anunciar na TEM NA ESQUINA!</a>
+      </p>
+
+      <h3>Avaliações</h3>
+      <p>
+        Além de encontrar o que procura, você ainda visualiza avaliações e
+        comentários de outros usuários para te ajudar a escolher os melhores
+        produtos e serviços.
+      </p>
+
+      <p>
+        Uma avaliação confere credibilidade às empresas e auxiliam os
+        consumidores a escolher a melhor opção.
+      </p>
+
+      <p>
+        Se quiser fazer seu comentário, também é simples e rápido. Basta se
+        cadastrar no site.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="accordionWrapper">
+      <div class="accordionItem close">
+        <h2 class="accordionItemHeading">
+          Titulo 1
+          <i id="seta-lado-tira" class="fa fa-angle-right" aria-hidden="true"></i>
+        </h2>
+        <div class="accordionItemContent">
+          <p>
+            JavaScript accordions let you squeeze a lot of content into a
+            small space in a Web page.
+          </p>
+          <p>
+            This simple accordion degrades gracefully in browsers that don't
+            support JavaScript or CSS.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordionItem close">
+        <h2 class="accordionItemHeading">
+          Titulo 2
+          <i id="seta-lado-tira" class="fa fa-angle-right" aria-hidden="true"></i>
+        </h2>
+        <div class="accordionItemContent">
+          <p>
+            A JavaScript accordion is made up of a number of
+            expandable/collapsible items. Only one item is ever shown at a
+            time.
+          </p>
+
+          <p>
+            You can include any content you want inside an accordion item.
+            Here's a bullet list:
+          </p>
+          <ul>
+            <li>List item #1</li>
+            <li>List item #2</li>
+            <li>List item #3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordionItem close">
+        <h2 class="accordionItemHeading">
+          Titulo 3<i id="seta-lado-tira" class="fa fa-angle-right" aria-hidden="true"></i>
+        </h2>
+        <div class="accordionItemContent">
+          <p>
+            Click an accordion item's heading to expand it. To collapse the
+            item, click it again, or click another item heading.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="fundo">
+    <div>
+    </div>
+    <p>Desenvolvido Tem na Esquina - 2022</p>
+  </footer>
+  <!--COOKIES -->
+
+  <div class="cookies-box" id="cookies">
+    <div class="pr pt pl pb cookies">
+      <div class="card-cookies pAll">
+        <p class="pAll">
+          Utilizamos cookies para personalizar sua experiência aqui no site,
+          de acordo com nossa <a href="">política de cookies</a>.
+        </p>
+        <div class="col-2 btn-cookies">
+          <div>
+            <button type="button" class="btn" onclick="cookies()">
+              Ok, entendi
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn" onclick="cookies()">
+              Recusar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+  <script>
+    var accItem = document.getElementsByClassName("accordionItem");
+    var accHD = document.getElementsByClassName("accordionItemHeading");
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener("click", toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (i = 0; i < accItem.length; i++) {
+        accItem[i].className = "accordionItem close";
+      }
+      if (itemClass == "accordionItem close") {
+        this.parentNode.className = "accordionItem open";
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
