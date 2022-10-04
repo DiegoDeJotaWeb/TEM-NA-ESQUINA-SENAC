@@ -21,7 +21,7 @@
     <header>
         <div class="menu-superior">
             <div class="container container_flex-space-around">
-                <a id="logo"><img src="imagens/logo.png" alt="Logomarca"></a>
+                <a id="logo" href="index.html"><img src="imagens/logo.png" alt="Logomarca"></a>
                 <nav>
                     <ul>
                         <div class="menu-bloco">
@@ -41,7 +41,7 @@
                                 <li><a href="pacotes.html">Seja parceiro</a></li>
                             </div>
                             <div class="menu-caixa">
-                                <li><a href="sistema/login.html">Login</a></li>
+                                <li><a href="sistema/login.html" target="_blank">Login</a></li>
                             </div>
                         </div>
                     </ul>
@@ -60,6 +60,7 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
     </div>
+    
     <style>
         /* Slideshow container */
 .slideshow-container {
@@ -237,35 +238,128 @@ function showSlides(n) {
 // }
 </script>
 
-    <section >
+<style>
+
+.categotias {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 15px;
+}
+
+
+.categotias figure{
+    width: 100%;
+    height: 130px;
+}
+
+.categotias figure i{
+    font-size: 70px;
+    margin: auto;
+
+}
+.menu-cate-logo{
+    background-color: #ff6600ec;
+    text-align: center;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+}.menu-cate-logo i{
+    line-height: 100px;
+    font-size: 30px;
+}
+.flex-space-around img{
+    border-radius: 15px;
+}
+#menu-cate{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 15px;
+    margin: 15px;
+}
+.titulo{
+    margin: 25px;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}.flex-space-around ul{
+    border-radius: 15px;
+}.text-propaganda .btn{
+    margin: 20px;
+}
+
+</style>
+
+<section>
+    <div class="container">
+    <h2 class="titulo">Categorias</h2>
+    <div class="menu-categorias">
+        <div id="menu-cate">
+
+                <div class="menu-cate-logo"><i class="fa-solid fa-bag-shopping"></i><h3>Mercado</h3></div>
+                <div class="menu-cate-logo"><i class="fa-solid fa-dog"></i><h3>PetShop</h3></div>
+                <div class="menu-cate-logo"><i class="fa-solid fa-car-burst"></i><h3>Mecanico</h3></div>
+                <div class="menu-cate-logo"><i class="fa-solid fa-shirt"></i><h3>Moda</h3></div>
+                <div class="menu-cate-logo"><i class="fa-solid fa-utensils"></i><h3>Restaurantes</h3></div>
+                <div class="menu-cate-logo"><i class="fa-solid fa-cross"></i><h3>Farmacia</h3></div>
+                <div class="menu-cate-logo"><i class="fa-solid fa-cake-candles"></i><h3>Padaria</h3></div>
+                <div class="menu-cate-logo"><i class="fa-solid fa-staff-snake"></i><h3>Mercado</h3></div>
+
+        </div>
+        </div>
+</section>
+</div>
+
+<!---------------------------------------------------------------------------->
+
+    <!-- <section >
         <div class="container">
             <h2 class="titulo">Categorias</h2>
             <div class="categotias">
 
                 <a href="">
-                    <figure>
+                    <figure> -->
                         <!-- <img src="imagens/layoutminimercado.png"> -->
+                        <!-- <figcaption><i class="fa-solid fa-user-gear cursor-pointer"></i></figcaption>
+                    </figure>
+                    <h3>Mercado</h3>
+                </a>
+                <a href="">
+                    <figure> -->
+                        <!-- <img src="imagens/layoutminimercado.png"> -->
+                        <!-- <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure> -->
+                        <!-- <img src="imagens/layoutminimercado.png"> -->
+                        <!-- <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure> -->
+                        <!-- <img src="imagens/layoutminimercado.png"> -->
+                        <!-- <figcaption>Mercado</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
                         <figcaption>Mercado</figcaption>
                     </figure>
                 </a>
                 <a href="">
                     <figure>
-                        <!-- <img src="imagens/layoutminimercado.png"> -->
                         <figcaption>Mercado</figcaption>
                     </figure>
                 </a>
                 <a href="">
                     <figure>
-                        <!-- <img src="imagens/layoutminimercado.png"> -->
                         <figcaption>Mercado</figcaption>
                     </figure>
                 </a>
                 <a href="">
                     <figure>
-                        <!-- <img src="imagens/layoutminimercado.png"> -->
                         <figcaption>Mercado</figcaption>
                     </figure>
-                </a>
+                </a> -->
 
                 <!-- <figure>
                 <img src="imagens/layoutminimercado.png">
@@ -281,33 +375,12 @@ function showSlides(n) {
                 <img src="imagens/layoutminimercado.png">
                 <figcaption>Mercado</figcaption>
             </figure> -->
+<!-- </div> -->
 
-
-
-
-            </div>
+<!---------------------------------------------------------------------------->
 
             <div class="categotias">
-                <a href="">
-                    <figure>
-                        <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure>
-                        <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure>
-                        <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure>
-                        <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
+                
 
 
             </div>
@@ -388,7 +461,7 @@ function showSlides(n) {
                             <li class="list-pacotes-not">Titulo</li>
                             <li class="list-pacotes-not">Titulo</li>
                             <h4 class="titulo-h4">R$ 0,00</h4>
-                            <button class="btn">CONTRATAR</button>
+                            <a href="pacotes.html" class="btn">CONTRATAR</a>
                         </ul>
                     </div>
                     <ul>
@@ -406,7 +479,7 @@ function showSlides(n) {
                         <li class="list-pacotes-not">Titulo</li>
                         <li class="list-pacotes-not">Titulo</li>
                         <h4 class="titulo-h4">R$ 0,00</h4>
-                        <button class="btn">CONTRATAR</button>
+                        <a href="pacotes.html" class="btn">CONTRATAR</a>
                     </ul>
                     <ul>
                         <h3 class="titulo-h3">Plus +</h3>
@@ -423,7 +496,7 @@ function showSlides(n) {
                         <li>Titulo</li>
                         <li>Titulo</li>
                         <h4 class="titulo-h4">R$ 0,00</h4>
-                        <button class="btn">CONTRATAR</button>
+                        <a href="pacotes.html" class="btn">CONTRATAR</a>
                     </ul>
                 </div>
             </div>
@@ -432,7 +505,9 @@ function showSlides(n) {
 
     <section>
 
+        <div class="container">
         <h2 class="titulo">Propagandas</h2>
+    </div>
         <div class="propaganda">
 
             <div class="text-propaganda">
@@ -463,22 +538,22 @@ function showSlides(n) {
                     obcaecati labore placeat.
                 </p>
 
-                <button class="botton">ASSINE JÁ</button>
+                <button class="btn">ASSINE JÁ</button>
             </div>
-        </div>
-
+     
+    </div>
     </section>
     <!-- <div class="dotted-spaced">222</div> -->
 
-    <footer>
+    <footer class="fundo">
 
         <div>
             <ul class="redes">
-                <li><a href="">facebook| </a></li>
-                <li><a href=""> Instagram| </a></li>
-                <li><a href=""> Linkedin| </a></li>
-                <li><a href=""> Twitter| </a></li>
-                <li><a href=""> YouTube </a></li>
+                <li><a href="https://www.facebook.com/" target="_blank">facebook| </a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"> Instagram| </a></li>
+                <li><a href="https://br.linkedin.com/" target="_blank"> Linkedin| </a></li>
+                <li><a href="https://twitter.com/" target="_blank"> Twitter| </a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"> YouTube </a></li>
             </ul>
 
 
@@ -513,7 +588,6 @@ function showSlides(n) {
 
     <script src="js/script.js"></script>
 
-    </script>
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
 
