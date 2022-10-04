@@ -20,7 +20,7 @@
 <body>
   <header>
     <div class="menu-superior">
-      <div class="container container_flex-space-around">
+      <div class="container container-menu container_flex-space-around">
 
         <a id="logo" href="index.html"><img src="imagens/logo.png" alt="Logomarca"></a>
         <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
@@ -34,7 +34,7 @@
           <ul>
 
 
-            <li class="menu-caixa"><a href="index.html">Home</a></li>
+            <a href="index.html"><li class="menu-caixa" id="item-menu-ativo">Home</li></a>
 
             <li class="menu-caixa"><a href="categorias.html">Categoria</a></li>
 
@@ -65,6 +65,14 @@
 </div>
 
   <style>
+
+    .container-menu{
+      width: 90%;
+    }
+
+    #item-menu-ativo{
+      background-color: #f7863b;
+    }
      #logo img {
     width: 100%;
 }
@@ -81,8 +89,12 @@
       padding: 0 12px;
     }
 
+    .menu-caixa{
+      background-color: #ff6600;
+    }
+
     .menu-caixa:hover {
-      background-color: red;
+      background-color: #f7863b;
     }
 
     .container_flex-space-around {
@@ -94,6 +106,14 @@
     
 
     @media only screen and (max-width: 768px) {
+
+      .container-menu{
+        width: 100%;
+      }
+
+      .menu-caixa{
+        transform: none;
+      }
    
       nav ul li {
         display: none;
