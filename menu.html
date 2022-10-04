@@ -110,9 +110,16 @@
 #logo img {
     width: 78%;
 }
-    
+.caixa-texto-imagem-1{
+  display: grid;
+    grid-template-columns: 1fr 2fr;}
+    .caixa-texto-imagem-2{display: grid;
+    grid-template-columns: 5fr 7fr;}
 
     @media only screen and (max-width: 768px) {
+
+      .caixa-texto-imagem-1,.caixa-texto-imagem-2{display: grid;
+    grid-template-columns: 1fr;}
 
       .container-menu{
         width: 100%;
@@ -277,8 +284,7 @@
   </section>
   <section>
     <div class="container">
-    <div class="" style="    display: grid;
-    grid-template-columns: 1fr 2fr;">
+    <div class="caixa-texto-imagem-1" >
       <div>
         <img src="imagens/cel-portal.png" alt="" style="width:80%">
       </div>
@@ -303,8 +309,7 @@
 
   <section>
     <div class="container">
-    <div style="display: grid;
-    grid-template-columns: 5fr 7fr;">
+    <div class="caixa-texto-imagem-2">
       <div>
         <h2 class="titulo">Sistema completo</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis neque magnam dolore commodi veniam, harum in nulla maiores, dolorum quae quam ex. Quia dicta, eius inventore ad minus nobis?</p>
