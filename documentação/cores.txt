@@ -1,0 +1,7 @@
+Cores e Sub-Cores da Index
+
+Laranja: #FF6600
+Sub-Cor: #ff6600EC
+
+Azul: #3319FF
+Sub-cor: #0FBCF9; #533FF0; #5D4AF0

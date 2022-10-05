@@ -729,7 +729,10 @@ margin: 15px 20px;
 }
 
 .anuncios img {
-    width: 95%;
+    width: 100%;
+}
+.anuncios div{
+    column-gap: 0.938rem;
 }
 
 .text-propaganda {

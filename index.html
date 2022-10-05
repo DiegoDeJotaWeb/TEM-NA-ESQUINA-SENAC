@@ -19,6 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
+        a{
+            color: black;
+        }
         /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
@@ -107,93 +110,99 @@
 }
 </style>
 <style>
-
     .categotias {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        column-gap: 15px;
+        column-gap: 0.938rem;
     }
     
     
     .categotias figure{
         width: 100%;
-        height: 130px;
+        height: 8.125rem;
     }
     
     .categotias figure i{
-        font-size: 70px;
+        font-size: 4.375rem;
         margin: auto;
     
     }
     .menu-cate-logo{
         background-color: #ff6600ec;
         text-align: center;
-        width: 100px;
+        width: 6.25rem;
         border-radius: 50%;
-        height: 100px;
+        height: 6.25rem;
+        margin: 0 auto;
     }.menu-cate-logo i{
-        line-height: 100px;
-        font-size: 30px;
+        line-height: 6.25rem;
+        font-size: 1.875rem;
+    }.menu-cate-logo h3{
+        margin: 0.5rem 0rem;
     }
     .flex-space-around img{
-        border-radius: 15px;
+        border-radius: 0.938rem;
     }
     #menu-cate{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        column-gap: 15px;
-        margin: 15px;
+        column-gap: 0.938rem;
+        margin: 0.938rem;
     }
     .titulo{
-        margin: 25px;
+        margin: 1.563rem 0rem;
         background-color: rgb(245, 245, 245);
         width: 100%;
     }.flex-space-around ul{
-        border-radius: 15px;
+        border-radius: 0.938;
     }.text-propaganda .btn{
-        margin: 20px;
+        margin: 1.25rem;
     }.menu-nav{
         font-family: Verdana;
     }.menu-bloco .menu-nav:hover{
         font-family: Verdana;
-        font-size: 18px;
+        font-size: 1.125rem;
         color: black;
         background-color: black;
-        border-radius: 45px;
+        border-radius: 2.813;
     }.menu-bloco li{
-        font-size: 14px;
+        font-size: 0.875rem;
         font-family: arial;
     }.propaganda{
-        margin-bottom: 35px;
+        margin-bottom: 2.188rem;
+        background-color: white;
+        font-size: 1.2rem;
+    }
+    .menu-anuncio{
+        text-align: center;
     }
 
     .tabela-preco{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            width: min(1600px, 100%);
-            margin: 15px;
+            margin: 0.938rem;
             font-family: "Open Sans";
         }.card-preco{
             flex: 1;
-            max-width: 360px;
+            max-width: 22.5rem;
             background-color: #fff;
-            margin: 20px 40px;
+            margin: 1.25rem 2.5rem;
             text-align: center;
             cursor: pointer;
             overflow: hidden;
             color: #2d2d2d;
             transition: .3s linear;
-            border: 1px solid black;
-            border-radius: 15px;
+            border: 0.063rem solid black;
+            border-radius: 0.938rem;
         }.card-preco:hover .card-preco-header{
-            box-shadow: 0 0 0 20em #3419ffce;
+            box-shadow: 0 0 0 20rem #5D4AF0;
         }.card-preco-header{
             display: inline-block;
             color: white;
-            padding: 12px;
-            border-radius: 0 0 20px 20px;
-            font-size: 16px;
+            padding: 0.75rem;
+            border-radius: 0 0 1.25rem 1.25rem;
+            font-size: 1rem;
             text-transform: uppercase;
             font-weight: 600;
             transition: .4s linear;
@@ -205,53 +214,38 @@
             background-color: #A95522;
         }
         .preco{
-            font-size: 70px;
+            font-size: 4.375rem;
             color: #0fbcf9;
-            margin: 0px;
+            margin: 0rem;
             transition: .2s linear;
         }.preco sup, .preco span{
-            font-size: 22px;
+            font-size: 1.375rem;
             font-weight: 600;
         }
         .card-preco:hover .preco, .card-preco:hover ul li{
             color: white;
         }
         .card-preco li{
-            font-size: 16px;
-            padding: 10px 0;
+            font-size: 1rem;
+            padding: 0.625rem 0;
             text-transform: uppercase;
         }.btn-preco{
             display: inline-block;
-            margin-bottom: 10px;
-            margin-top: 40px;
-            border: 2px solid #0fbcf9;
+            margin-bottom: 0.625rem;
+            margin-top: 2.5rem;
+            border: 0.125rem solid #0fbcf9;
             color: black;
-            padding: 18px 20px;
-            border-radius: 8px;
+            padding: 1.125rem 1.25rem;
+            border-radius: 0.5rem;
             text-transform: uppercase;
             font-weight: 500;
             transition: .3s linear;
-        }.btn-preco:hover{
-            background-color: white;
-            font-weight: 400;
-            margin-bottom: 10px;
-            margin-top: 40px;
-            color: black;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            border: 1px solid #0fbcf9;
-            padding: 18px 20px;
-            font-size: 1,5rem;
-            line-height: 1.5;
-            border-radius: 0.25rem;
-            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-            display: inline-block;
-        }.menu-categorias{
+        }
+        .btn-preco:hover{
+            border: #533ff0 solid 0.125rem;
+            color: #533ff0;
+        }
+        .menu-categorias{
             font-size: 0.8rem;
             margin: 1rem 0;
         }
@@ -370,22 +364,25 @@ text-align: center;">
             <div class="anuncios">
                 <div class="flex-space-around">
 
-                    <div>
+                    <a href=""><div class="menu-anuncio">
                         <img src="imagens/layoutminimercado.png" alt="">
-                    </div>
+                        <h3>Tem na Esquina</h3>
+                    </div></a>
 
-                    <div>
+                    <a href=""><div class="menu-anuncio">
                         <img src="imagens/layoutminimercado.png" alt="">
-                    </div>
+                        <h3>Tem na Esquina</h3>
+                    </div></a>
 
-                    <div>
+                    <a href=""><div class="menu-anuncio">
                         <img src="imagens/layoutminimercado.png" alt="">
-                    </div>
+                        <h3>Tem na Esquina</h3>
+                    </div></a>
 
-                    <div>
+                    <a href=""><div class="menu-anuncio">
                         <img src="imagens/layoutminimercado.png" alt="">
-                    </div>
-
+                        <h3>Tem na Esquina</h3>
+                    </div></a>
                 </div>
             </div>
         </div>
@@ -466,21 +463,9 @@ text-align: center;">
                     Odit iusto ipsam explicabo, veniam et hic aut fugiat fugit voluptates officiis blanditiis! Aut eum
                     quasi non rerum quaerat fugiat hic iusto nobis deleniti inventore distinctio eligendi, sequi
                     repellendus itaque?
-                    Aliquam eaque consequuntur consectetur sequi optio harum quia laudantium fuga sunt exercitationem
-                    deserunt numquam dolorem officiis inventore delectus dolor, magni ducimus autem reprehenderit
-                    expedita repellendus rerum maiores. Illo, odio explicabo?
-                    Veritatis corrupti qui laboriosam mollitia accusantium nesciunt! Atque eius quaerat eos ratione, eum
-                    error modi repudiandae hic laborum minus exercitationem accusamus necessitatibus natus itaque nemo
-                    ipsum eligendi vel commodi et!
-                    Id ipsam enim soluta, nemo commodi assumenda! Aliquid culpa ipsa non soluta minima omnis ratione
-                    voluptas reprehenderit, dolorum atque enim magni vero. Qui provident nam aspernatur distinctio neque
-                    fugit id!
-                    Dicta qui omnis, sit accusamus sunt unde consectetur commodi pariatur. Laboriosam cumque at animi
-                    facere eius ea sed consectetur blanditiis cupiditate perferendis. Aut sunt nulla quas, quam
-                    obcaecati labore placeat.
                 </p>
 
-                <button class="btn">ASSINE JÁ</button>
+                <a href="" class="btn-preco">ASSINE JÁ</a>
             </div>
      
     </div>
