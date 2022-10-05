@@ -15,52 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <div class="menu-superior">
-            <div class="container container_flex-space-around">
-                <a id="logo" href="index.html"><img src="imagens/logo.png" alt="Logomarca"></a>
-                <nav>
-                    <ul>
-                        <div class="menu-bloco">
-                            <div class="menu-caixa">
-                                <li><a href="index.html">Home</a></li>
-                            </div>
-                            <div class="menu-caixa">
-                                <li><a href="categorias.html">Categoria</a></li>
-                            </div>
-                            <div class="menu-caixa">
-                                <li><a href="contato.html">Contato</a></li>
-                            </div>
-                            <div class="menu-caixa">
-                                <li><a href="sobre.html">Sobre</a></li>
-                            </div>
-                            <div class="menu-caixa">
-                                <li><a href="pacotes.html">Seja parceiro</a></li>
-                            </div>
-                            <div class="menu-caixa">
-                                <li><a href="sistema/login.html" target="_blank">Login</a></li>
-                            </div>
-                        </div>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div class="social-caixa">
-        <div class="social-icons">
-            <i class="fa-brands fa-facebook-f"></i>
-        </div>
-        <div class="social-icons">
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div class="social-icons">
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-    </div>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         /* Slideshow container */
 .slideshow-container {
@@ -148,8 +105,205 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+</style>
+<style>
+
+    .categotias {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: 15px;
+    }
+    
+    
+    .categotias figure{
+        width: 100%;
+        height: 130px;
+    }
+    
+    .categotias figure i{
+        font-size: 70px;
+        margin: auto;
+    
+    }
+    .menu-cate-logo{
+        background-color: #ff6600ec;
+        text-align: center;
+        width: 100px;
+        border-radius: 50%;
+        height: 100px;
+    }.menu-cate-logo i{
+        line-height: 100px;
+        font-size: 30px;
+    }
+    .flex-space-around img{
+        border-radius: 15px;
+    }
+    #menu-cate{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: 15px;
+        margin: 15px;
+    }
+    .titulo{
+        margin: 25px;
+        background-color: rgb(245, 245, 245);
+        width: 100%;
+    }.flex-space-around ul{
+        border-radius: 15px;
+    }.text-propaganda .btn{
+        margin: 20px;
+    }.menu-nav{
+        font-family: Verdana;
+    }.menu-bloco .menu-nav:hover{
+        font-family: Verdana;
+        font-size: 18px;
+        color: black;
+        background-color: black;
+        border-radius: 45px;
+    }.menu-bloco li{
+        font-size: 14px;
+        font-family: arial;
+    }.propaganda{
+        margin-bottom: 35px;
+    }
+
+    .tabela-preco{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: min(1600px, 100%);
+            margin: 15px;
+            font-family: "Open Sans";
+        }.card-preco{
+            flex: 1;
+            max-width: 360px;
+            background-color: #fff;
+            margin: 20px 40px;
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden;
+            color: #2d2d2d;
+            transition: .3s linear;
+            border: 1px solid black;
+            border-radius: 15px;
+        }.card-preco:hover .card-preco-header{
+            box-shadow: 0 0 0 20em #3419ffce;
+        }.card-preco-header{
+            display: inline-block;
+            color: white;
+            padding: 12px;
+            border-radius: 0 0 20px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: .4s linear;
+        }#gold-preco{
+            background-color: #CFB53B;
+        }#free-preco{
+            background-color: #a9a9a9;
+        }#bronze-preco{
+            background-color: #A95522;
+        }
+        .preco{
+            font-size: 70px;
+            color: #0fbcf9;
+            margin: 0px;
+            transition: .2s linear;
+        }.preco sup, .preco span{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .card-preco:hover .preco, .card-preco:hover ul li{
+            color: white;
+        }
+        .card-preco li{
+            font-size: 16px;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }.btn-preco{
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-top: 40px;
+            border: 2px solid #0fbcf9;
+            color: black;
+            padding: 18px 20px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+        }.btn-preco:hover{
+            background-color: white;
+            font-weight: 400;
+            margin-bottom: 10px;
+            margin-top: 40px;
+            color: black;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid #0fbcf9;
+            padding: 18px 20px;
+            font-size: 1,5rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            display: inline-block;
+        }.menu-categorias{
+            font-size: 0.8rem;
+            margin: 1rem 0;
+        }
     </style>
-    <!-- <div class="banner"></div> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="menu-superior">
+            <div class="container container_flex-space-around">
+                <a id="logo" href="index.html"><img src="imagens/logo.png" alt="Logomarca"></a>
+                <nav>
+                    <ul>
+                        <div class="menu-bloco">
+                            <a href="index.html"><div class="menu-nav">
+                                <li>Home</li>
+                            </div></a>
+                            <a href="categorias.html"><div class="menu-nav">
+                                <li>Categoria</li>
+                            </div></a>
+                            <a href="contato.html"><div class="menu-nav">
+                                <li>Contato</li>
+                            </div></a>
+                            <a href="sobre.html"><div class="menu-nav">
+                                <li>Sobre</li>
+                            </div></a>
+                            <a href="pacotes.html"><div class="menu-nav">
+                                <li>Seja Parceiro</li>
+                            </div></a>
+                            <a href="sistema/login.html" target="_blank"><div class="menu-nav">
+                                <li>Login</li>
+                            </div></a>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="social-caixa">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+<!-- <div class="banner"></div> -->
 <!-- Slideshow container -->
 <div class="slideshow-container margin-header">
 
@@ -186,107 +340,8 @@ text-align: center;">
     <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 </div>
+
 <br>
-
-
-
-<script>
-    let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 5000); 
-}
-
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 5000); 
-// }
-</script>
-
-<style>
-
-.categotias {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 15px;
-}
-
-
-.categotias figure{
-    width: 100%;
-    height: 130px;
-}
-
-.categotias figure i{
-    font-size: 70px;
-    margin: auto;
-
-}
-.menu-cate-logo{
-    background-color: #ff6600ec;
-    text-align: center;
-    width: 100px;
-    border-radius: 50%;
-    height: 100px;
-}.menu-cate-logo i{
-    line-height: 100px;
-    font-size: 30px;
-}
-.flex-space-around img{
-    border-radius: 15px;
-}
-#menu-cate{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 15px;
-    margin: 15px;
-}
-.titulo{
-    margin: 25px;
-    background-color: rgb(245, 245, 245);
-    width: 100%;
-}.flex-space-around ul{
-    border-radius: 15px;
-}.text-propaganda .btn{
-    margin: 20px;
-}
-
-</style>
 
 <section>
     <div class="container">
@@ -308,110 +363,7 @@ function showSlides(n) {
 </section>
 </div>
 
-<!---------------------------------------------------------------------------->
-
-    <!-- <section >
-        <div class="container">
-            <h2 class="titulo">Categorias</h2>
-            <div class="categotias">
-
-                <a href="">
-                    <figure> -->
-                        <!-- <img src="imagens/layoutminimercado.png"> -->
-                        <!-- <figcaption><i class="fa-solid fa-user-gear cursor-pointer"></i></figcaption>
-                    </figure>
-                    <h3>Mercado</h3>
-                </a>
-                <a href="">
-                    <figure> -->
-                        <!-- <img src="imagens/layoutminimercado.png"> -->
-                        <!-- <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure> -->
-                        <!-- <img src="imagens/layoutminimercado.png"> -->
-                        <!-- <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure> -->
-                        <!-- <img src="imagens/layoutminimercado.png"> -->
-                        <!-- <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure>
-                        <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure>
-                        <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure>
-                        <figcaption>Mercado</figcaption>
-                    </figure>
-                </a>
-                <a href="">
-                    <figure>
-                        <figcaption>Mercado</figcaption>
-                    </figure>
-                </a> -->
-
-                <!-- <figure>
-                <img src="imagens/layoutminimercado.png">
-                <figcaption>Mercado</figcaption>
-            </figure>
-
-            <figure>
-                <img src="imagens/layoutminimercado.png">
-                <figcaption>Mercado</figcaption>
-            </figure>
-
-            <figure>
-                <img src="imagens/layoutminimercado.png">
-                <figcaption>Mercado</figcaption>
-            </figure> -->
-<!-- </div> -->
-
-<!---------------------------------------------------------------------------->
-
-            <div class="categotias">
-                
-
-
-            </div>
-        </div>
-        <!-- <div class="categotias">
-
-            <figure>
-                <img src="imagens/layoutminimercado.png">
-                <figcaption>Mercado</figcaption>
-            </figure>
-
-            <figure>
-                <img src="imagens/layoutminimercado.png">
-                <figcaption>Mercado</figcaption>
-            </figure>
-
-            <figure>
-                <img src="imagens/layoutminimercado.png">
-                <figcaption>Mercado</figcaption>
-            </figure>
-
-            <figure>
-                <img src="imagens/layoutminimercado.png">
-                <figcaption>Mercado</figcaption>
-            </figure>
-
-
-
-            
-        </div> -->
-    </section>
+    <div class="categotias"></div>
     <section>
         <div class="container">
             <h2 class="titulo">Anuncios</h2>
@@ -439,75 +391,65 @@ function showSlides(n) {
         </div>
     </section>
     <section>
+
         <div class="container">
             <h2 class="titulo">Pacotes</h2>
+        <div class="tabela-preco">
+            <div class="card-preco">
+                <h3 class="card-preco-header" id="free-preco">Free</h3>
+                <div class="preco"><sup>R$</sup>0<span>,00/mês</span></div>
 
-            <div class="list-pacotes">
+                <ul>
+                    <li>Pagina Simples</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                </ul>
+                <a href="categorias.html" class="btn-preco">Ver Mais</a>
+            </div>
+        
 
-                <div class="flex-space-around">
-                    <div class="free">
-                        <ul>
-                            <h3 class="titulo-h3">Grátis</h3>
-                            <li>Titulo</li>
-                            <li>Titulo</li>
-                            <li>Titulo</li>
-                            <li>Titulo</li>
-                            <li>Titulo</li>
-                            <li class="list-pacotes-not">Titulo</li>
-                            <li class="list-pacotes-not">Titulo</li>
-                            <li class="list-pacotes-not">Titulo</li>
-                            <li class="list-pacotes-not">Titulo</li>
-                            <li class="list-pacotes-not">Titulo</li>
-                            <li class="list-pacotes-not">Titulo</li>
-                            <li class="list-pacotes-not">Titulo</li>
-                            <h4 class="titulo-h4">R$ 0,00</h4>
-                            <a href="pacotes.html" class="btn">CONTRATAR</a>
-                        </ul>
-                    </div>
-                    <ul>
-                        <h3 class="titulo-h3">Plus</h3>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li class="list-pacotes-not">Titulo</li>
-                        <li class="list-pacotes-not">Titulo</li>
-                        <li class="list-pacotes-not">Titulo</li>
-                        <li class="list-pacotes-not">Titulo</li>
-                        <h4 class="titulo-h4">R$ 0,00</h4>
-                        <a href="pacotes.html" class="btn">CONTRATAR</a>
-                    </ul>
-                    <ul>
-                        <h3 class="titulo-h3">Plus +</h3>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <li>Titulo</li>
-                        <h4 class="titulo-h4">R$ 0,00</h4>
-                        <a href="pacotes.html" class="btn">CONTRATAR</a>
-                    </ul>
-                </div>
+        
+            <div class="card-preco">
+                <h3 class="card-preco-header" id="bronze-preco">Bronze</h3>
+                <div class="preco"><sup>R$</sup>15<span>,00/mês</span></div>
+
+                <ul>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                </ul>
+                <a href="categorias.html" class="btn-preco">Ver Mais</a>
+            </div>
+        
+
+        
+            <div class="card-preco">
+                <h3 class="card-preco-header" id="gold-preco">Gold</h3>
+                <div class="preco"><sup>R$</sup>30<span>,00/mês</span></div>
+
+                <ul>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                    <li>teste</li>
+                </ul>
+                <a href="categorias.html" class="btn-preco">Ver Mais</a>
             </div>
         </div>
+
+    </div>
     </section>
 
     <section>
 
         <div class="container">
-        <h2 class="titulo">Propagandas</h2>
-    </div>
+            <h2 class="titulo">Propagandas</h2>
+        </div>
         <div class="propaganda">
 
             <div class="text-propaganda">
@@ -589,6 +531,54 @@ function showSlides(n) {
     <script src="js/script.js"></script>
 
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
-</body>
 
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    
+    //   slideIndex++;
+    //   if (slideIndex > slides.length) {slideIndex = 1}
+    //   slides[slideIndex-1].style.display = "block";
+    //   setTimeout(showSlides, 5000); 
+    }
+    
+    // function showSlides() {
+    //   let i;
+    //   let slides = document.getElementsByClassName("mySlides");
+    //   for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = "none";
+    //   }
+    //   slideIndex++;
+    //   if (slideIndex > slides.length) {slideIndex = 1}
+    //   slides[slideIndex-1].style.display = "block";
+    //   setTimeout(showSlides, 5000); 
+    // }
+    </script>
+
+</body>
 </html>
