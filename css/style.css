@@ -122,7 +122,7 @@ header {
 
 footer {
     text-align: center;
-    border-top: 3px inset #3319FF;
+    border-top: 3px inset #0f1833;
     background-color: #FF6600;
     bottom: 0;
 }
@@ -153,7 +153,7 @@ nav a:hover {
 
 .btn {
     /*Padrão dos botões*/
-    background-color: #3319FF;
+    background-color: #0f1833;
     color: #fff;
     font-weight: 400;
     text-align: center;
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .menu-caixa {
-    background-color: #3419ff;
+    background-color: #0f1833;
     margin: 0px 5px 0px 0px;
     transform: skew(340deg);
     border: solid rgba(255, 255, 255, 0.80) 1px;
@@ -326,7 +326,7 @@ div.social-icons {
     transform: skew(340deg);
     margin: 0px 0px 7px 0px;
     box-shadow: 3px 3px rgba(135, 135, 135, 0.2);
-    color: #3419ff;
+    color: #0f1833;
 
 }
 
@@ -355,7 +355,7 @@ div.social-icons {
 .bg-pessoa-fisica {
     /*CSS das abas do cadastro - Pessoa Fisica*/
     /* background-color:  #a9a9a9; */
-    background-color: #3319FF;
+    background-color: #0f1833;
     color: #fff;
 }
 
@@ -388,7 +388,7 @@ div.social-icons {
     margin-right: 30%;
     width: 100%;
     padding: 10px;
-    background-color: #3419ff;
+    background-color: #0f1833;
 }
 
 .form-cadastro input,
@@ -411,7 +411,7 @@ textarea {
     /*Padrão para Checkbox*/
     text-align: center;
     align-items: center;
-    background-color: #3419ff;
+    background-color: #0f1833;
     color: #fff;
     padding: 3px;
 }
@@ -442,7 +442,7 @@ textarea {
 .form-contato {
     margin-right: 30%;
     width: 100%;
-    background-color: #3319FF;
+    background-color: #0f1833;
     border-radius: 10px;
     margin-bottom: 5px;
 }
@@ -472,7 +472,7 @@ textarea {
     text-align: center;
     margin-top: 70px;
     padding: 15px;
-    background-color: #3319FF;
+    background-color: #0f1833;
 }
 
 #menu-login label {
@@ -561,7 +561,7 @@ textarea {
 }
 
 .tag-oferta {
-    background-color: #3319FF;
+    background-color: #0f1833;
     color: #fff;
     width: 310px;
     height: 30px;
@@ -586,8 +586,19 @@ textarea {
     border-radius: 10px;
 }
 
+.tag-promocao-brass{
+        background-color: #FF6600;
+        width: 310px;
+        height: 30px;
+        line-height: 30px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+        top: 10px;
+        border-radius: 10px;
+    }
 .card-footer {
-    background-color: #3319FF;
+    background-color: #0f1833;
     color: #fff;
     padding: 6px 5px;
     border-radius: 10px;
@@ -635,7 +646,7 @@ textarea {
 
 .info-pacote-1 {
     background-color: rgb(255, 255, 255);
-    border: solid darkgray 1px;
+    border-bottom: solid darkgray 1px;
 }
 
 .info-pacote-2 {
@@ -886,7 +897,7 @@ produtos-info {
     cursor: pointer;
     margin: 0px 0px 10px 0px;
     padding: 10px;
-    background: #3419ff;
+    background: #0f1833;
     color: #fff;
     width: 100%;
     -webkit-border-radius: 3px;
