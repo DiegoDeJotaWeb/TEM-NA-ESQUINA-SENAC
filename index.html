@@ -498,11 +498,10 @@ text-align: center;">
                 </div>
             </div> -->
 
-            <p>
-                <span class="btn-menu-categoria">&#139;</span>
-                <span class="btn-menu-categoria">&#155;</span>
-            </p>
+            
 
+            <div class="caixa-categoria">
+               
             <div class="carousel-menu-categoria">
 
                 <div class="logo-categoria ">
@@ -606,6 +605,11 @@ text-align: center;">
                     </div>
                 </div>
             </div>
+            <div class="caixa-btn-menu-anuncio">
+                <span class="btn-menu-categoria">&#139;</span>
+                <span class="btn-menu-categoria">&#155;</span>
+            </div>
+        </div>
     </section>
     </div>
 
@@ -641,6 +645,38 @@ text-align: center;">
             border-radius: 0.938rem;
         }
 
+        .caixa-anuncio, .caixa-categoria{
+            position: relative;
+        }
+        .caixa-btn-menu-anuncio{
+            width: 100%;
+            display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+
+         }
+
+        
+
+         .btn-menu-anuncio, 
+         .btn-menu-categoria{
+            color: black;
+            padding: 5px;
+            cursor: pointer;
+            transition: 0.6s ease;
+
+         }
+
+
+         .btn-menu-anuncio:hover, .btn-menu-categoria:hover{
+           
+           color: white;
+            background-color: #0f1833;
+       
+
+         }
+
 
         @media (max-width: 768px) {
 
@@ -649,7 +685,7 @@ text-align: center;">
                 margin: 0 10px 0 0;
             }
 
-         
+       
         }
     </style>
     <div class="categotias"></div>
@@ -661,12 +697,10 @@ text-align: center;">
 
         <div class="container">
             <h2 class="titulo">Anuncios</h2>
-            <p>
-                <span class="btn-menu-anuncio">&#139;</span>
-                <span class="btn-menu-anuncio">&#155;</span>
-            </p>
-
+          
+            <div class="caixa-anuncio">
             <div class="carousel-menu-anuncio">
+                
 
                 <div class="img-anuncio ">
                     <div class="menu-anuncio">
@@ -735,6 +769,7 @@ text-align: center;">
                     </div>
                 </div>
 
+               
 
 
                 <!-- <div class="anuncios">
@@ -770,6 +805,11 @@ text-align: center;">
                     </div>
                 </div> -->
             </div>
+            <div class="caixa-btn-menu-anuncio">
+                <span class="btn-menu-anuncio">&#139;</span>
+                <span class="btn-menu-anuncio">&#155;</span>
+            </div>
+        </div>
         </div>
     </section>
     <section>
@@ -989,7 +1029,7 @@ text-align: center;">
 
     <script>
         let btnMenuAnuncio = document.getElementsByClassName('btn-menu-anuncio');
-        console.log()
+     
         let imgAnuncio = document.getElementsByClassName('img-anuncio')
         let imgAnuncio_page = Math.ceil(imgAnuncio.length / 4);
         let lAnuncio = 0;
@@ -1003,6 +1043,7 @@ text-align: center;">
         }
 
         let right_mover_anuncio = () => {
+            console.log('right');
             lAnuncio = lAnuncio + movePerAnuncio;
             if (imgAnuncio == 1) {
                 lAnuncio = 0;
@@ -1016,13 +1057,14 @@ text-align: center;">
 
         }
         let left_mover_anuncio = () => {
+            console.log('left');
             lAnuncio = lAnuncio - movePer;
             if (lAnuncio <= 0) {
                 lAnuncio = 0;
             }
-            for (const i of logoCategoria) {
-                if (logoCategoria_page > 1) {
-                    i.style.left = '-' + l + '%';
+            for (const i of imgAnuncio) {
+                if (imgAnuncio_page > 1) {
+                    i.style.left = '-' + lAnuncio + '%';
                 }
             }
         }
