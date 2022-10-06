@@ -434,7 +434,8 @@ textarea {
 
 .menu-contato {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 8fr 6fr;
+    
 }
 
 .menu-contato-center ul {
@@ -447,7 +448,14 @@ textarea {
     background-color: #0f1833;
     border-radius: 10px;
     margin-bottom: 5px;
+    padding: 15px;
 }
+
+.form-contato textarea{
+ height: 120px;
+}
+
+
 
 .form-contato-iten {
     width: 100%;
