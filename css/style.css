@@ -9,7 +9,7 @@
     
 }
 
-    p, li{
+    p, li, input, label{
         font-family: 'Darker Grotesque', sans-serif;
     font-weight: bold;
     }
@@ -311,8 +311,10 @@ div.social-caixa {
 div.social-caixa :hover,
 div.social-caixa i:hover {
     animation: caixa-icones 300ms;
-    color: #FF6600;
+    color: #0f1833;
     animation-fill-mode: forwards;
+    background-color: #FF6600;
+    
 }
 
 div.social-icons {
@@ -427,7 +429,7 @@ textarea {
 1 - Descer texto (menu pilar esta encobrindo)
 */
 
-/*------------------------- PARTE DO CONTATOS.HTML -------------------------*/
+/*------------------------- PARTE DO CONTATO.HTML -------------------------*/
 
 
 .menu-contato {
@@ -449,7 +451,7 @@ textarea {
 
 .form-contato-iten {
     width: 100%;
-    padding: 15px;
+    padding: 0px 10px 15px 10px;
 }
 
 
@@ -460,6 +462,9 @@ textarea {
     /* padding: 10px; */
 }
 
+#enviar-btn:hover{
+    background-color: #FF6600;
+}
 /*Obs: 
 1 - Colocar os dados do Senac nop lado direito*/
 
@@ -616,21 +621,21 @@ textarea {
     /* background-color:  #CFB53B; */
     background-color: #cfb53b99;
     border-radius: 10px 10px 0px 0px;
-    border: solid #cfb53b99 1px;
+    border: solid #cfb53b99 3px;
 }
 
 .bg-pacote-brass {
     /* background-color:  #A95522; */
     background-color: #a955226b;
     border-radius: 10px 10px 0px 0px;
-    border: solid #a955226b 1px;
+    border: solid #a955226b 3px;
 }
 
 .bg-pacote-free {
     /* background-color:  #a9a9a9; */
     background-color: #a9a9a980;
     border-radius: 10px 10px 0px 0px;
-    border: solid #a9a9a980 1px;
+    border: solid #a9a9a980 3px;
 }
 
 .menu-pacotes ul {
@@ -646,17 +651,17 @@ textarea {
 
 .info-pacote-1 {
     background-color: rgb(255, 255, 255);
-    border-bottom: solid darkgray 1px;
+    border-bottom: solid darkgray 3px;
 }
 
 .info-pacote-2 {
     background-color: rgb(255, 255, 255);
-    border: solid #a955226b 1px;
+    border-bottom: solid #a955226b 3px;
 }
 
 .info-pacote-3 {
     background-color: rgb(255, 255, 255);
-    border: solid #cfb53b99 1px;
+    border-bottom: solid #cfb53b99 3px;
 }
 
 .info-pacotes {
