@@ -147,8 +147,8 @@
 
           <div class="flex-grid-2" id="flex-grid-2">
             <div class="form-cadastro">
-              <label for="cadastro-cpf">Telefone ( )</label>
-              <input type="telefone" placeholder="Telefone" />
+              <label for="phone_fisico">Telefone/ Celular</label>
+              <input type="text" id="phone_fisico" name="phone_fisico" onkeypress="mask_fisico(this, mphone_fisico);" onblur="mask_fisico(this, mphone_fisico);" />
             </div>
             <div class="form-cadastro">
               <label for="cadastro-senha">Senha: </label>
@@ -203,11 +203,11 @@
             <textarea name="" id="" cols="30" rows="10" style="resize: none"></textarea>
           </div>
           <div class="container-termo-uso">
-            <div class="termo-uso">
+            <div class="termo-uso pt pb">
               <p>Aceita os termos de uso</p>
               <input type="checkbox" />
             </div>
-            <div class="termo-uso" id="fundo-form">
+            <div class="termo-uso pb pt" id="fundo-form">
               <p>Aceita os Termos de uso</p>
               <input type="checkbox" />
             </div>
@@ -236,8 +236,8 @@
 
           <div class="flex-grid-2" id="flex-grid-2">
             <div class="form-cadastro">
-              <label for="cadastro-cpf">Telefone ( )</label>
-              <input type="telefone" placeholder="Telefone" />
+              <label for="phone_juridico">Telefone/ Celular</label>
+              <input type="text" id="phone_juridico" name="phone_juridico" onkeypress="mask_juridico(this, mphone_juridico);" onblur="mask_juridico(this, mphone_juridico);" />
             </div>
             <div class="form-cadastro">
               <label for="cadastro-senha">Senha: </label>
@@ -267,23 +267,23 @@
           <div class="flex-grid-3">
             <div class="form-cadastro">
               <label for="cep">CEP: </label>
-              <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                onblur="pesquisacep(this.value);" placeholder="00000-000"/>
+              <input name="cep" type="text" id="cep_juridico" value="" size="10" maxlength="9"
+                onblur="pesquisacep_juridico(this.value);" placeholder="00000-000"/>
             </div>
             <div class="form-cadastro">
               <label for="cidade">Cidade </label>
-              <input name="cidade" type="text" id="cidade" size="40" />
+              <input name="cidade" type="text" id="cidade_juridico" size="40" />
             </div>
             <div class="form-cadastro">
               <label for="uf">Estado </label>
-              <input name="uf" type="text" id="uf" size="2" />
+              <input name="uf" type="text" id="uf_juridico" size="2" />
             </div>
           </div>
 
           <div class="flex-grid-3">
             <div class="form-cadastro">
               <label for="rua">Rua </label>
-              <input name="rua" type="text" id="rua" size="60" />
+              <input name="rua" type="text" id="rua_juridico" size="60" />
             </div>
             <div class="form-cadastro">
               <label for="numero">Numero </label>
@@ -291,7 +291,7 @@
             </div>
             <div class="form-cadastro">
               <label for="bairro">Bairro </label>
-              <input name="bairro" type="text" id="bairro" size="40" />
+              <input name="bairro" type="text" id="bairro_juridico" size="40" />
             </div>
           </div>
           <div class="form-cadastro">
@@ -414,6 +414,129 @@
     };
 
   </script>
+
+
+<script>
+
+  function limpa_formulário_cep_juridico() {
+    //Limpa valores do formulário de cep.
+    document.getElementById('rua_juridico').value = ("");
+    document.getElementById('bairro_juridico').value = ("");
+    document.getElementById('cidade_juridico').value = ("");
+    document.getElementById('uf_juridico').value = ("");
+  }
+
+  function meu_callback_juridico(conteudo) {
+    if (!("erro" in conteudo)) {
+      //Atualiza os campos com os valores.
+      document.getElementById('rua_juridico').value = (conteudo.logradouro);
+      document.getElementById('bairro_juridico').value = (conteudo.bairro);
+      document.getElementById('cidade_juridico').value = (conteudo.localidade);
+      document.getElementById('uf_juridico').value = (conteudo.uf);
+    } //end if.
+    else {
+      //CEP não Encontrado.
+      limpa_formulário_cep_juridico();
+      alert("CEP não encontrado.");
+    }
+  }
+
+  function pesquisacep_juridico(valor) {
+
+    //Nova variável "cep" somente com dígitos.
+    var cep = valor.replace(/\D/g, '');
+
+    //Verifica se campo cep possui valor informado.
+    if (cep != "") {
+
+      //Expressão regular para validar o CEP.
+      var validacep = /^[0-9]{8}$/;
+
+      //Valida o formato do CEP.
+      if (validacep.test(cep)) {
+
+        //Preenche os campos com "..." enquanto consulta webservice.
+        document.getElementById('rua_juridico').value = "...";
+        document.getElementById('bairro_juridico').value = "...";
+        document.getElementById('cidade_juridico').value = "...";
+        document.getElementById('uf_juridico').value = "...";
+
+        //Cria um elemento javascript.
+        var script = document.createElement('script');
+
+        //Sincroniza com o callback.
+        script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback_juridico';
+
+        //Insere script no documento e carrega o conteúdo.
+        document.body.appendChild(script);
+
+      } //end if.
+      else {
+        //cep é inválido.
+        limpa_formulário_cep_juridico();
+        alert("Formato de CEP inválido.");
+      }
+    } //end if.
+    else {
+      //cep sem valor, limpa formulário.
+      limpa_formulário_cep_juridico();
+    }
+  };
+
+</script>
+
+
+<script>
+  function mask_fisico(o, f) {
+  setTimeout(function() {
+    var v = mphone_fisico(o.value);
+    if (v != o.value) {
+      o.value = v;
+    }
+  }, 1);
+}
+
+function mphone_fisico(v) {
+  var r = v.replace(/\D/g, "");
+  r = r.replace(/^0/, "");
+  if (r.length > 10) {
+    r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+  } else if (r.length > 5) {
+    r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+  } else if (r.length > 2) {
+    r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+  } else {
+    r = r.replace(/^(\d*)/, "($1");
+  }
+  return r;
+}
+</script>
+
+<script>
+  function mask_juridico(o, f) {
+  setTimeout(function() {
+    var v = mphone_juridico(o.value);
+    if (v != o.value) {
+      o.value = v;
+    }
+  }, 1);
+}
+
+function mphone_juridico(v) {
+  var r = v.replace(/\D/g, "");
+  r = r.replace(/^0/, "");
+  if (r.length > 10) {
+    r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+  } else if (r.length > 5) {
+    r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+  } else if (r.length > 2) {
+    r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+  } else {
+    r = r.replace(/^(\d*)/, "($1");
+  }
+  return r;
+}
+</script>
 
   <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
