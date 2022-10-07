@@ -15,6 +15,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .info-pacotes{
+                grid-template-columns: 1fr;
+            }
+
+            .col-3-9-pacote-free{ 
+                
+                    grid-template-columns: 1fr;
+                }
+        }
+    </style>
 </head>
 
 <body>
@@ -80,7 +92,7 @@
 
             <div   id="pacote-1" style="border: solid darkgray 3px;">
             <div class="info-pacotes info-pacote-1">
-                <div class="pacote-info-text">
+                <div class="pacote-info-text mb">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad rerum, at nulla ratione
                         adipisci, nemo aspernatur</p>
 
@@ -88,7 +100,7 @@
                     <button class="btn">Contratar</button>
                 </div>
                 <div>
-                    <div class="card-cateroria ">
+                    <div class="card-cateroria mb">
                         <div class="card-info-pacote-free ">
                             <div class="">
                                 <div>
@@ -144,8 +156,7 @@
                    
                 </div>
                 <div class="contatos-info   ">
-                    <div class=" pAll" style="    display: grid;
-                    grid-template-columns: 3fr 9fr;column-gap: 15px;">
+                    <div class=" pAll col-3-9-pacote-free">
                         <div>
                             <h2>Contatos</h2>
                             <p><a href="">Telefone (11) 99999-9999</a></p>

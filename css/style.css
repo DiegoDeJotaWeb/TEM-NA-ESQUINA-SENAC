@@ -9,11 +9,23 @@
     
 }
 
+.titulo {
+    margin: 1.563rem 0rem;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}
+
     p, li, input, label{
         font-family: 'Darker Grotesque', sans-serif;
     font-weight: bold;
     }
-
+.titulo-pub{
+    text-align: left;
+    max-width: 1.563rem 0rem;
+    background-color: rgb(245, 245,245);
+    width: 100%;
+    padding: 7px 0 7px 15px;
+}
 
 body::-webkit-scrollbar {
     width: 15px;
@@ -576,7 +588,7 @@ textarea {
 .tag-oferta {
     background-color: #0f1833;
     color: #fff;
-    width: 310px;
+    width: 25%;
     height: 30px;
     line-height: 30px;
     position: absolute;
@@ -589,7 +601,7 @@ textarea {
 
 .tag-promocao {
     background-color: #FF6600;
-    width: 310px;
+    width: 25%;
     height: 30px;
     line-height: 30px;
     position: absolute;
@@ -601,7 +613,7 @@ textarea {
 
 .tag-promocao-brass{
         background-color: #FF6600;
-        width: 310px;
+        width: 25%;
         height: 30px;
         line-height: 30px;
         position: absolute;
