@@ -156,8 +156,8 @@
               <!-- <input type="password" placeholder="Senha" /> -->
               <div style="position: relative;">
                 <i class="fa-solid fa-eye olho-fisica" id="olho-fisica"></i>
-              <input type="password" id="cadastro-senha-fisica">
-            </div>
+                <input type="password" id="cadastro-senha-fisica">
+              </div>
             </div>
           </div>
 
@@ -245,12 +245,14 @@
               <input type="text" id="phone_juridico" name="phone_juridico"
                 onkeypress="mask_juridico(this, mphone_juridico);" onblur="mask_juridico(this, mphone_juridico);" />
             </div>
+
             <div class="form-cadastro">
               <label for="cadastro-senha-juridica">Senha: </label>
               <!-- <input type="password" placeholder="Senha" /> -->
               <div style="position: relative;">
                 <i class="fa-solid fa-eye olho-juridica" id="olho-juridica"></i>
-              <input type="password" id="cadastro-senha-juridica">
+                <input type="password" id="cadastro-senha-juridica">
+              </div>
             </div>
           </div>
 
@@ -273,6 +275,7 @@
               <input type="cnpj" placeholder="CNPJ" />
             </div>
           </div>
+
           <div class="flex-grid-3">
             <div class="form-cadastro">
               <label for="cep">CEP: </label>
@@ -543,22 +546,20 @@
     }
   </script>
   <style>
-  
-
     .olho-fisica {
       cursor: pointer;
-    right: 9px;
-    top: 14px;
-    position: absolute;
-    width: 20px;
+      right: 9px;
+      top: 14px;
+      position: absolute;
+      width: 20px;
     }
 
     .olho-juridica {
       cursor: pointer;
-    right: 9px;
-    top: 14px;
-    position: absolute;
-    width: 20px;
+      right: 9px;
+      top: 14px;
+      position: absolute;
+      width: 20px;
     }
   </style>
 
@@ -577,20 +578,20 @@
     });
   </script>
 
-<script>
-  document.getElementById('olho-juridica').addEventListener('mousedown', function () {
-    document.getElementById('cadastro-senha-juridica').type = 'text';
-  });
+  <script>
+    document.getElementById('olho-juridica').addEventListener('mousedown', function () {
+      document.getElementById('cadastro-senha-juridica').type = 'text';
+    });
 
-  document.getElementById('olho-juridica').addEventListener('mouseup', function () {
-    document.getElementById('cadastro-senha-juridica').type = 'password';
-  });
+    document.getElementById('olho-juridica').addEventListener('mouseup', function () {
+      document.getElementById('cadastro-senha-juridica').type = 'password';
+    });
 
-  // Para que o password não fique exposto apos mover a imagem.
-  document.getElementById('olho-fisica').addEventListener('mousemove', function () {
-    document.getElementById('cadastro-senha-juridica').type = 'password';
-  });
-</script>
+    // Para que o password não fique exposto apos mover a imagem.
+    document.getElementById('olho-fisica').addEventListener('mousemove', function () {
+      document.getElementById('cadastro-senha-juridica').type = 'password';
+    });
+  </script>
 
   <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
