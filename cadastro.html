@@ -21,7 +21,7 @@
       display: none;
     }
 
-    #fundo-form{
+    #fundo-form {
       border-radius: 0px 0px 10px 10px;
     }
 
@@ -148,11 +148,16 @@
           <div class="flex-grid-2" id="flex-grid-2">
             <div class="form-cadastro">
               <label for="phone_fisico">Telefone/ Celular</label>
-              <input type="text" id="phone_fisico" name="phone_fisico" onkeypress="mask_fisico(this, mphone_fisico);" onblur="mask_fisico(this, mphone_fisico);" />
+              <input type="text" id="phone_fisico" name="phone_fisico" onkeypress="mask_fisico(this, mphone_fisico);"
+                onblur="mask_fisico(this, mphone_fisico);" />
             </div>
             <div class="form-cadastro">
-              <label for="cadastro-senha">Senha: </label>
-              <input type="senha" placeholder="Senha" />
+              <label for="cadastro-senha-fisica">Senha: </label>
+              <!-- <input type="password" placeholder="Senha" /> -->
+              <div style="position: relative;">
+                <i class="fa-solid fa-eye olho-fisica" id="olho-fisica"></i>
+              <input type="password" id="cadastro-senha-fisica">
+            </div>
             </div>
           </div>
 
@@ -168,8 +173,8 @@
           <div class="flex-grid-3">
             <div class="form-cadastro">
               <label for="cep">CEP: </label>
-              <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                onblur="pesquisacep(this.value);" placeholder="00000-000"/>
+              <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);"
+                placeholder="00000-000" />
             </div>
             <div class="form-cadastro">
               <label for="cidade">Cidade </label>
@@ -237,11 +242,15 @@
           <div class="flex-grid-2" id="flex-grid-2">
             <div class="form-cadastro">
               <label for="phone_juridico">Telefone/ Celular</label>
-              <input type="text" id="phone_juridico" name="phone_juridico" onkeypress="mask_juridico(this, mphone_juridico);" onblur="mask_juridico(this, mphone_juridico);" />
+              <input type="text" id="phone_juridico" name="phone_juridico"
+                onkeypress="mask_juridico(this, mphone_juridico);" onblur="mask_juridico(this, mphone_juridico);" />
             </div>
             <div class="form-cadastro">
-              <label for="cadastro-senha">Senha: </label>
-              <input type="senha" placeholder="Senha" />
+              <label for="cadastro-senha-juridica">Senha: </label>
+              <!-- <input type="password" placeholder="Senha" /> -->
+              <div style="position: relative;">
+                <i class="fa-solid fa-eye olho-juridica" id="olho-juridica"></i>
+              <input type="password" id="cadastro-senha-juridica">
             </div>
           </div>
 
@@ -268,7 +277,7 @@
             <div class="form-cadastro">
               <label for="cep">CEP: </label>
               <input name="cep" type="text" id="cep_juridico" value="" size="10" maxlength="9"
-                onblur="pesquisacep_juridico(this.value);" placeholder="00000-000"/>
+                onblur="pesquisacep_juridico(this.value);" placeholder="00000-000" />
             </div>
             <div class="form-cadastro">
               <label for="cidade">Cidade </label>
@@ -347,7 +356,6 @@
   </script>
 
   <script>
-
     function limpa_formulário_cep() {
       //Limpa valores do formulário de cep.
       document.getElementById('rua').value = ("");
@@ -412,130 +420,176 @@
         limpa_formulário_cep();
       }
     };
-
   </script>
 
 
-<script>
-
-  function limpa_formulário_cep_juridico() {
-    //Limpa valores do formulário de cep.
-    document.getElementById('rua_juridico').value = ("");
-    document.getElementById('bairro_juridico').value = ("");
-    document.getElementById('cidade_juridico').value = ("");
-    document.getElementById('uf_juridico').value = ("");
-  }
-
-  function meu_callback_juridico(conteudo) {
-    if (!("erro" in conteudo)) {
-      //Atualiza os campos com os valores.
-      document.getElementById('rua_juridico').value = (conteudo.logradouro);
-      document.getElementById('bairro_juridico').value = (conteudo.bairro);
-      document.getElementById('cidade_juridico').value = (conteudo.localidade);
-      document.getElementById('uf_juridico').value = (conteudo.uf);
-    } //end if.
-    else {
-      //CEP não Encontrado.
-      limpa_formulário_cep_juridico();
-      alert("CEP não encontrado.");
+  <script>
+    function limpa_formulário_cep_juridico() {
+      //Limpa valores do formulário de cep.
+      document.getElementById('rua_juridico').value = ("");
+      document.getElementById('bairro_juridico').value = ("");
+      document.getElementById('cidade_juridico').value = ("");
+      document.getElementById('uf_juridico').value = ("");
     }
-  }
 
-  function pesquisacep_juridico(valor) {
-
-    //Nova variável "cep" somente com dígitos.
-    var cep = valor.replace(/\D/g, '');
-
-    //Verifica se campo cep possui valor informado.
-    if (cep != "") {
-
-      //Expressão regular para validar o CEP.
-      var validacep = /^[0-9]{8}$/;
-
-      //Valida o formato do CEP.
-      if (validacep.test(cep)) {
-
-        //Preenche os campos com "..." enquanto consulta webservice.
-        document.getElementById('rua_juridico').value = "...";
-        document.getElementById('bairro_juridico').value = "...";
-        document.getElementById('cidade_juridico').value = "...";
-        document.getElementById('uf_juridico').value = "...";
-
-        //Cria um elemento javascript.
-        var script = document.createElement('script');
-
-        //Sincroniza com o callback.
-        script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback_juridico';
-
-        //Insere script no documento e carrega o conteúdo.
-        document.body.appendChild(script);
-
+    function meu_callback_juridico(conteudo) {
+      if (!("erro" in conteudo)) {
+        //Atualiza os campos com os valores.
+        document.getElementById('rua_juridico').value = (conteudo.logradouro);
+        document.getElementById('bairro_juridico').value = (conteudo.bairro);
+        document.getElementById('cidade_juridico').value = (conteudo.localidade);
+        document.getElementById('uf_juridico').value = (conteudo.uf);
       } //end if.
       else {
-        //cep é inválido.
+        //CEP não Encontrado.
         limpa_formulário_cep_juridico();
-        alert("Formato de CEP inválido.");
+        alert("CEP não encontrado.");
       }
-    } //end if.
-    else {
-      //cep sem valor, limpa formulário.
-      limpa_formulário_cep_juridico();
     }
-  };
 
-</script>
+    function pesquisacep_juridico(valor) {
 
+      //Nova variável "cep" somente com dígitos.
+      var cep = valor.replace(/\D/g, '');
+
+      //Verifica se campo cep possui valor informado.
+      if (cep != "") {
+
+        //Expressão regular para validar o CEP.
+        var validacep = /^[0-9]{8}$/;
+
+        //Valida o formato do CEP.
+        if (validacep.test(cep)) {
+
+          //Preenche os campos com "..." enquanto consulta webservice.
+          document.getElementById('rua_juridico').value = "...";
+          document.getElementById('bairro_juridico').value = "...";
+          document.getElementById('cidade_juridico').value = "...";
+          document.getElementById('uf_juridico').value = "...";
+
+          //Cria um elemento javascript.
+          var script = document.createElement('script');
+
+          //Sincroniza com o callback.
+          script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback_juridico';
+
+          //Insere script no documento e carrega o conteúdo.
+          document.body.appendChild(script);
+
+        } //end if.
+        else {
+          //cep é inválido.
+          limpa_formulário_cep_juridico();
+          alert("Formato de CEP inválido.");
+        }
+      } //end if.
+      else {
+        //cep sem valor, limpa formulário.
+        limpa_formulário_cep_juridico();
+      }
+    };
+  </script>
+
+
+  <script>
+    function mask_fisico(o, f) {
+      setTimeout(function () {
+        var v = mphone_fisico(o.value);
+        if (v != o.value) {
+          o.value = v;
+        }
+      }, 1);
+    }
+
+    function mphone_fisico(v) {
+      var r = v.replace(/\D/g, "");
+      r = r.replace(/^0/, "");
+      if (r.length > 10) {
+        r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+      } else if (r.length > 5) {
+        r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+      } else if (r.length > 2) {
+        r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+      } else {
+        r = r.replace(/^(\d*)/, "($1");
+      }
+      return r;
+    }
+  </script>
+
+  <script>
+    function mask_juridico(o, f) {
+      setTimeout(function () {
+        var v = mphone_juridico(o.value);
+        if (v != o.value) {
+          o.value = v;
+        }
+      }, 1);
+    }
+
+    function mphone_juridico(v) {
+      var r = v.replace(/\D/g, "");
+      r = r.replace(/^0/, "");
+      if (r.length > 10) {
+        r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+      } else if (r.length > 5) {
+        r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+      } else if (r.length > 2) {
+        r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+      } else {
+        r = r.replace(/^(\d*)/, "($1");
+      }
+      return r;
+    }
+  </script>
+  <style>
+  
+
+    .olho-fisica {
+      cursor: pointer;
+    right: 9px;
+    top: 14px;
+    position: absolute;
+    width: 20px;
+    }
+
+    .olho-juridica {
+      cursor: pointer;
+    right: 9px;
+    top: 14px;
+    position: absolute;
+    width: 20px;
+    }
+  </style>
+
+  <script>
+    document.getElementById('olho-fisica').addEventListener('mousedown', function () {
+      document.getElementById('cadastro-senha-fisica').type = 'text';
+    });
+
+    document.getElementById('olho-fisica').addEventListener('mouseup', function () {
+      document.getElementById('cadastro-senha-fisica').type = 'password';
+    });
+
+    // Para que o password não fique exposto apos mover a imagem.
+    document.getElementById('olho-fisica').addEventListener('mousemove', function () {
+      document.getElementById('cadastro-senha-fisica').type = 'password';
+    });
+  </script>
 
 <script>
-  function mask_fisico(o, f) {
-  setTimeout(function() {
-    var v = mphone_fisico(o.value);
-    if (v != o.value) {
-      o.value = v;
-    }
-  }, 1);
-}
+  document.getElementById('olho-juridica').addEventListener('mousedown', function () {
+    document.getElementById('cadastro-senha-juridica').type = 'text';
+  });
 
-function mphone_fisico(v) {
-  var r = v.replace(/\D/g, "");
-  r = r.replace(/^0/, "");
-  if (r.length > 10) {
-    r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
-  } else if (r.length > 5) {
-    r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
-  } else if (r.length > 2) {
-    r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
-  } else {
-    r = r.replace(/^(\d*)/, "($1");
-  }
-  return r;
-}
-</script>
+  document.getElementById('olho-juridica').addEventListener('mouseup', function () {
+    document.getElementById('cadastro-senha-juridica').type = 'password';
+  });
 
-<script>
-  function mask_juridico(o, f) {
-  setTimeout(function() {
-    var v = mphone_juridico(o.value);
-    if (v != o.value) {
-      o.value = v;
-    }
-  }, 1);
-}
-
-function mphone_juridico(v) {
-  var r = v.replace(/\D/g, "");
-  r = r.replace(/^0/, "");
-  if (r.length > 10) {
-    r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
-  } else if (r.length > 5) {
-    r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
-  } else if (r.length > 2) {
-    r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
-  } else {
-    r = r.replace(/^(\d*)/, "($1");
-  }
-  return r;
-}
+  // Para que o password não fique exposto apos mover a imagem.
+  document.getElementById('olho-fisica').addEventListener('mousemove', function () {
+    document.getElementById('cadastro-senha-juridica').type = 'password';
+  });
 </script>
 
   <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
