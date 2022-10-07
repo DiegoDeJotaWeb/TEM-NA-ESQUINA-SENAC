@@ -1,280 +1,325 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Classificados de comércios regionais" />
-    <meta name="keywords" content="Classificados" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro" />
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="imagens/logo_icone.png" sizes="64x64" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <style>
-        #btn-p-juridico{
-            display: none;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Classificados de comércios regionais" />
+  <meta name="keywords" content="Classificados" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imagens/logo_icone.png" sizes="64x64" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet" />
 
-       
-    </style>
-  </head>
+  <style>
+    #btn-p-juridico {
+      display: none;
+    }
 
-  <body>
-    <header>
-      <div class="menu-superior">
-        <div class="container container_flex-space-around">
-          <a id="logo" href="index.html"
-            ><img src="imagens/logo.png" alt="Logomarca"
-          /></a>
-          <nav>
-            <ul>
-              <div class="menu-bloco">
-                <div class="menu-caixa">
-                  <li><a href="index.html">Home</a></li>
-                </div>
-                <div class="menu-caixa">
-                  <li><a href="categorias.html">Categoria</a></li>
-                </div>
-                <div class="menu-caixa">
-                  <li><a href="contato.html">Contato</a></li>
-                </div>
-                <div class="menu-caixa">
-                  <li><a href="sobre.html">Sobre</a></li>
-                </div>
-                <div class="menu-caixa">
-                  <li><a href="pacotes.html">Seja parceiro</a></li>
-                </div>
-                <div class="menu-caixa">
-                  <li>
-                    <a href="sistema/login.html" target="_blank">Login</a>
-                  </li>
-                </div>
+    #fundo-form{
+      border-radius: 0px 0px 10px 10px;
+    }
+
+    .flex-grid-2-nome-sobrenome {
+      /*Linha com 2 preenchimentos*/
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .flex-grid-2 {
+      /*Linha com 2 preenchimentos*/
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .flex-grid-3-telefone-senha-email {
+      /*Linha com 3 preenchimentos*/
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 768px) {
+      .flex-grid-2 {
+        /*Linha com 2 preenchimentos*/
+        grid-template-columns: 1fr;
+      }
+
+      .flex-grid-3 {
+        /*Linha com 3 preenchimentos*/
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      #flex-grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="menu-superior">
+      <div class="container container_flex-space-around">
+        <a id="logo" href="index.html"><img src="imagens/logo.png" alt="Logomarca" /></a>
+        <nav>
+          <ul>
+            <div class="menu-bloco">
+              <div class="menu-caixa">
+                <li><a href="index.html">Home</a></li>
               </div>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <div class="social-caixa">
-      <div class="social-icons">
-        <i class="fa-brands fa-facebook-f"></i>
-      </div>
-      <div class="social-icons">
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-      <div class="social-icons">
-        <i class="fa-brands fa-twitter"></i>
+              <div class="menu-caixa">
+                <li><a href="categorias.html">Categoria</a></li>
+              </div>
+              <div class="menu-caixa">
+                <li><a href="contato.html">Contato</a></li>
+              </div>
+              <div class="menu-caixa">
+                <li><a href="sobre.html">Sobre</a></li>
+              </div>
+              <div class="menu-caixa">
+                <li><a href="pacotes.html">Seja parceiro</a></li>
+              </div>
+              <div class="menu-caixa">
+                <li>
+                  <a href="sistema/login.html" target="_blank">Login</a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </nav>
       </div>
     </div>
-    <section class="margin-header">
-      <div class="container">
-        <h2 class="titulo">Cadastro</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorem
-          eum placeat nostrum fuga quibusdam culpa possimus consequuntur maxime
-          cumque. Eligendi quas aliquid in, saepe exercitationem sit quos
-          commodi repudiandae?
-        </p>
+  </header>
+  <div class="social-caixa">
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook-f"></i>
+    </div>
+    <div class="social-icons">
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="social-icons">
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </div>
+  <section class="margin-header">
+    <div class="container">
+      <h2 class="titulo">Cadastro</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorem
+        eum placeat nostrum fuga quibusdam culpa possimus consequuntur maxime
+        cumque. Eligendi quas aliquid in, saepe exercitationem sit quos
+        commodi repudiandae?
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="menu-cadastro">
+        <ul>
+          <li class="bg-pessoa-fisica" onclick="btnfisica()" id="cor-f" style="border-radius: 10px 10px 0px 0px;">
+            Pessoa Física
+          </li>
+          <li class="bg-pessoa-juridica" onclick="btnjuridico()" id="cor-r" style="border-radius: 10px 10px 0px 0px;">
+            Pessoa Jurídica
+          </li>
+        </ul>
       </div>
-    </section>
-    <section>
+    </div>
+
+    <div id="btn-p-fisica">
       <div class="container">
-        <div class="menu-cadastro">
-          <ul>
-            <li class="bg-pessoa-fisica" onclick="btnfisica()" id="cor-f">
-              Pessoa Física
-            </li>
-            <li class="bg-pessoa-juridica" onclick="btnjuridico()" id="cor-r">
-              Pessoa Jurídica
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="btn-p-fisica">
-        <div class="container">
-          <form class="estrutura-geral">
-            <div class="flex-grid-2">
-              <div class="form-cadastro">
-                <label for="cadastro-nome">Nome:</label>
-                <input
-                  type="Nome"
-                  aria-describedby="cadastro"
-                  placeholder="Nome"
-                />
-              </div>
-              <div class="form-cadastro">
-                <label for="cadastro-sobrenome">Sobrenome:</label>
-                <input type="sobrenome" placeholder="Sobrenome" />
-              </div>
-            </div>
-
-            <div class="flex-grid-3">
-              <div class="form-cadastro">
-                <label for="cadastro-cpf">Telefone ( )</label>
-                <input type="telefone" placeholder="Telefone" />
-              </div>
-              <div class="form-cadastro">
-                <label for="cadastro-senha">Senha: </label>
-                <input type="senha" placeholder="Senha" />
-              </div>
-              <div class="form-cadastro">
-                <label for="cadastro-cpf">E-mail: </label>
-                <input type="email" placeholder="E-mail" />
-              </div>
-            </div>
-            
-
-            <div class="flex-grid-2">
-              <div class="form-cadastro">
-                <label for="cadastro-nomefan">Nome Fantasia: </label>
-                <input type="fantasia" placeholder="Nome Fantasia" />
-              </div>
-              <div class="form-cadastro">
-                <label for="cep">CEP: </label>
-                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                onblur="pesquisacep(this.value);" />
-              </div>
-            </div>
-
-            <div class="flex-grid-2">
-              <div class="form-cadastro">
-                <label for="rua">Rua </label>
-                <input name="rua" type="text" id="rua" size="60" />
-              </div>
-              <div class="form-cadastro">
-                <label for="numero">Numero </label>
-                <input name="numero" type="text" id="numero" size="60" />
-              </div>
-             
-            </div>
-
-            <div class="flex-grid-3">
-              <div class="form-cadastro">
-                <label for="bairro">Bairro </label>
-                <input name="bairro" type="text" id="bairro" size="40" />
-              </div>
-              <div class="form-cadastro">
-                <label for="cidade">Cidade </label>
-                <input name="cidade" type="text" id="cidade" size="40" />
-              </div>
-              <div class="form-cadastro">
-                <label for="uf">Estado </label>
-                <input name="uf" type="text" id="uf" size="2" />
-              </div>
-            </div>
-          
+        <form class="estrutura-geral">
+          <div class="flex-grid-2">
             <div class="form-cadastro">
-              <label for="cadastro-cpf"
-                >Descrever sua empresa com poucas palavras:
-              </label>
-              <!-- <input type="Descreva" class="form-cadastro" id="cadastro-email" placeholder="Descreva" > -->
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="container-termo-uso">
-              <div class="termo-uso">
-                <p>Aceita os termos de uso</p>
-                <input type="checkbox" />
-              </div>
-              <div class="termo-uso">
-                <p>Aceita os Termos de uso</p>
-                <input type="checkbox" />
-              </div>
-            </div>
-            <div class="botao">
-              <button type="cadastrar" class="btn">Cadastrar</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div id="btn-p-juridico">
-        <div class="container">
-          <form class="estrutura-geral">
-            <div class="flex-grid-2">
-              <div class="form-cadastro">
-                <label for="cadastro-nome">Nome de contato:</label>
-                <input
-                  type="Nome"
-                  aria-describedby="cadastro"
-                  placeholder="Nome"
-                />
-              </div>
-              <div class="form-cadastro">
-                <label for="cadastro-sobrenome">Sobrenome:</label>
-                <input type="sobrenome" placeholder="Sobrenome" />
-              </div>
-            </div>
-
-            <div class="flex-grid-3">
-              <div class="form-cadastro">
-                <label for="cadastro-cpf">Telefone ( )</label>
-                <input type="telefone" placeholder="Telefone" />
-              </div>
-              <div class="form-cadastro">
-                <label for="cadastro-senha">Senha: </label>
-                <input type="senha" placeholder="Senha" />
-              </div>
-              <div class="form-cadastro">
-                <label for="cadastro-cpf">E-mail: </label>
-                <input type="email" placeholder="E-mail" />
-              </div>
-            </div>
-            <div class="flex-grid-3">
-              <div class="form-cadastro">
-                <label for="cadastro-nomefan">Nome jurídico: </label>
-                <input type="juridico" placeholder="Nome jurídico" />
-              </div>
-              <div class="form-cadastro">
-                <label for="cadastro-cpf">Nome Fantasia: </label>
-                <input type="fantasia" placeholder="Nome Fantasia" />
-              </div>
-              <div class="form-cadastro">
-                <label for="cadastro-cpf">CNPJ: </label>
-                <input type="cnpj" placeholder="CNPJ" />
-              </div>
-            </div>
-            <div class="flex-grid-1">
-                <div class="form-cadastro">
-                    <label for="cadastro-cpf">Endereço: </label>
-                    <input type="endereço" placeholder="Endereço" />
-                  </div>
+              <label for="cadastro-nome">Nome:</label>
+              <input type="Nome" aria-describedby="cadastro" placeholder="Nome" />
             </div>
             <div class="form-cadastro">
-              <label for="cadastro-cpf"
-                >Descrever sua empresa com poucas palavras:
-              </label>
-              <!-- <input type="Descreva" class="form-cadastro" id="cadastro-email" placeholder="Descreva" > -->
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <label for="cadastro-sobrenome">Sobrenome:</label>
+              <input type="sobrenome" placeholder="Sobrenome" />
             </div>
-            <div class="container-termo-uso">
-              <div class="termo-uso">
-                <p>Aceita os termos de uso</p>
-                <input type="checkbox" />
-              </div>
-              <div class="termo-uso">
-                <p>Aceita os Termos de uso</p>
-                <input type="checkbox" />
-              </div>
+          </div>
+
+          <div class="flex-grid-2" id="flex-grid-2">
+            <div class="form-cadastro">
+              <label for="cadastro-cpf">Telefone ( )</label>
+              <input type="telefone" placeholder="Telefone" />
             </div>
-            <div class="botao">
-              <button type="cadastrar" class="btn">Cadastrar</button>
+            <div class="form-cadastro">
+              <label for="cadastro-senha">Senha: </label>
+              <input type="senha" placeholder="Senha" />
             </div>
-          </form>
-        </div>
+          </div>
+
+          <div class="form-cadastro" id="flex-grid-2">
+            <label for="cadastro-cpf">E-mail: </label>
+            <input type="email" placeholder="E-mail" />
+          </div>
+          <div class="form-cadastro">
+            <label for="cadastro-nomefan">Nome Fantasia: </label>
+            <input type="fantasia" placeholder="Nome Fantasia" />
+          </div>
+
+          <div class="flex-grid-3">
+            <div class="form-cadastro">
+              <label for="cep">CEP: </label>
+              <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                onblur="pesquisacep(this.value);" placeholder="00000-000"/>
+            </div>
+            <div class="form-cadastro">
+              <label for="cidade">Cidade </label>
+              <input name="cidade" type="text" id="cidade" size="40" />
+            </div>
+            <div class="form-cadastro">
+              <label for="uf">Estado </label>
+              <input name="uf" type="text" id="uf" size="2" />
+            </div>
+          </div>
+
+          <div class="flex-grid-3">
+            <div class="form-cadastro">
+              <label for="rua">Rua </label>
+              <input name="rua" type="text" id="rua" size="60" />
+            </div>
+            <div class="form-cadastro">
+              <label for="numero">Numero </label>
+              <input name="numero" type="text" id="numero" size="60" />
+            </div>
+            <div class="form-cadastro">
+              <label for="bairro">Bairro </label>
+              <input name="bairro" type="text" id="bairro" size="40" />
+            </div>
+          </div>
+
+          <div class="form-cadastro">
+            <label for="cadastro-cpf">Descrever sua empresa com poucas palavras:
+            </label>
+            <!-- <input type="Descreva" class="form-cadastro" id="cadastro-email" placeholder="Descreva" > -->
+            <textarea name="" id="" cols="30" rows="10" style="resize: none"></textarea>
+          </div>
+          <div class="container-termo-uso">
+            <div class="termo-uso">
+              <p>Aceita os termos de uso</p>
+              <input type="checkbox" />
+            </div>
+            <div class="termo-uso" id="fundo-form">
+              <p>Aceita os Termos de uso</p>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div class="botao">
+            <button type="cadastrar" class="btn">Cadastrar</button>
+          </div>
+        </form>
       </div>
-      
-    </section>
-    <footer>
-      <!--<div>
+    </div>
+
+    <div id="btn-p-juridico">
+      <div class="container">
+        <form class="estrutura-geral">
+
+          <div class="flex-grid-2">
+            <div class="form-cadastro">
+              <label for="cadastro-nome">Nome de contato:</label>
+              <input type="Nome" aria-describedby="cadastro" placeholder="Nome" />
+            </div>
+            <div class="form-cadastro">
+              <label for="cadastro-sobrenome">Sobrenome:</label>
+              <input type="sobrenome" placeholder="Sobrenome" />
+            </div>
+          </div>
+
+          <div class="flex-grid-2" id="flex-grid-2">
+            <div class="form-cadastro">
+              <label for="cadastro-cpf">Telefone ( )</label>
+              <input type="telefone" placeholder="Telefone" />
+            </div>
+            <div class="form-cadastro">
+              <label for="cadastro-senha">Senha: </label>
+              <input type="senha" placeholder="Senha" />
+            </div>
+          </div>
+
+          <div class="form-cadastro">
+            <label for="cadastro-cpf">E-mail: </label>
+            <input type="email" placeholder="E-mail" />
+          </div>
+          <div class="form-cadastro">
+            <label for="cadastro-cpf">Nome Fantasia: </label>
+            <input type="fantasia" placeholder="Nome Fantasia" />
+          </div>
+
+          <div class="flex-grid-2">
+            <div class="form-cadastro">
+              <label for="cadastro-nomefan">Nome jurídico: </label>
+              <input type="juridico" placeholder="Nome jurídico" />
+            </div>
+            <div class="form-cadastro">
+              <label for="cadastro-cpf">CNPJ: </label>
+              <input type="cnpj" placeholder="CNPJ" />
+            </div>
+          </div>
+          <div class="flex-grid-3">
+            <div class="form-cadastro">
+              <label for="cep">CEP: </label>
+              <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                onblur="pesquisacep(this.value);" placeholder="00000-000"/>
+            </div>
+            <div class="form-cadastro">
+              <label for="cidade">Cidade </label>
+              <input name="cidade" type="text" id="cidade" size="40" />
+            </div>
+            <div class="form-cadastro">
+              <label for="uf">Estado </label>
+              <input name="uf" type="text" id="uf" size="2" />
+            </div>
+          </div>
+
+          <div class="flex-grid-3">
+            <div class="form-cadastro">
+              <label for="rua">Rua </label>
+              <input name="rua" type="text" id="rua" size="60" />
+            </div>
+            <div class="form-cadastro">
+              <label for="numero">Numero </label>
+              <input name="numero" type="text" id="numero" size="60" />
+            </div>
+            <div class="form-cadastro">
+              <label for="bairro">Bairro </label>
+              <input name="bairro" type="text" id="bairro" size="40" />
+            </div>
+          </div>
+          <div class="form-cadastro">
+            <label for="cadastro-cpf">Descrever sua empresa com poucas palavras:
+            </label>
+            <!-- <input type="Descreva" class="form-cadastro" id="cadastro-email" placeholder="Descreva" > -->
+            <textarea name="" id="" cols="30" rows="10" style="resize: none"></textarea>
+          </div>
+          <div class="container-termo-uso">
+            <div class="termo-uso">
+              <p>Aceita os termos de uso</p>
+              <input type="checkbox" />
+            </div>
+            <div class="termo-uso" id="fundo-form">
+              <p>Aceita os Termos de uso</p>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div class="botao">
+            <button type="cadastrar" class="btn">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <!--<div>
             <ul class="redes">
                 <li><a href="">facebook| </a></li>
                 <li><a href=""> Instagram| </a></li>
@@ -283,50 +328,50 @@
                 <li><a href=""> YouTube </a></li>
             </ul>
         </div>-->
-      <p>Desenvolvido Tem na Esquina - 2022</p>
-    </footer>
-    <script>
-      function btnfisica() {
-        document.getElementById('cor-f').style.backgroundColor = "#3419ff"
-        document.getElementById('cor-r').style.backgroundColor = "#FF6600"
-        document.getElementById("btn-p-fisica").style.display = "grid";
-        document.getElementById("btn-p-juridico").style.display = "none";
-      }
+    <p>Desenvolvido Tem na Esquina - 2022</p>
+  </footer>
+  <script>
+    function btnfisica() {
+      document.getElementById('cor-f').style.backgroundColor = "#0f1833"
+      document.getElementById('cor-r').style.backgroundColor = "#FF6600"
+      document.getElementById("btn-p-fisica").style.display = "grid";
+      document.getElementById("btn-p-juridico").style.display = "none";
+    }
 
-      function btnjuridico() {
-        document.getElementById('cor-f').style.backgroundColor = "#FF6600"
-        document.getElementById('cor-r').style.backgroundColor = "#3419ff"
-        document.getElementById("btn-p-juridico").style.display = "grid";
-        document.getElementById("btn-p-fisica").style.display = "none";
-      }
-    </script>
+    function btnjuridico() {
+      document.getElementById('cor-f').style.backgroundColor = "#FF6600"
+      document.getElementById('cor-r').style.backgroundColor = "#0f1833"
+      document.getElementById("btn-p-juridico").style.display = "grid";
+      document.getElementById("btn-p-fisica").style.display = "none";
+    }
+  </script>
 
-<script>
-    
-  function limpa_formulário_cep() {
-          //Limpa valores do formulário de cep.
-          document.getElementById('rua').value=("");
-          document.getElementById('bairro').value=("");
-          document.getElementById('cidade').value=("");
-          document.getElementById('uf').value=("");
-  }
+  <script>
 
-  function meu_callback(conteudo) {
+    function limpa_formulário_cep() {
+      //Limpa valores do formulário de cep.
+      document.getElementById('rua').value = ("");
+      document.getElementById('bairro').value = ("");
+      document.getElementById('cidade').value = ("");
+      document.getElementById('uf').value = ("");
+    }
+
+    function meu_callback(conteudo) {
       if (!("erro" in conteudo)) {
-          //Atualiza os campos com os valores.
-          document.getElementById('rua').value=(conteudo.logradouro);
-          document.getElementById('bairro').value=(conteudo.bairro);
-          document.getElementById('cidade').value=(conteudo.localidade);
-          document.getElementById('uf').value=(conteudo.uf);
+        //Atualiza os campos com os valores.
+        document.getElementById('rua').value = (conteudo.logradouro);
+        document.getElementById('bairro').value = (conteudo.bairro);
+        document.getElementById('cidade').value = (conteudo.localidade);
+        document.getElementById('uf').value = (conteudo.uf);
       } //end if.
       else {
-          //CEP não Encontrado.
-          limpa_formulário_cep();
-          alert("CEP não encontrado.");
+        //CEP não Encontrado.
+        limpa_formulário_cep();
+        alert("CEP não encontrado.");
       }
-  }
-      
-  function pesquisacep(valor) {
+    }
+
+    function pesquisacep(valor) {
 
       //Nova variável "cep" somente com dígitos.
       var cep = valor.replace(/\D/g, '');
@@ -334,45 +379,43 @@
       //Verifica se campo cep possui valor informado.
       if (cep != "") {
 
-          //Expressão regular para validar o CEP.
-          var validacep = /^[0-9]{8}$/;
+        //Expressão regular para validar o CEP.
+        var validacep = /^[0-9]{8}$/;
 
-          //Valida o formato do CEP.
-          if(validacep.test(cep)) {
+        //Valida o formato do CEP.
+        if (validacep.test(cep)) {
 
-              //Preenche os campos com "..." enquanto consulta webservice.
-              document.getElementById('rua').value="...";
-              document.getElementById('bairro').value="...";
-              document.getElementById('cidade').value="...";
-              document.getElementById('uf').value="...";
+          //Preenche os campos com "..." enquanto consulta webservice.
+          document.getElementById('rua').value = "...";
+          document.getElementById('bairro').value = "...";
+          document.getElementById('cidade').value = "...";
+          document.getElementById('uf').value = "...";
 
-              //Cria um elemento javascript.
-              var script = document.createElement('script');
+          //Cria um elemento javascript.
+          var script = document.createElement('script');
 
-              //Sincroniza com o callback.
-              script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+          //Sincroniza com o callback.
+          script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
 
-              //Insere script no documento e carrega o conteúdo.
-              document.body.appendChild(script);
+          //Insere script no documento e carrega o conteúdo.
+          document.body.appendChild(script);
 
-          } //end if.
-          else {
-              //cep é inválido.
-              limpa_formulário_cep();
-              alert("Formato de CEP inválido.");
-          }
+        } //end if.
+        else {
+          //cep é inválido.
+          limpa_formulário_cep();
+          alert("Formato de CEP inválido.");
+        }
       } //end if.
       else {
-          //cep sem valor, limpa formulário.
-          limpa_formulário_cep();
+        //cep sem valor, limpa formulário.
+        limpa_formulário_cep();
       }
-  };
+    };
 
   </script>
 
-    <script
-      src="https://kit.fontawesome.com/a342c01441.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
