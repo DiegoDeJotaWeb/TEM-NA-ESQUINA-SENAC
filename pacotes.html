@@ -15,16 +15,145 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         @media (max-width: 768px) {
-            .info-pacotes{
+            .info-pacotes {
                 grid-template-columns: 1fr;
             }
 
-            .col-3-9-pacote-free{ 
-                
-                    grid-template-columns: 1fr;
-                }
+            .col-3-9-pacote-free {
+
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .preco {
+            font-size: 3.375rem;
+            color: #0f1833;
+            margin: 0rem;
+            transition: .2s linear;
+        }
+
+        .preco sup,
+        .preco span {
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .cont-p {
+            font-size: 1.188rem;
+        }
+
+        .card-footer {
+            margin: 0.625rem 0;
+        }
+
+        .btn-preco-pct {
+
+            border: 0.125rem solid #0fbcf9;
+            color: white;
+            background-color: #0f1833;
+            padding: 1.125rem 1.25rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .titulo-pub {
+            margin: 1.563rem 0rem;
+            text-align: left;
+            background-color: rgb(245, 245, 245);
+            width: 100%;
+            padding: 7px 0 7px 15px;
+        }
+
+        .cont-pub {
+            margin: 0 1rem;
+        }
+
+        .contatos-info iframe {
+            margin-top: 1rem;
+        }
+    </style>
+    <style>
+        .titulo {
+            margin-top: 0;
+            text-align: left;
+        }
+
+        .cont-pub {
+            margin: 0 1rem;
+        }
+
+        .contatos-info iframe {
+            margin-top: 1rem;
+        }
+
+        .mt {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .ml {
+            margin-left: 1rem;
+        }
+
+        .col-cupom {
+            background-color: white;
+            border: 0.125rem solid #0fbcf9;
+            border-radius: 1rem;
+            background-color: #0f1833;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cont-pb {
+            font-size: 1rem;
+        }
+
+        .titulo-h4 {
+            margin-top: 0.7rem;
+            text-align: left;
+        }
+
+        .br {
+            border-radius: 0.5rem;
+        }
+
+        .margin-header {
+            margin-top: 0;
+        }
+
+        .btn-pag-info {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-preco-pct-cup {
+            border: 0.125rem solid white;
+            color: white;
+            background-color: #0f1833;
+            padding: 1.125rem 1.25rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-preco-pct-cup:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border: 0.125rem solid black;
         }
     </style>
 </head>
@@ -75,34 +204,135 @@
     <section class="margin-header">
         <div class="container">
             <h2 class="titulo">Pacotes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorem eum placeat nostrum fuga quibusdam
-                culpa possimus consequuntur maxime cumque. Eligendi quas aliquid in, saepe exercitationem sit quos
-                commodi repudiandae?</p>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="menu-pacotes">
                 <ul>
-                    <li class="bg-pacote-free" onclick="btnPacote1()">Gratis</li>
-                    <li class="bg-pacote-brass" onclick="btnPacote2()">Bronze</li>
-                    <li class="bg-pacote-gold" onclick="btnPacote3()">Gold</li>
+                    <li class="bg-pacote-free" onclick="btnPacote1()">Free</li>
+                    <li class="bg-pacote-brass" onclick="btnPacote2()">Pro</li>
+                    <li class="bg-pacote-gold" onclick="btnPacote3()">Premium</li>
                 </ul>
             </div>
 
-            <div   id="pacote-1" style="border: solid darkgray 3px;">
-            <div class="info-pacotes info-pacote-1">
-                <div class="pacote-info-text mb">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad rerum, at nulla ratione
-                        adipisci, nemo aspernatur</p>
+            <div id="pacote-1" style="border: solid darkgray 3px;">
+                <div class="info-pacotes info-pacote-1">
+                    <div class="pacote-info-text mb">
+                        <p class="cont-p">Pagina Simples contendo apenas o Endereço, Contatos e uma Descrição.</p>
 
-                    <h3>R$ 0,00</h3>
-                    <button class="btn">Contratar</button>
+                        <div class="preco"><sup>R$</sup>0<span>,00</span></div>
+                        <a class="btn-preco-pct">Contratar</a>
+                    </div>
+                    <div>
+                        <div class="card-cateroria mb">
+                            <div class="card-info-pacote-free ">
+                                <div class="">
+                                    <div>
+                                        <h2>Nome da empresa</h2>
+                                        <h4>Categoria</h4>
+                                        <hr>
+                                        <ul>
+                                            <li>Descrição</li>
+                                            <li>Endereço</li>
+                                            <li>Contato</li>
+
+                                        </ul>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <div class="card-footer ">
+                                    <ul class="classificacao">
+                                        <li><img src="imagens/estrela.png" alt=""></li>
+                                        <li><img src="imagens/estrela.png" alt=""></li>
+                                        <li><img src="imagens/estrela.png" alt=""></li>
+                                        <li><img src="imagens/estrela.png" alt=""></li>
+                                        <li><img src="imagens/estrela.png" alt=""></li>
+                                        <li> | Avaliação</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
                 <div>
-                    <div class="card-cateroria mb">
-                        <div class="card-info-pacote-free ">
-                            <div class="">
+                    <div style="background-color:white ;padding: 15px;">
+                        <h2>Nome da empresa</h2>
+                        <h3>CATEGORIA</h3>
+
+                        <hr>
+                    </div>
+
+
+
+                    <div class="info-empresa">
+                        <p class="cont-p">Descrição da sua empresa; Por exemplo: "Nossa empresa tem foco no ramo de
+                            supermercado, temos horti-fruit, acogue e Padaria, Alem da grande variedade de produtos,
+                            Preços justos e que cabem no bolso do consumidor"
+                        </p>
+
+                    </div>
+                    <div class="contatos-info">
+                        <div class=" pAll col-3-9-pacote-free">
+                            <div>
+                                <h3 class="titulo-pub">Contatos</h3>
+                                <p class="cont-pub"><a href="" class="cont-p">Telefone (11) 99999-9999</a></p>
+                                <p class="cont-pub"><a href="" class="cont-p">Celular (11) 99999-9999</a></p>
+
+                            </div>
+
+
+                            <div>
+                                <h3 class="titulo-pub">Endereço</h3>
+                                <p class="cont-pub"><a
+                                        href="https://www.google.com/search?q=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&oq=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&aqs=chrome..69i57j0i546l5.572j0j7&sourceid=chrome&ie=UTF-8"
+                                        target="_blank" class="cont-p">Rua Tito, 54 - Vila Romana, São Paulo - SP,
+                                        05051-000</a></p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
+                                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------>
+            <div id="pacote-2" style="border: solid #a955226b 3px;">
+                <div class="info-pacotes info-pacote-2">
+                    <div class="pacote-info-text">
+                        <p class="cont-pb">Descrição da sua empresa; Por exemplo: "Nossa empresa tem foco no ramo de
+                            supermercado, temos horti-fruit, acogue e Padaria, Alem da grande variedade de produtos,
+                            Preços justos e que cabem no bolso do consumidor. Estamos no mercado desde 1999"
+                            <br>
+                        <h4 class="titulo-h4">Beneficios:</h4>
+                        <ul>
+                            <li>- Pagina Intermediaria</li>
+                            <li>- Descrição Completa</li>
+                            <li>- 15 Produtos e Ofertas</li>
+                            <li>- Visibilidade Intermediaria</li>
+                            <li>- Comentarios e Chat direto</li>
+                            <li>- Sem Pagina na Home</li>
+                            <li>- Redes</li>
+                        </ul>
+                        </p>
+
+                        <div class="preco"><sup>R$</sup>0<span>,00</span></div>
+                        <button class="btn-preco-pct">Contratar</button>
+                    </div>
+                    <div>
+                        <div class="card-info-pacote-brass">
+                            <div class="col-2">
                                 <div>
                                     <h2>Nome da empresa</h2>
                                     <h4>Categoria</h4>
@@ -111,13 +341,16 @@
                                         <li>texto</li>
                                         <li>texto</li>
                                         <li>texto</li>
-
+                                        <li>texto</li>
                                     </ul>
 
                                 </div>
                                 <div>
+                                    <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
 
+                                    <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
                                 </div>
+
                             </div>
                             <div class="card-footer ">
                                 <ul class="classificacao">
@@ -130,67 +363,202 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="margin-header">
+                        <div class="container">
 
+                            <div style="background-color:white ;padding: 15px;">
+                                <h2>Nome da empresa</h2>
+                                <h3>CATEGORIA</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- <div class="banner-pag-cliente"></div> -->
+                        <div class="container">
+                            <div class="info-empresa cont-pub">
+                                <p class="cont-p">Descrição da sua empresa; Por exemplo: "Nossa empresa tem foco no ramo
+                                    de supermercado, temos horti-fruit, acogue e Padaria, Alem da grande variedade de
+                                    produtos, Preços justos e que cabem no bolso do consumidor. Estamos no mercado desde
+                                    1999"
+                                </p>
+                            </div>
+                            <div class="contatos-info">
+                                <div class=" pAll" style="    display: grid;
+                                grid-template-columns: 3fr 9fr;column-gap: 15px;">
+                                    <div>
+                                        <h3 class="titulo">Contatos</h3>
+                                        <p class="cont-pub"><a href="" class="cont-p">Telefone (11) 99999-9999</a></p>
+                                        <p class="cont-pub"><a href="" class="cont-p">Celular (11) 99999-9999</a></p>
+
+                                        <div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <h3 class="titulo">Siga-nos</h3>
+                                            <p class="cont-pub"><a href="" class="cont-p">Facebook</a></p>
+                                            <p class="cont-pub"><a href="" class="cont-p">Instagram</a></p>
+                                            <p class="cont-pub"><a href="" class="cont-p">Twitter</a></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <h3 class="titulo">Endereço</h3>
+                                        <p class="cont-p"><a
+                                                href="https://www.google.com/search?q=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&oq=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&aqs=chrome..69i57j0i546l5.572j0j7&sourceid=chrome&ie=UTF-8"
+                                                target="_blank"> Rua Tito, 54 - Vila Romana, São Paulo - SP,
+                                                05051-000</a></p>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
+                                            width="100%" height="350" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------Produtos---------------------->
+                    <div class="produtos-info container">
+                        <h2 class="titulo">Produtos</h2>
+                        <div class="col-grid-4">
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
+
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
-                
-            </div>
-            <div>
-                <div  style="background-color:white ;padding: 15px;">
-                    <h2>Nome da empresa</h2>
-                    <h3>CATEGORIA</h3>
+                    <div class="produtos-info container">
+                        <h2 class="titulo mt">Ofertas</h2>
+                        <div class="col-grid-4">
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
 
-                    <hr>
-                </div>
-
-
-
-                <div class="info-empresa">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti vero
-                        nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                        voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit eos
-                        dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat vitae?
-                    </p>
-                   
-                </div>
-                <div class="contatos-info   ">
-                    <div class=" pAll col-3-9-pacote-free">
-                        <div>
-                            <h2>Contatos</h2>
-                            <p><a href="">Telefone (11) 99999-9999</a></p>
-                            <p><a href="">Celular (11) 99999-9999</a></p>
-
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens/layoutminimercado.png" alt="">
+                                <h3>Nome do produto</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
                         </div>
+                    </div>
+                    <br>
+                    <div class="cupom mt">
+                        <div class="col-cupom container mt">
 
+                            <p class="cont-p">Este cupom lhe Garante X% de Desconto em "produto" Para participar da
+                                promoção clique em "Gerar" , Lembrando que para participar é necesario Login</p>
+                            <div class="ml" style="text-align: center;">
+                                <a href="pacote-premium-cupom.html" class="btn-preco-pct-cup">Gerar</a>
+                                <p>Clique para gerar cupom</p>
+                            </div>
 
-                        <div>
-                            <h2>Endereço</h2>
-                            <p> Rua Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</p>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
-                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
+                    <div class="comentarios-info container">
+                        <h2>Comentarios</h2>
+                        <div class="comentario-pag-info br">
+                            <img src="imagens/layoutminimercado.png" alt="">
+                            <div class="pl">
+                                <h2>Nome </h2>
+                                <p class="cont-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+                                    numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+
+                        <div class="comentario-pag-info br">
+                            <img src="imagens/layoutminimercado.png" alt="">
+                            <div class="pl">
+                                <h2>Nome </h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+
+                        <div class="comentario-pag-info br">
+                            <img src="imagens/layoutminimercado.png" alt="">
+                            <div class="pl">
+                                <h2>Nome </h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-pag-info container">
+                        <a class="btn-preco-pct">Ver mais</a>
+                        <a class="btn-preco-pct">Fale direto com a empresa</a>
+                        <a class="btn-preco-pct">Comentar</a>
+                    </div>
                 </div>
-
-
-
             </div>
-            </div>
-            <!------------------------------------------------------------------------------------>
-            <div id="pacote-2" style="border: solid #a955226b 3px;">
-            <div class="info-pacotes info-pacote-2">
+      
+        <!------------------------------------------------------------------------------------>
+        <div id="pacote-3" style="border: solid #cfb53b99 3px;">
+            <div class="info-pacotes info-pacote-3 ">
                 <div class="pacote-info-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad rerum, at nulla ratione
-                        adipisci, nemo aspernatur cupiditate facilis non qui ipsa quibusdam eaque expedita reiciendis
-                        atque, aut quam repudiandae?</p>
+                    <p class="cont-pb">Descrição da sua empresa; Por exemplo: "Nossa empresa tem foco no ramo de
+                        supermercado, temos horti-fruit, acogue e Padaria, Alem da grande variedade de produtos,
+                        Preços justos e que cabem no bolso do consumidor. Estamos no mercado desde 1999"
+                        <br>
+                    <h4 class="titulo-h4">Beneficios:</h4>
+                    <ul>
+                        <li>- Pagina Intermediaria</li>
+                        <li>- Descrição Completa</li>
+                        <li>- Produtos e Ofertas ilimitadas</li>
+                        <li>- Banner Rotativo</li>
+                        <li>- Comentarios e Chat direto</li>
+                        <li>- Destaque na Home</li>
+                        <li>- Cupons e Redes Sociais</li>
+                    </ul>
+                    </p>
 
-                    <h3>R$ 0,00</h3>
-                    <button class="btn">Contratar</button>
+                    <div class="preco"><sup>R$</sup>0<span>,00</span></div>
+                    <button class="btn-preco-pct">Contratar</button>
                 </div>
                 <div>
                     <div class="card-info-pacote-brass">
@@ -204,17 +572,15 @@
                                     <li>texto</li>
                                     <li>texto</li>
                                     <li>texto</li>
-                                    <li>texto</li>
-                                    <li>texto</li>
                                 </ul>
-    
+
                             </div>
                             <div>
                                 <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
-    
+
                                 <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
                             </div>
-    
+
                         </div>
                         <div class="card-footer ">
                             <ul class="classificacao">
@@ -229,86 +595,64 @@
                     </div>
                 </div>
             </div>
-            <div >
-                <div class="nome" style="background-color:white ;padding: 15px;">
-                    <h2>Nome da empresa</h2>
-                    <h3>CATEGORIA</h3>
+            <div>
+                <div class="margin-header">
+                    <div class="container">
 
+                        <div style="background-color:white ;padding: 15px;">
+                            <h2>Nome da empresa</h2>
+                            <h3>CATEGORIA</h3>
+                        </div>
+                    </div>
                     <hr>
-                </div>
-
-                <div class="banner-pag-cliente"></div>
-
-                <div class="info-empresa">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti
-                        vero
-                        nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                        voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit
-                        eos
-                        dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat
-                        vitae?
-                    </p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti
-                        vero
-                        nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                        voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit
-                        eos
-                        dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat
-                        vitae?
-                    </p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti
-                        vero
-                        nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                        voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit
-                        eos
-                        dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat
-                        vitae?
-                    </p>
-
-
-                </div>
-                <div class="contatos-info">
-                    <div class="col-2 pAll">
-                        <div>
-                            <h2>Contatos</h2>
-                            <p><a href="">Telefone (11) 99999-9999</a></p>
-                            <p><a href="">Celular (11) 99999-9999</a></p>
-                            <p><a href="">Whatsapp (11) 99999-9999</a></p>
-                            <p><a href="">Site www.seu-site.com.br</a></p>
-                            <p><a href="">Email contato@seu-site.com.br</a></p>
+                    <div class="banner-pag-cliente"></div>
+                    <div class="container">
+                        <div class="info-empresa cont-pub">
+                            <p class="cont-p">Descrição da sua empresa; Por exemplo: "Nossa empresa tem foco no ramo
+                                de supermercado, temos horti-fruit, acogue e Padaria, Alem da grande variedade de
+                                produtos, Preços justos e que cabem no bolso do consumidor. Estamos no mercado desde
+                                1999"
+                            </p>
                         </div>
+                        <div class="contatos-info">
+                            <div class=" pAll" style="    display: grid;
+                            grid-template-columns: 3fr 9fr;column-gap: 15px;">
+                                <div>
+                                    <h3 class="titulo">Contatos</h3>
+                                    <p class="cont-pub"><a href="" class="cont-p">Telefone (11) 99999-9999</a></p>
+                                    <p class="cont-pub"><a href="" class="cont-p">Celular (11) 99999-9999</a></p>
 
-                        <div>
-                            <h3>siga-nos</h3>
-                            <p><a href="">Facebook</a></p>
-                            <p><a href="">Instagram</a></p>
-                            <p><a href="">Twitter</a></p>
+                                    <div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <h3 class="titulo">Siga-nos</h3>
+                                        <p class="cont-pub"><a href="" class="cont-p">Facebook</a></p>
+                                        <p class="cont-pub"><a href="" class="cont-p">Instagram</a></p>
+                                        <p class="cont-pub"><a href="" class="cont-p">Twitter</a></p>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <h3 class="titulo">Endereço</h3>
+                                    <p class="cont-p"><a
+                                            href="https://www.google.com/search?q=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&oq=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&aqs=chrome..69i57j0i546l5.572j0j7&sourceid=chrome&ie=UTF-8"
+                                            target="_blank"> Rua Tito, 54 - Vila Romana, São Paulo - SP,
+                                            05051-000</a></p>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
+                                        width="100%" height="350" style="border:0;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
                         </div>
-
-
-
-
                     </div>
-
                 </div>
-
-                <div class="endereco-info">
-                    <h2>Endereço</h2>
-                    <p> Rua Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</p>
-
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
-                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="produtos-info">
-                    <h2>Produtos</h2>
+                <!------------------------Produtos---------------------->
+                <div class="produtos-info container">
+                    <h2 class="titulo">Produtos</h2>
                     <div class="col-grid-4">
                         <div>
                             <img src="imagens/layoutminimercado.png" alt="">
@@ -334,8 +678,8 @@
                     </div>
                 </div>
 
-                <div class="produtos-info">
-                    <h2>Ofertas</h2>
+                <div class="produtos-info container">
+                    <h2 class="titulo mt">Ofertas</h2>
                     <div class="col-grid-4">
                         <div>
                             <img src="imagens/layoutminimercado.png" alt="">
@@ -364,55 +708,50 @@
                         </div>
                     </div>
                 </div>
+                <br>
+                <div class="cupom mt">
+                    <div class="col-cupom container mt">
 
-
-                <div class="cupom">
-                    <div class="col-cupom">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta perferendis natus
-                            unde
-                            corrupti repellat consectetur, a at ipsa ducimus culpa est quod ratione totam
-                            expedita
-                            sit
-                            rerum quos ad ullam.</p>
-                        <div style="text-align: center;">
-                            <button class="btn" style="width: 100%;">Gerar</button>
+                        <p class="cont-p">Este cupom lhe Garante X% de Desconto em "produto" Para participar da
+                            promoção clique em "Gerar" , Lembrando que para participar é necesario Login</p>
+                        <div class="ml" style="text-align: center;">
+                            <a href="pacote-premium-cupom.html" class="btn-preco-pct-cup">Gerar</a>
                             <p>Clique para gerar cupom</p>
                         </div>
+
                     </div>
                 </div>
 
-                <div class="comentarios-info">
+                <div class="comentarios-info container">
                     <h2>Comentarios</h2>
-                    <div class="comentario-pag-info">
+                    <div class="comentario-pag-info br">
                         <img src="imagens/layoutminimercado.png" alt="">
                         <div class="pl">
                             <h2>Nome </h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
-                                itaque
+                            <p class="cont-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+                                numquam amet itaque
                                 assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
                                 vero,
                                 laboriosam dolore! Illum ipsum nemo sequi odio.</p>
                         </div>
                     </div>
 
-                    <div class="comentario-pag-info">
+                    <div class="comentario-pag-info br">
                         <img src="imagens/layoutminimercado.png" alt="">
                         <div class="pl">
                             <h2>Nome </h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
-                                itaque
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
                                 assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
                                 vero,
                                 laboriosam dolore! Illum ipsum nemo sequi odio.</p>
                         </div>
                     </div>
 
-                    <div class="comentario-pag-info">
+                    <div class="comentario-pag-info br">
                         <img src="imagens/layoutminimercado.png" alt="">
                         <div class="pl">
                             <h2>Nome </h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
-                                itaque
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
                                 assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
                                 vero,
                                 laboriosam dolore! Illum ipsum nemo sequi odio.</p>
@@ -420,268 +759,14 @@
                     </div>
                 </div>
 
-                <div class="btn-pag-info">
-                    <button class="btn">Ver mais</button>
-                    <button class="btn">Fale direto com a empresa</button>
-                    <button class="btn">Comentar</button>
-                </div>
-            </div>
-            </div>
-            <!------------------------------------------------------------------------------------>
-            <div id="pacote-3" style="border: solid #cfb53b99 3px;">
-                <div class="info-pacotes info-pacote-3 ">
-                    <div class="pacote-info-text">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad rerum, at nulla
-                            ratione
-                            adipisci, nemo aspernatur cupiditate facilis non qui ipsa quibusdam eaque expedita
-                            reiciendis
-                            atque, aut quam repudiandae?</p>
-
-                        <h3>R$ 0,00</h3>
-                        <button class="btn">Contratar</button>
-                    </div>
-                    <div>
-                        <div class="card-cateroria pacote-gold">
-                            <div class="card-info-pacote-gold ">
-                                <div class="col-2">
-                                    <div>
-                                        <h2>Nome da empresa</h2>
-                                        <h4>Categoria</h4>
-                                        <hr>
-                                        <ul>
-                                            <li>texto</li>
-                                            <li>texto</li>
-                                            <li>texto</li>
-                                            <li>texto</li>
-                                            <li>texto</li>
-                                            <li>texto</li>
-                                        </ul>
-
-                                    </div>
-                                    <div>
-                                        <h3 class="tag-oferta">OFERTA</h3><br>
-                                        <h3 class="tag-promocao">PROMOÇÃO</h3>
-
-                                        <img src="imagens/layoutminimercado.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-footer ">
-                                    <ul class="classificacao">
-                                        <li><img src="imagens/estrela.png" alt=""></li>
-                                        <li><img src="imagens/estrela.png" alt=""></li>
-                                        <li><img src="imagens/estrela.png" alt=""></li>
-                                        <li><img src="imagens/estrela.png" alt=""></li>
-                                        <li><img src="imagens/estrela.png" alt=""></li>
-                                        <li> | texto</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div >
-                    <div class="nome" style="background-color:white ;padding: 15px;">
-                        <h2>Nome da empresa</h2>
-                        <h3>CATEGORIA</h3>
-
-                        <hr>
-                    </div>
-
-                    <div class="banner-pag-cliente"></div>
-
-                    <div class="info-empresa">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti
-                            vero
-                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit
-                            eos
-                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat
-                            vitae?
-                        </p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti
-                            vero
-                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit
-                            eos
-                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat
-                            vitae?
-                        </p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti
-                            vero
-                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit
-                            eos
-                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat
-                            vitae?
-                        </p>
-
-
-                    </div>
-                    <div class="contatos-info">
-                        <div class="col-2 pAll">
-                            <div>
-                                <h2>Contatos</h2>
-                                <p><a href="">Telefone (11) 99999-9999</a></p>
-                                <p><a href="">Celular (11) 99999-9999</a></p>
-                                <p><a href="">Whatsapp (11) 99999-9999</a></p>
-                                <p><a href="">Site www.seu-site.com.br</a></p>
-                                <p><a href="">Email contato@seu-site.com.br</a></p>
-                            </div>
-
-                            <div>
-                                <h3>siga-nos</h3>
-                                <p><a href="">Facebook</a></p>
-                                <p><a href="">Instagram</a></p>
-                                <p><a href="">Twitter</a></p>
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="endereco-info">
-                        <h2>Endereço</h2>
-                        <p> Rua Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</p>
-
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
-                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                    <div class="produtos-info">
-                        <h2>Produtos</h2>
-                        <div class="col-grid-4">
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4>R$ 50,00</h4>
-                            </div>
-
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4>R$ 50,00</h4>
-                            </div>
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4>R$ 50,00</h4>
-                            </div>
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4>R$ 50,00</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="produtos-info">
-                        <h2>Ofertas</h2>
-                        <div class="col-grid-4">
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4 class="valor-desconto">R$ 50,00</h4>
-                                <h4>R$ 45,00</h4>
-                            </div>
-
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4 class="valor-desconto">R$ 50,00</h4>
-                                <h4>R$ 45,00</h4>
-                            </div>
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4 class="valor-desconto">R$ 50,00</h4>
-                                <h4>R$ 45,00</h4>
-                            </div>
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4 class="valor-desconto">R$ 50,00</h4>
-                                <h4>R$ 45,00</h4>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="cupom">
-                        <div class="col-cupom">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta perferendis natus
-                                unde
-                                corrupti repellat consectetur, a at ipsa ducimus culpa est quod ratione totam
-                                expedita
-                                sit
-                                rerum quos ad ullam.</p>
-                            <div style="text-align: center;">
-                                <button class="btn" style="width: 100%;">Gerar</button>
-                                <p>Clique para gerar cupom</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="comentarios-info">
-                        <h2>Comentarios</h2>
-                        <div class="comentario-pag-info">
-                            <img src="imagens/layoutminimercado.png" alt="">
-                            <div class="pl">
-                                <h2>Nome </h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
-                                    itaque
-                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                                    vero,
-                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
-                            </div>
-                        </div>
-
-                        <div class="comentario-pag-info">
-                            <img src="imagens/layoutminimercado.png" alt="">
-                            <div class="pl">
-                                <h2>Nome </h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
-                                    itaque
-                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                                    vero,
-                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
-                            </div>
-                        </div>
-
-                        <div class="comentario-pag-info">
-                            <img src="imagens/layoutminimercado.png" alt="">
-                            <div class="pl">
-                                <h2>Nome </h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
-                                    itaque
-                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                                    vero,
-                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="btn-pag-info">
-                        <button class="btn">Ver mais</button>
-                        <button class="btn">Fale direto com a empresa</button>
-                        <button class="btn">Comentar</button>
-                    </div>
+                <div class="btn-pag-info container">
+                    <a class="btn-preco-pct">Ver mais</a>
+                    <a class="btn-preco-pct">Fale direto com a empresa</a>
+                    <a class="btn-preco-pct">Comentar</a>
                 </div>
             </div>
         </div>
+
     </section>
     <footer id="fundo-pacotes">
         <!--<div>
@@ -721,4 +806,5 @@
         }
     </script>
 </body>
+
 </html>
