@@ -317,6 +317,7 @@ div.social-caixa {
     position: fixed;
     left: -15px;
     top: 250px;
+    z-index: 50;
 
 }
 
