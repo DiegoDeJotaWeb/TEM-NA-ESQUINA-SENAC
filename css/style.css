@@ -1543,7 +1543,9 @@ produtos-info {
   }
 
 /* menu */
-
+.item-menu-superior{
+    padding: 0;
+}
 
 .container-menu{
     width:  80%;

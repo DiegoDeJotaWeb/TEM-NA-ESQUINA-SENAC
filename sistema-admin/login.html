@@ -35,13 +35,14 @@
     }
 
     #menu-login {
-        width: 35%;
+        min-width: 50%;
+        width: 50%;
         border-radius: 10px;
         margin: 0 auto;
         /* text-align: center; */
         margin-top: 70px;
         padding: 15px;
-        background-color: #3319FF;
+        background-color: #0f1833;
     }
 
     .input-form label {
@@ -114,6 +115,22 @@
         text-align: center;
 
         width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        #menu-login {
+            min-width: 50%;
+        width: 50%;
+        border-radius: 10px;
+        margin: 0 auto;
+        /* text-align: center; */
+        margin-top: 70px;
+        padding: 15px;
+    }
+    .logo-container img {
+        width: 50%;
+        margin: 25px auto;
+    }
     }
 </style>
 

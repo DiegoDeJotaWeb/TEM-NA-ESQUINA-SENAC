@@ -142,7 +142,9 @@ input {
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-
+.text-center{
+    text-align: center;
+}
 .btn {
     background-color: var(--success);
     display: inline-block;

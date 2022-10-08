@@ -22,36 +22,48 @@
 <body>
     <header>
         <div class="menu-superior">
-          <div class="container container-menu container_flex-space-around">
-    
-            <a id="logo" href="index.html"><img src="imagens/logo-tem-na-esquina-branco.png" alt="Logomarca"></a>
-            <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
+            <div class="container container-menu container_flex-space-around">
+
+                <a id="logo" href="index.html"><img src="imagens/logo-tem-na-esquina-branco.png" alt="Logomarca"></a>
+                <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
             line-height: 64px;
             text-align: end;
             top: 4px;
             position: absolute;
             right: 24px;"></i>
-            <nav>
-              <ul>
-    
-    
-                <a href="index.html"><li class="menu-caixa" id="item-menu-ativo">Home</li></a>
-    
-                <li class="menu-caixa"><a href="categorias.html">Categoria</a></li>
-    
-                <li class="menu-caixa"><a href="contato.html">Contato</a></li>
-    
-                <li class="menu-caixa"><a href="sobre.html">Sobre</a></li>
-    
-                <li class="menu-caixa"><a href="pacotes.html">Seja parceiro</a></li>
-    
-                <li class="menu-caixa"><a href="sistema/login.html" target="_blank">Login</a></li>
-    
-              </ul>
-            </nav>
-          </div>
+                <nav>
+                    <ul>
+                        <a href="index.html" class="item-menu-superior">
+                            <li class="menu-caixa">Home</li>
+                        </a>
+
+                        <a href="categorias.html" class="item-menu-superior">
+                            <li class="menu-caixa" id="item-menu-ativo">Categoria</li>
+                        </a>
+
+
+
+                        <a href="sobre.html" class="item-menu-superior">
+                            <li class="menu-caixa">Sobre</li>
+                        </a>
+
+                        <a href="pacotes.html" class="item-menu-superior">
+                            <li class="menu-caixa">Seja parceiro</li>
+                        </a>
+
+                        <a href="contato.html" class="item-menu-superior">
+                            <li class="menu-caixa">Contato</li>
+                        </a>
+
+                        <a href="sistema-premium/login.html" target="_blank" class="item-menu-superior">
+                            <li class="menu-caixa">Login</li>
+                        </a>
+
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </header>
+    </header>
 
     <div class="social-caixa">
         <div class="social-icons">
@@ -69,33 +81,387 @@
         <div class="container">
 
             <h2 class="titulo">Categoria</h2>
-            <div class="mb mt"
-                style="text-align: center;display: grid; grid-template-columns: repeat(10, 1fr);column-gap: 1px;">
-                <button class="btn">Todos</button>
-                <button class="btn">Categoria1</button>
-                <button class="btn">Categoria2</button>
-                <button class="btn">Categoria3</button>
-                <button class="btn">Categoria4</button>
-                <button class="btn">Categoria5</button>
-                <button class="btn">Categoria6</button>
-                <button class="btn">Categoria7</button>
-                <button class="btn">Categoria8</button>
-                <button class="btn">Outras</button>
-            </div>
-            <div class="card-cateroria">
-                <div class="card-info-pacote-gold">
-                    <div class="col-2">
+
+            <div class="caixa-categoria">
+
+                <div class="carousel-menu-categoria mb">
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-bag-shopping"></i>
+                            <h3>Mercado</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-dog"></i>
+                            <h3>PetShop</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-car-burst"></i>
+                            <h3>Mecanico</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-shirt"></i>
+                            <h3>Moda</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria " style="text-align: center;">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-utensils"></i>
+                            <h3>Food</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-cross"></i>
+                            <h3>Farmacia</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-cake-candles"></i>
+                            <h3>Padaria</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <h3>Mercado</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-shirt"></i>
+                            <h3>Moda</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-dog"></i>
+                            <h3>PetShop</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-utensils"></i>
+                            <h3>Food</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-car-burst"></i>
+                            <h3>Mecanico</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-cross"></i>
+                            <h3>Farmacia</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria ">
+                        <div class="menu-cate-logo">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <h3>Mercado</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-btn-menu-anuncio">
+                    <span class="btn-menu-categoria">&#139;</span>
+                    <span class="btn-menu-categoria">&#155;</span>
+                </div>
+
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-gold">
+                        <div class="col-2">
+                            <div>
+                                <h2>Nome da empresa</h2>
+                                <h4>Categoria</h4>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste
+                                    laborum
+                                    fugit ducimus commodi id quos tempore esse impedit perspiciatis architecto inventore
+                                    nulla, sequi amet earum ipsam provident vero.</p>
+                                <ul>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                <h3 class="tag-oferta">CUPOM</h3><br>
+                                <h3 class="tag-promocao">PROMOÇÃO</h3>
+
+                                <img src="imagens/layoutminimercado.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-gold">
+                        <div class="col-2">
+                            <div>
+                                <h2>Nome da empresa</h2>
+                                <h4>Categoria</h4>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste
+                                    laborum
+                                    fugit ducimus commodi id quos tempore esse impedit perspiciatis architecto inventore
+                                    nulla, sequi amet earum ipsam provident vero.</p>
+                                <ul>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                <h3 class="tag-oferta">CUPOM</h3><br>
+                                <h3 class="tag-promocao">PROMOÇÃO</h3>
+
+                                <img src="imagens/layoutminimercado.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-gold">
+                        <div class="col-2">
+                            <div>
+                                <h2>Nome da empresa</h2>
+                                <h4>Categoria</h4>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste
+                                    laborum
+                                    fugit ducimus commodi id quos tempore esse impedit perspiciatis architecto inventore
+                                    nulla, sequi amet earum ipsam provident vero.</p>
+                                <ul>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                <h3 class="tag-oferta">CUPOM</h3><br>
+                                <h3 class="tag-promocao">PROMOÇÃO</h3>
+
+                                <img src="imagens/layoutminimercado.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-brass">
+                        <div class="col-2">
+                            <div>
+                                <h2>Nome da empresa</h2>
+                                <h4>Categoria</h4>
+                                <hr>
+                                <ul>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
+
+                                <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
+                            </div>
+
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-brass">
+                        <div class="col-2">
+                            <div>
+                                <h2>Nome da empresa</h2>
+                                <h4>Categoria</h4>
+                                <hr>
+                                <ul>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
+
+                                <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
+                            </div>
+
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-brass">
+                        <div class="col-2">
+                            <div>
+                                <h2>Nome da empresa</h2>
+                                <h4>Categoria</h4>
+                                <hr>
+                                <ul>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
+
+                                <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
+                            </div>
+
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-brass">
+                        <div class="col-2">
+                            <div>
+                                <h2>Nome da empresa</h2>
+                                <h4>Categoria</h4>
+                                <hr>
+                                <ul>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                    <li>texto</li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
+
+                                <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
+                            </div>
+
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-free">
                         <div>
                             <h2>Nome da empresa</h2>
                             <h4>Categoria</h4>
                             <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste laborum
-                                fugit ducimus commodi id quos tempore esse impedit perspiciatis architecto inventore
-                                nulla, sequi amet earum ipsam provident vero.</p>
                             <ul>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
                                 <li>texto</li>
                                 <li>texto</li>
                                 <li>texto</li>
@@ -103,108 +469,24 @@
 
                         </div>
                         <div>
-                            <h3 class="tag-oferta">CUPOM</h3><br>
-                            <h3 class="tag-promocao">PROMOÇÃO</h3>
 
-                            <img src="imagens/layoutminimercado.png" alt="">
                         </div>
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div class="card-cateroria">
-                <div class="card-info-pacote-gold">
-                    <div class="col-2">
-                        <div>
-                            <h2>Nome da empresa</h2>
-                            <h4>Categoria</h4>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste laborum
-                                fugit ducimus commodi id quos tempore esse impedit perspiciatis architecto inventore
-                                nulla, sequi amet earum ipsam provident vero.</p>
-                            <ul>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
                             </ul>
-
-                        </div>
-                        <div>
-                            <h3 class="tag-oferta">CUPOM</h3><br>
-                            <h3 class="tag-promocao">PROMOÇÃO</h3>
-
-                            <img src="imagens/layoutminimercado.png" alt="">
                         </div>
                     </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
+
                 </div>
 
-            </div>
-            <div class="card-cateroria">
-                <div class="card-info-pacote-gold">
-                    <div class="col-2">
-                        <div>
-                            <h2>Nome da empresa</h2>
-                            <h4>Categoria</h4>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste laborum
-                                fugit ducimus commodi id quos tempore esse impedit perspiciatis architecto inventore
-                                nulla, sequi amet earum ipsam provident vero.</p>
-                            <ul>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                            </ul>
-
-                        </div>
-                        <div>
-                            <h3 class="tag-oferta">CUPOM</h3><br>
-                            <h3 class="tag-promocao">PROMOÇÃO</h3>
-
-                            <img src="imagens/layoutminimercado.png" alt="">
-                        </div>
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div class="card-cateroria">
-                <div class="card-info-pacote-brass">
-                    <div class="col-2">
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-free">
                         <div>
                             <h2>Nome da empresa</h2>
                             <h4>Categoria</h4>
@@ -213,36 +495,28 @@
                                 <li>texto</li>
                                 <li>texto</li>
                                 <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
                             </ul>
 
                         </div>
                         <div>
-                            <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
 
-                            <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
                         </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
                 </div>
 
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-brass">
-                    <div class="col-2">
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-free">
                         <div>
                             <h2>Nome da empresa</h2>
                             <h4>Categoria</h4>
@@ -251,36 +525,28 @@
                                 <li>texto</li>
                                 <li>texto</li>
                                 <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
                             </ul>
 
                         </div>
                         <div>
-                            <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
 
-                            <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
                         </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
                 </div>
 
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-brass">
-                    <div class="col-2">
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-free">
                         <div>
                             <h2>Nome da empresa</h2>
                             <h4>Categoria</h4>
@@ -289,36 +555,28 @@
                                 <li>texto</li>
                                 <li>texto</li>
                                 <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
-                                <li>texto</li>
                             </ul>
 
                         </div>
                         <div>
-                            <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
 
-                            <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
                         </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
                 </div>
 
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-brass">
-                    <div class="col-2">
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-free">
                         <div>
                             <h2>Nome da empresa</h2>
                             <h4>Categoria</h4>
@@ -327,6 +585,33 @@
                                 <li>texto</li>
                                 <li>texto</li>
                                 <li>texto</li>
+                            </ul>
+
+                        </div>
+                        <div>
+
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-free">
+                        <div>
+                            <h2>Nome da empresa</h2>
+                            <h4>Categoria</h4>
+                            <hr>
+                            <ul>
                                 <li>texto</li>
                                 <li>texto</li>
                                 <li>texto</li>
@@ -334,237 +619,53 @@
 
                         </div>
                         <div>
-                            <h3 class="tag-promocao-brass">PROMOÇÃO</h3>
 
-                            <!-- <img src="imagens/layoutminimercado.png" alt=""> -->
                         </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
+                    </div>
 
+                </div>
+
+                <div class="card-cateroria">
+                    <div class="card-info-pacote-free">
+                        <div>
+                            <h2>Nome da empresa</h2>
+                            <h4>Categoria</h4>
+                            <hr>
+                            <ul>
+                                <li>texto</li>
+                                <li>texto</li>
+                                <li>texto</li>
+                            </ul>
+
+                        </div>
+                        <div>
+
+                        </div>
+                        <div class="card-footer ">
+                            <ul class="classificacao">
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li><img src="imagens/estrela.png" alt=""></li>
+                                <li> | texto</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
+
                 </div>
 
             </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-free">
-                    <div>
-                        <h2>Nome da empresa</h2>
-                        <h4>Categoria</h4>
-                        <hr>
-                        <ul>
-                            <li>texto</li>
-                            <li>texto</li>
-                            <li>texto</li>
-                        </ul>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-free">
-                    <div>
-                        <h2>Nome da empresa</h2>
-                        <h4>Categoria</h4>
-                        <hr>
-                        <ul>
-                            <li>texto</li>
-                            <li>texto</li>
-                            <li>texto</li>
-                        </ul>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-free">
-                    <div>
-                        <h2>Nome da empresa</h2>
-                        <h4>Categoria</h4>
-                        <hr>
-                        <ul>
-                            <li>texto</li>
-                            <li>texto</li>
-                            <li>texto</li>
-                        </ul>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-free">
-                    <div>
-                        <h2>Nome da empresa</h2>
-                        <h4>Categoria</h4>
-                        <hr>
-                        <ul>
-                            <li>texto</li>
-                            <li>texto</li>
-                            <li>texto</li>
-                        </ul>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-free">
-                    <div>
-                        <h2>Nome da empresa</h2>
-                        <h4>Categoria</h4>
-                        <hr>
-                        <ul>
-                            <li>texto</li>
-                            <li>texto</li>
-                            <li>texto</li>
-                        </ul>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-free">
-                    <div>
-                        <h2>Nome da empresa</h2>
-                        <h4>Categoria</h4>
-                        <hr>
-                        <ul>
-                            <li>texto</li>
-                            <li>texto</li>
-                            <li>texto</li>
-                        </ul>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-cateroria">
-                <div class="card-info-pacote-free">
-                    <div>
-                        <h2>Nome da empresa</h2>
-                        <h4>Categoria</h4>
-                        <hr>
-                        <ul>
-                            <li>texto</li>
-                            <li>texto</li>
-                            <li>texto</li>
-                        </ul>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="card-footer ">
-                        <ul class="classificacao">
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li><img src="imagens/estrela.png" alt=""></li>
-                            <li> | texto</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
 
 
         </div>
