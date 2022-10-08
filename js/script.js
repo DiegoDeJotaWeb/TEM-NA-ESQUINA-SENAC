@@ -291,7 +291,7 @@ let btnMenuAnuncio = document.getElementsByClassName('btn-menu-anuncio');
         let imgAnuncio_page = Math.ceil(imgAnuncio.length / 4);
         let lAnuncio = 0;
         let movePerAnuncio = 25.5;
-        let maxMoveAnuncio = 51;
+        let maxMoveAnuncio = 102;
         // mobile_view	
         let mob_view_anuncio = window.matchMedia("(max-width: 768px)");
         if (mob_view_anuncio.matches) {
