@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/tema-claro.css">
+  <link rel="stylesheet" href="libs/fontawesome-free-6.1.2-web/css/all.css">
+</head>
+
+<style>
+  *{
+padding: 0;
+margin: 0;
+  }
+  #tema-claro {
+    display: none;
+    font-size: 60px;
+    
+  }
+div{
+  text-align: center;
+}
+  #tema-escuro {
+    font-size: 60px;
+  }
+</style>
+
+<body>
+
+
+  <!-- <button onclick="trocaTemaClaro()" id="tema-claro">trocaTemaClaro</button>
+  <button onclick="trocaTemaEscuro()" id="tema-escuro">trocaTemaEscuro</button> -->
+
+<div>
+  <i class="fa-solid fa-toggle-off" onclick="trocaTemaClaro()" id="tema-claro"></i>
+  <i class="fa-solid fa-toggle-on" onclick="trocaTemaEscuro()" id="tema-escuro"></i>
+</div>
+
+<div>
+  <h1>TEM NA ESQUINA</h1>
+</div>
+ 
+  <script>
+    function trocaTemaClaro() {
+      document.querySelector('link').href = "css/tema-claro.css";
+      document.querySelector('#tema-claro').style.display = "none";
+      document.querySelector('#tema-escuro').style.display = "block";
+    }
+
+    function trocaTemaEscuro() {
+      document.querySelector('link').href = "css/tema-escuro.css";
+      document.querySelector('#tema-claro').style.display = "block";
+      document.querySelector('#tema-escuro').style.display = "none";
+    }
+  </script>
+
+<!-- <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script> -->
+<!-- <script src="libs/fontawesome-free-6.1.2-web/js/all.min.js" crossorigin="anonymous"></script> -->
+<script src="libs/fontawesome-free-6.1.2-web/js/solid.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

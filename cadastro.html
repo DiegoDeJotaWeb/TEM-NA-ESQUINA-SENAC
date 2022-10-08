@@ -15,81 +15,40 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-  <style>
-    #btn-p-juridico {
-      display: none;
-    }
-
-    #fundo-form {
-      border-radius: 0px 0px 10px 10px;
-    }
-
-    .flex-grid-2-nome-sobrenome {
-      /*Linha com 2 preenchimentos*/
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .flex-grid-2 {
-      /*Linha com 2 preenchimentos*/
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .flex-grid-3-telefone-senha-email {
-      /*Linha com 3 preenchimentos*/
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @media (max-width: 768px) {
-      .flex-grid-2 {
-        /*Linha com 2 preenchimentos*/
-        grid-template-columns: 1fr;
-      }
-
-      .flex-grid-3 {
-        /*Linha com 3 preenchimentos*/
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-
-      #flex-grid-2 {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <header>
     <div class="menu-superior">
-      <div class="container container_flex-space-around">
-        <a id="logo" href="index.html"><img src="imagens/logo.png" alt="Logomarca" /></a>
+      <div class="container container-menu container_flex-space-around">
+
+        <a id="logo" href="index.html"><img src="imagens/logo-tem-na-esquina-branco.png" alt="Logomarca"></a>
+        <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
+        line-height: 64px;
+        text-align: end;
+        top: 4px;
+        position: absolute;
+        right: 24px;"></i>
         <nav>
           <ul>
-            <div class="menu-bloco">
-              <div class="menu-caixa">
-                <li><a href="index.html">Home</a></li>
-              </div>
-              <div class="menu-caixa">
-                <li><a href="categorias.html">Categoria</a></li>
-              </div>
-              <div class="menu-caixa">
-                <li><a href="contato.html">Contato</a></li>
-              </div>
-              <div class="menu-caixa">
-                <li><a href="sobre.html">Sobre</a></li>
-              </div>
-              <div class="menu-caixa">
-                <li><a href="pacotes.html">Seja parceiro</a></li>
-              </div>
-              <div class="menu-caixa">
-                <li>
-                  <a href="sistema/login.html" target="_blank">Login</a>
-                </li>
-              </div>
-            </div>
+
+
+            <a href="index.html">
+              <li class="menu-caixa" id="item-menu-ativo">Home</li>
+            </a>
+
+            <li class="menu-caixa"><a href="categorias.html">Categoria</a></li>
+
+            <li class="menu-caixa"><a href="contato.html">Contato</a></li>
+
+            <li class="menu-caixa"><a href="sobre.html">Sobre</a></li>
+
+            <li class="menu-caixa"><a href="pacotes.html">Seja parceiro</a></li>
+
+            <li class="menu-caixa"><a href="sistema/login.html" target="_blank">Login</a></li>
+
           </ul>
         </nav>
       </div>
@@ -331,268 +290,10 @@
 
   </section>
   <footer>
-    <!--<div>
-            <ul class="redes">
-                <li><a href="">facebook| </a></li>
-                <li><a href=""> Instagram| </a></li>
-                <li><a href=""> Linkedin| </a></li>
-                <li><a href=""> Twitter| </a></li>
-                <li><a href=""> YouTube </a></li>
-            </ul>
-        </div>-->
+
     <p>Desenvolvido Tem na Esquina - 2022</p>
   </footer>
-  <script>
-    function btnfisica() {
-      document.getElementById('cor-f').style.backgroundColor = "#0f1833"
-      document.getElementById('cor-r').style.backgroundColor = "#FF6600"
-      document.getElementById("btn-p-fisica").style.display = "grid";
-      document.getElementById("btn-p-juridico").style.display = "none";
-    }
-
-    function btnjuridico() {
-      document.getElementById('cor-f').style.backgroundColor = "#FF6600"
-      document.getElementById('cor-r').style.backgroundColor = "#0f1833"
-      document.getElementById("btn-p-juridico").style.display = "grid";
-      document.getElementById("btn-p-fisica").style.display = "none";
-    }
-  </script>
-
-  <script>
-    function limpa_formulário_cep() {
-      //Limpa valores do formulário de cep.
-      document.getElementById('rua').value = ("");
-      document.getElementById('bairro').value = ("");
-      document.getElementById('cidade').value = ("");
-      document.getElementById('uf').value = ("");
-    }
-
-    function meu_callback(conteudo) {
-      if (!("erro" in conteudo)) {
-        //Atualiza os campos com os valores.
-        document.getElementById('rua').value = (conteudo.logradouro);
-        document.getElementById('bairro').value = (conteudo.bairro);
-        document.getElementById('cidade').value = (conteudo.localidade);
-        document.getElementById('uf').value = (conteudo.uf);
-      } //end if.
-      else {
-        //CEP não Encontrado.
-        limpa_formulário_cep();
-        alert("CEP não encontrado.");
-      }
-    }
-
-    function pesquisacep(valor) {
-
-      //Nova variável "cep" somente com dígitos.
-      var cep = valor.replace(/\D/g, '');
-
-      //Verifica se campo cep possui valor informado.
-      if (cep != "") {
-
-        //Expressão regular para validar o CEP.
-        var validacep = /^[0-9]{8}$/;
-
-        //Valida o formato do CEP.
-        if (validacep.test(cep)) {
-
-          //Preenche os campos com "..." enquanto consulta webservice.
-          document.getElementById('rua').value = "...";
-          document.getElementById('bairro').value = "...";
-          document.getElementById('cidade').value = "...";
-          document.getElementById('uf').value = "...";
-
-          //Cria um elemento javascript.
-          var script = document.createElement('script');
-
-          //Sincroniza com o callback.
-          script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
-
-          //Insere script no documento e carrega o conteúdo.
-          document.body.appendChild(script);
-
-        } //end if.
-        else {
-          //cep é inválido.
-          limpa_formulário_cep();
-          alert("Formato de CEP inválido.");
-        }
-      } //end if.
-      else {
-        //cep sem valor, limpa formulário.
-        limpa_formulário_cep();
-      }
-    };
-  </script>
-
-
-  <script>
-    function limpa_formulário_cep_juridico() {
-      //Limpa valores do formulário de cep.
-      document.getElementById('rua_juridico').value = ("");
-      document.getElementById('bairro_juridico').value = ("");
-      document.getElementById('cidade_juridico').value = ("");
-      document.getElementById('uf_juridico').value = ("");
-    }
-
-    function meu_callback_juridico(conteudo) {
-      if (!("erro" in conteudo)) {
-        //Atualiza os campos com os valores.
-        document.getElementById('rua_juridico').value = (conteudo.logradouro);
-        document.getElementById('bairro_juridico').value = (conteudo.bairro);
-        document.getElementById('cidade_juridico').value = (conteudo.localidade);
-        document.getElementById('uf_juridico').value = (conteudo.uf);
-      } //end if.
-      else {
-        //CEP não Encontrado.
-        limpa_formulário_cep_juridico();
-        alert("CEP não encontrado.");
-      }
-    }
-
-    function pesquisacep_juridico(valor) {
-
-      //Nova variável "cep" somente com dígitos.
-      var cep = valor.replace(/\D/g, '');
-
-      //Verifica se campo cep possui valor informado.
-      if (cep != "") {
-
-        //Expressão regular para validar o CEP.
-        var validacep = /^[0-9]{8}$/;
-
-        //Valida o formato do CEP.
-        if (validacep.test(cep)) {
-
-          //Preenche os campos com "..." enquanto consulta webservice.
-          document.getElementById('rua_juridico').value = "...";
-          document.getElementById('bairro_juridico').value = "...";
-          document.getElementById('cidade_juridico').value = "...";
-          document.getElementById('uf_juridico').value = "...";
-
-          //Cria um elemento javascript.
-          var script = document.createElement('script');
-
-          //Sincroniza com o callback.
-          script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback_juridico';
-
-          //Insere script no documento e carrega o conteúdo.
-          document.body.appendChild(script);
-
-        } //end if.
-        else {
-          //cep é inválido.
-          limpa_formulário_cep_juridico();
-          alert("Formato de CEP inválido.");
-        }
-      } //end if.
-      else {
-        //cep sem valor, limpa formulário.
-        limpa_formulário_cep_juridico();
-      }
-    };
-  </script>
-
-
-  <script>
-    function mask_fisico(o, f) {
-      setTimeout(function () {
-        var v = mphone_fisico(o.value);
-        if (v != o.value) {
-          o.value = v;
-        }
-      }, 1);
-    }
-
-    function mphone_fisico(v) {
-      var r = v.replace(/\D/g, "");
-      r = r.replace(/^0/, "");
-      if (r.length > 10) {
-        r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
-      } else if (r.length > 5) {
-        r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
-      } else if (r.length > 2) {
-        r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
-      } else {
-        r = r.replace(/^(\d*)/, "($1");
-      }
-      return r;
-    }
-  </script>
-
-  <script>
-    function mask_juridico(o, f) {
-      setTimeout(function () {
-        var v = mphone_juridico(o.value);
-        if (v != o.value) {
-          o.value = v;
-        }
-      }, 1);
-    }
-
-    function mphone_juridico(v) {
-      var r = v.replace(/\D/g, "");
-      r = r.replace(/^0/, "");
-      if (r.length > 10) {
-        r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
-      } else if (r.length > 5) {
-        r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
-      } else if (r.length > 2) {
-        r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
-      } else {
-        r = r.replace(/^(\d*)/, "($1");
-      }
-      return r;
-    }
-  </script>
-  <style>
-    .olho-fisica {
-      cursor: pointer;
-      right: 9px;
-      top: 14px;
-      position: absolute;
-      width: 20px;
-    }
-
-    .olho-juridica {
-      cursor: pointer;
-      right: 9px;
-      top: 14px;
-      position: absolute;
-      width: 20px;
-    }
-  </style>
-
-  <script>
-    document.getElementById('olho-fisica').addEventListener('mousedown', function () {
-      document.getElementById('cadastro-senha-fisica').type = 'text';
-    });
-
-    document.getElementById('olho-fisica').addEventListener('mouseup', function () {
-      document.getElementById('cadastro-senha-fisica').type = 'password';
-    });
-
-    // Para que o password não fique exposto apos mover a imagem.
-    document.getElementById('olho-fisica').addEventListener('mousemove', function () {
-      document.getElementById('cadastro-senha-fisica').type = 'password';
-    });
-  </script>
-
-  <script>
-    document.getElementById('olho-juridica').addEventListener('mousedown', function () {
-      document.getElementById('cadastro-senha-juridica').type = 'text';
-    });
-
-    document.getElementById('olho-juridica').addEventListener('mouseup', function () {
-      document.getElementById('cadastro-senha-juridica').type = 'password';
-    });
-
-    // Para que o password não fique exposto apos mover a imagem.
-    document.getElementById('olho-fisica').addEventListener('mousemove', function () {
-      document.getElementById('cadastro-senha-juridica').type = 'password';
-    });
-  </script>
-
+  <script src="js/script.js"></script>
   <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
 

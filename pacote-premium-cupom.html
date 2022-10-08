@@ -15,27 +15,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="menu-superior">
-            <div class="container container_flex-space-around">
-                <a id="logo" href="index.html"><img src="imagens/logo.png" alt="Logomarca"></a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="categorias.html">Categoria</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="pacotes.html">Seja parceiro</a></li>
-                        <li><a href="sistema/login.html" target="_blank">Login</a></li>
-                    </ul>
-                </nav>
-            </div>
+          <div class="container container-menu container_flex-space-around">
+    
+            <a id="logo" href="index.html"><img src="imagens/logo-tem-na-esquina-branco.png" alt="Logomarca"></a>
+            <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
+            line-height: 64px;
+            text-align: end;
+            top: 4px;
+            position: absolute;
+            right: 24px;"></i>
+            <nav>
+              <ul>
+    
+    
+                <a href="index.html"><li class="menu-caixa" id="item-menu-ativo">Home</li></a>
+    
+                <li class="menu-caixa"><a href="categorias.html">Categoria</a></li>
+    
+                <li class="menu-caixa"><a href="contato.html">Contato</a></li>
+    
+                <li class="menu-caixa"><a href="sobre.html">Sobre</a></li>
+    
+                <li class="menu-caixa"><a href="pacotes.html">Seja parceiro</a></li>
+    
+                <li class="menu-caixa"><a href="sistema/login.html" target="_blank">Login</a></li>
+    
+              </ul>
+            </nav>
+          </div>
         </div>
-    </header>
-
+      </header>
     <div class="social-caixa">
         <div class="social-icons">
             <i class="fa-brands fa-facebook-f"></i>
@@ -261,6 +276,7 @@
         </p>
 
     </footer>
+    <script src="js/script.js"></script>
     <script>
         function btnPacote1() {
             document.getElementById('pacote-1').style.display = "grid";

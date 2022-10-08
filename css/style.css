@@ -352,6 +352,443 @@ div.social-icons {
     margin: 0px 0px 0px 15px;
 }
 
+/*------------------------- PARTE DO INDEX.HTML -------------------------*/
+
+a {
+    color: black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.categotias {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 0.938rem;
+}
+
+
+.categotias figure {
+    width: 100%;
+    height: 8.125rem;
+}
+
+.categotias figure i {
+    font-size: 4.375rem;
+    margin: auto;
+
+}
+
+.menu-cate-logo {
+    background-color: #ff6600ec;
+    text-align: center;
+    width: 6.25rem;
+    border-radius: 50%;
+    height: 6.25rem;
+    margin: 0 auto;
+}
+
+.menu-cate-logo i {
+    line-height: 6.25rem;
+    font-size: 1.875rem;
+}
+
+.menu-cate-logo h3 {
+    margin: 0.5rem 0rem;
+}
+
+.flex-space-around img {
+    border-radius: 0.938rem;
+}
+
+#menu-cate {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 0.938rem;
+    margin: 0.938rem;
+}
+
+.titulo {
+    margin: 1.563rem 0rem;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}
+
+.flex-space-around ul {
+    border-radius: 0.938;
+}
+
+.text-propaganda .btn {
+    margin: 1.25rem;
+}
+
+.menu-nav {
+    font-family: Verdana;
+}
+
+.menu-bloco .menu-nav:hover {
+    font-family: Verdana;
+    font-size: 1.125rem;
+    color: black;
+    background-color: black;
+    border-radius: 2.813;
+}
+
+.menu-bloco li {
+    font-size: 0.875rem;
+    font-family: arial;
+}
+
+.propaganda {
+    margin-bottom: 2.188rem;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.menu-anuncio {
+    text-align: center;
+}
+
+.tabela-preco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0.938rem;
+    font-family: "Open Sans";
+}
+
+.card-preco {
+    flex: 1;
+    max-width: 22.5rem;
+    background-color: #fff;
+    margin: 1.25rem 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .3s linear;
+    border: 0.063rem solid black;
+    border-radius: 0.938rem;
+}
+
+.card-preco:hover .card-preco-header {
+    box-shadow: 0 0 0 20rem #0f1833
+}
+
+.card-preco-header {
+    display: inline-block;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0 0 1.25rem 1.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+}
+
+#gold-preco {
+    background-color: #CFB53B;
+}
+
+#free-preco {
+    background-color: #a9a9a9;
+}
+
+#bronze-preco {
+    background-color: #A95522;
+}
+
+.preco {
+    font-size: 4.375rem;
+    color: #0fbcf9;
+    margin: 0rem;
+    transition: .2s linear;
+}
+
+.preco sup,
+.preco span {
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.card-preco:hover .preco,
+.card-preco:hover ul li {
+    color: white;
+}
+
+.card-preco li {
+    font-size: 1rem;
+    padding: 0.625rem 0;
+    text-transform: uppercase;
+}
+
+.btn-preco {
+    display: inline-block;
+    margin-bottom: 0.625rem;
+    margin-top: 2.5rem;
+    border: 0.125rem solid #0fbcf9;
+    color: black;
+    padding: 0.7rem 1.25rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+    font-family:  'Montserrat', sans-serif;;
+}
+
+.btn-preco:hover {
+    border: #533ff0 solid 0.125rem;
+    color: #533ff0;
+}
+
+.menu-categorias {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+.carousel-menu-categoria {
+    width: 98%;
+    /*background: red;*/
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.carousel-menu-categoria::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-menu-categoria .logo-categoria {
+    min-width: 12.5%;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    height: 132px;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .carousel-menu-categoria .logo-categoria {
+        min-width: 23%;
+        margin: 0 10px 0 0;
+    }
+
+    .detail,
+    .button {
+        font-size: 16px;
+    }
+
+    a {
+        padding: 6px 10px;
+    }
+}
+
+.menu-cate-logo {
+    background-color: #ff6600ec;
+    text-align: center;
+    width: 6.25rem;
+    border-radius: 50%;
+    height: 6.25rem;
+    margin: 0 auto;
+}
+
+.menu-cate-logo i {
+    line-height: 6.25rem;
+    font-size: 1.875rem;
+}
+
+.menu-cate-logo h3 {
+    margin: 0.5rem 0rem;
+}
+
+.carousel-menu-anuncio {
+    width: 98%;
+    /*background: red;*/
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+
+.carousel-menu-anuncio::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-menu-anuncio .img-anuncio {
+    min-width: 23.5%;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    /* height: 127px; */
+
+}
+
+.img-anuncio img {
+    width: 100%;
+    border-radius: 0.938rem;
+}
+
+.caixa-anuncio,
+.caixa-categoria {
+    position: relative;
+}
+
+.caixa-btn-menu-anuncio {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+
+}
+
+
+
+.btn-menu-anuncio,
+.btn-menu-categoria {
+    color: black;
+    padding: 0.875rem 0.25rem 1.25rem;
+    cursor: pointer;
+    transition: 0.6s ease;
+    font-size: 3.125rem;
+    line-height: 0.438rem;
+
+}
+
+/* #f7f4f459;  card */
+
+.btn-menu-anuncio:hover,
+.btn-menu-categoria:hover{
+
+    color: white;
+    background-color: #0f1833; 
+    
+}
+
+
+@media (max-width: 768px) {
+
+    .carousel-menu-anuncio .img-anuncio {
+        min-width: 48.5%;
+        margin: 0 10px 0 0;
+    }
+
+    .tabela-preco {
+        display: block;
+        margin: 0;
+
+    }
+
+    .card-preco {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+
+
+}
+
 /*------------------------- PARTE DO CADASTRO.HTML -------------------------*/
 
 .menu-cadastro ul {
@@ -442,6 +879,64 @@ textarea {
 1 - Descer texto (menu pilar esta encobrindo)
 */
 
+#btn-p-juridico {
+    display: none;
+  }
+
+  #fundo-form {
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .flex-grid-2-nome-sobrenome {
+    /*Linha com 2 preenchimentos*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flex-grid-2 {
+    /*Linha com 2 preenchimentos*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flex-grid-3-telefone-senha-email {
+    /*Linha com 3 preenchimentos*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    .flex-grid-2 {
+      /*Linha com 2 preenchimentos*/
+      grid-template-columns: 1fr;
+    }
+
+    .flex-grid-3 {
+      /*Linha com 3 preenchimentos*/
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #flex-grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .olho-fisica {
+    cursor: pointer;
+    right: 9px;
+    top: 14px;
+    position: absolute;
+    width: 20px;
+  }
+
+  .olho-juridica {
+    cursor: pointer;
+    right: 9px;
+    top: 14px;
+    position: absolute;
+    width: 20px;
+  }
+
 /*------------------------- PARTE DO CONTATO.HTML -------------------------*/
 
 
@@ -485,6 +980,15 @@ textarea {
 
 #enviar-btn:hover{
     background-color: #FF6600;
+}
+
+@media (max-width: 768px) {
+    .menu-contato{
+        grid-template-columns: 1fr;
+    }
+    .ml{
+margin-left: 0;
+    }
 }
 /*Obs: 
 1 - Colocar os dados do Senac nop lado direito*/
@@ -779,11 +1283,6 @@ margin: 15px 20px;
     padding: 15px 0;
 }
 
-.propaganda {
-    width: 100%;
-    background-color: rgb(114, 112, 112);
-}
-
 /*Apenas para ver visualmente, nâo colocar no css*/
 .titulo-h3 {
     text-align: center;
@@ -992,3 +1491,143 @@ produtos-info {
     background-color: #bdc3c7;
     color: #7f8c8d;
 }
+
+.borda-rad{
+    border-radius: 0.538rem;
+  }
+  .accordionWrapper{
+    border-radius: 10px;
+    padding: 0;
+    margin: 30px 0 0 0;
+    width: 100%;
+    box-shadow: none;
+  }
+  .accordionItem{
+    width: 100%;
+  }
+  .accordionItemHeading{
+    padding: 0.625rem 0px 0px 0.313rem;
+    font-family:  'Montserrat', sans-serif;;
+  }
+  .accordionItem i{
+    line-height: 15px;
+    padding: 5px 1rem 8px;
+  }
+  .titulo{
+    margin: 1.563rem 0rem;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+  }
+  .titulo-pub {
+    text-align: left;
+    margin: 0 0 1rem;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    padding: 7px 0 7px 15px;
+  }
+  .mt-titulo{
+    margin-top: 110px;
+  }
+  .mb{
+    margin-bottom: 15px;
+  }
+  .container p{
+    font-size: 17px;
+    margin: 0 15px;
+  }
+  .cont-pub{
+    margin: 5px 0;
+  }
+  .pf{
+    padding: 8px;
+  }
+
+/* menu */
+
+
+.container-menu{
+    width:  80%;
+  }
+
+  #item-menu-ativo{
+    background-color: #f7863b;
+  }
+  #logo img {
+  width: 100%;
+}
+  #icon-menu{
+    display: none;
+  }
+  nav {
+    text-align: end;
+  }
+
+  nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 12px;
+  }
+
+  .menu-caixa{
+    background-color: #ff6600;
+  }
+
+  .menu-caixa:hover {
+    background-color: #f7863b;
+  }
+
+  .container_flex-space-around {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+  }
+
+  .menu-superior {
+
+  height: 90px;
+}
+
+#logo img {
+  width: 78%;
+}
+.caixa-texto-imagem-1{
+display: grid;
+  grid-template-columns: 1fr 2fr;}
+  .caixa-texto-imagem-2{display: grid;
+  grid-template-columns: 5fr 7fr;}
+
+  @media only screen and (max-width: 768px) {
+
+    .caixa-texto-imagem-1,.caixa-texto-imagem-2{display: grid;
+  grid-template-columns: 1fr;}
+
+    .container-menu{
+      width: 100%;
+    }
+
+    .menu-caixa{
+      transform: none;
+    }
+
+    nav ul li {
+      display: none;
+      width: 100%;
+    }
+
+    .container_flex-space-around {
+      grid-template-columns: 1fr;
+    }
+
+    .container {
+      width: 90%;
+    }
+    #icon-menu{
+    display: block;
+  }
+  #logo img {
+  width: 30%;
+  }
+  }
+
+  .block {
+    display: block;
+  }
