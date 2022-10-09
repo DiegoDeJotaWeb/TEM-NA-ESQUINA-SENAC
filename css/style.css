@@ -321,12 +321,19 @@ div.social-caixa {
 
 }
 
-div.social-caixa :hover,
+div.social-caixa :hover {
+    animation: caixa-icones 300ms;
+    color: #0f1833;
+    animation-fill-mode: forwards;
+    /* background-color: #FF6600; */
+    
+}
+
+
 div.social-caixa i:hover {
     animation: caixa-icones 300ms;
     color: #0f1833;
     animation-fill-mode: forwards;
-    background-color: #FF6600;
     
 }
 
@@ -512,6 +519,10 @@ a {
 
 .text-propaganda .btn {
     margin: 1.25rem;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .menu-nav {
@@ -1038,7 +1049,7 @@ margin-left: 0;
 }
 
 .card-info-pacote-gold {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding: 10px;
     border: solid #CFB53B 2px;
     border-left: solid #CFB53B 10px;
@@ -1048,7 +1059,7 @@ margin-left: 0;
 }
 
 .card-info-pacote-brass {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding: 10px;
     border: solid #A95522 2px;
     border-left: solid #A95522 10px;
@@ -1058,7 +1069,7 @@ margin-left: 0;
 }
 
 .card-info-pacote-free {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding: 10px;
     border: solid #a9a9a9 2px;
     border-left: solid #a9a9a9 10px;
@@ -1098,7 +1109,7 @@ margin-left: 0;
     line-height: 30px;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 45px;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 3px;
