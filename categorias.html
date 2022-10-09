@@ -16,7 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+<style>
+    .logo-categoria{
+        cursor: pointer;;
+    }
+</style>
 </head>
 
 <body>
@@ -86,50 +90,56 @@
 
                 <div class="carousel-menu-categoria mb">
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria "  onclick="todasCategorias()">
+                        <div class="menu-cate-logo"><i class="fa-solid fa-plus"></i>
+                            <h3>Todos</h3>
+                        </div>
+                    </div>
+
+                    <div class="logo-categoria"  onclick="categoria1()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-bag-shopping"></i>
                             <h3>Mercado</h3>
                         </div>
                     </div>
 
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria " onclick="categoria2()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-dog"></i>
                             <h3>PetShop</h3>
                         </div>
                     </div>
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria " onclick="categoria3()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-car-burst"></i>
                             <h3>Mecanico</h3>
                         </div>
                     </div>
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria " onclick="categoria4()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-shirt"></i>
                             <h3>Moda</h3>
                         </div>
                     </div>
 
-                    <div class="logo-categoria " style="text-align: center;">
+                    <div class="logo-categoria " style="text-align: center;" onclick="categoria5()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-utensils"></i>
                             <h3>Food</h3>
                         </div>
                     </div>
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria " onclick="categoria6()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-cross"></i>
                             <h3>Farmacia</h3>
                         </div>
                     </div>
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria " onclick="categoria7()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-cake-candles"></i>
                             <h3>Padaria</h3>
                         </div>
                     </div>
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria " onclick="categoria8()">
                         <div class="menu-cate-logo">
                             <i class="fa-solid fa-bag-shopping"></i>
                             <h3>Mercado</h3>
@@ -137,41 +147,28 @@
                     </div>
 
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria " onclick="categoria9()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-shirt"></i>
                             <h3>Moda</h3>
                         </div>
                     </div>
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria "onclick="categoria10()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-dog"></i>
                             <h3>PetShop</h3>
                         </div>
                     </div>
 
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria " onclick="categoria11()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-utensils"></i>
                             <h3>Food</h3>
                         </div>
                     </div>
 
-                    <div class="logo-categoria ">
+                    <div class="logo-categoria "onclick="categoria12()">
                         <div class="menu-cate-logo"><i class="fa-solid fa-car-burst"></i>
                             <h3>Mecanico</h3>
-                        </div>
-                    </div>
-
-                    <div class="logo-categoria ">
-                        <div class="menu-cate-logo"><i class="fa-solid fa-cross"></i>
-                            <h3>Farmacia</h3>
-                        </div>
-                    </div>
-
-                    <div class="logo-categoria ">
-                        <div class="menu-cate-logo">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            <h3>Mercado</h3>
                         </div>
                     </div>
                 </div>
@@ -180,12 +177,12 @@
                     <span class="btn-menu-categoria">&#155;</span>
                 </div>
 
-                <div class="card-cateroria">
+                <div class="card-cateroria categoria9">
                     <div class="card-info-pacote-gold">
                         <div class="col-2">
                             <div>
                                 <h2>Nome da empresa</h2>
-                                <h4>Categoria</h4>
+                                <h4>Categoria 9</h4>
                                 <hr>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste
                                     laborum
@@ -221,12 +218,12 @@
                     </div>
 
                 </div>
-                <div class="card-cateroria">
+                <div class="card-cateroria categoria1">
                     <div class="card-info-pacote-gold">
                         <div class="col-2">
                             <div>
                                 <h2>Nome da empresa</h2>
-                                <h4>Categoria</h4>
+                                <h4>Categoria 1</h4>
                                 <hr>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste
                                     laborum
@@ -262,12 +259,12 @@
                     </div>
 
                 </div>
-                <div class="card-cateroria">
+                <div class="card-cateroria categoria2">
                     <div class="card-info-pacote-gold">
                         <div class="col-2">
                             <div>
                                 <h2>Nome da empresa</h2>
-                                <h4>Categoria</h4>
+                                <h4>Categoria 2</h4>
                                 <hr>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia doloremque iste
                                     laborum
@@ -692,6 +689,7 @@
 
 </footer>
 <script src="js/script.js"></script>
+<script src="js/menu-categorias.js"></script>
 <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 
 </html>

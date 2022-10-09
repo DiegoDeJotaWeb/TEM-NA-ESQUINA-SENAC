@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caixa-1{
+            background-color: red;
+        }
+        .caixa-2{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="todos"><button type="button" onclick="todos()">todos</button></div>
+    <div class="btn-1"><button type="button" onclick="caixa1()">caixa-1</button></div>
+    <div class="btn-2"><button tybe="button" onclick="caixa2()">caixa-2</button></div>
+
+    <div class="caixa-1">
+        caixa-1
+    </div>
+
+    <div class="caixa-2">
+        caixa-2
+    </div>
+
+    <div class="caixa-1">
+        caixa-1
+    </div>
+
+    <div class="caixa-2">
+        caixa-2
+    </div>
+
+    <div class="caixa-2">
+        caixa-2
+    </div>
+
+    <div class="caixa-2">
+        caixa-2
+    </div>
+
+    <div class="caixa-1">
+        caixa-1
+    </div>
+
+    <script>
+        function todos(){
+            let caixa1 = document.getElementsByClassName('caixa-1');
+            let caixa2 = document.getElementsByClassName('caixa-2');
+
+            for(let i = 0; i < caixa2.length; i ++){
+                console.log(caixa2[i].style.display = 'block');
+            }
+            for(let i = 0; i < caixa1.length; i ++ ){
+                console.log(caixa1[i].style.display = 'block');
+                
+            }
+        }
+        function caixa1(){
+            let caixa1 = document.getElementsByClassName('caixa-1');
+            let caixa2 = document.getElementsByClassName('caixa-2');
+           
+            for(let i = 0; i < caixa1.length; i ++ ){
+                console.log(caixa1[i].style.display = 'block');
+            }
+
+            for(let i = 0; i < caixa2.length; i ++ ){
+              
+                console.log(caixa2[i].style.display = 'none');
+            }
+        }
+
+        function caixa2(){
+            let caixa1 = document.getElementsByClassName('caixa-1');
+            let caixa2 = document.getElementsByClassName('caixa-2');
+  
+            for(let i = 0; i < caixa1.length; i ++ ){
+              
+                console.log(caixa1[i].style.display = 'none');
+            }
+
+            for(let i = 0; i < caixa2.length; i ++ ){
+                console.log(caixa2[i].style.display = 'block');
+               
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

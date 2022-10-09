@@ -1099,6 +1099,7 @@ margin-left: 0;
 .col-2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 15px;
 }
 
 .tag-oferta {
