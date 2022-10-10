@@ -249,6 +249,27 @@ header nav {
     display: none;
 }
 
+
+#menu-lateral-toggle-suporte {
+    transition: opacity 1.5s;
+    display: none;
+
+}
+
+#menu-lateral-toggle-suporte li a {
+    display: inline !important;
+}
+
+#menu-lateral-toggle-suporte li a:hover,
+#menu-lateral-toggle-suporte li {
+    color: var(--secondary);
+    border-left: none !important;
+}
+
+#menu-lateral-toggle-suporte:hover {
+    /* border-left: 2px #1e282c solid!important; */
+}
+
 #menu-mensagens.mostrar-menu-mensagens {
     display: block;
 }

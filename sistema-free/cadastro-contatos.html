@@ -116,71 +116,89 @@
 
         <div class="caixa-2" id="caixa-2" style="background-color: green;height: 100vh;">
             <div class="menu-lado" id="menu-lado" style="background-color: blue;    background-color: #161d31;
-            box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%) !important;z-index: 999;" >
-                <div id="logo"><img src="imagens/tem-na-esquina-branco.png" alt=""></div>
-                <!-- <nav style="background: #161d31;"> -->
-                <div class="menu-lateral" id="menu-lateral" style="overflow: auto; height:100vh;overflow-x: hidden;">
-                    <ul class="nav nav-pills nav-sidebar flex-column">
+            box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%) !important;z-index: 999;">
+            <div id="logo"><img src="imagens/tem-na-esquina-branco.png" alt=""></div>
+            <!-- <nav style="background: #161d31;"> -->
+            <div class="menu-lateral" id="menu-lateral" style="overflow: auto; height:100vh;overflow-x: hidden;">
+                <ul class="nav nav-pills nav-sidebar flex-column">
 
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">
-                                <i class="fa-solid fa-house"></i>
-                                <p>
-                                    Dashboard
+                    <li class="nav-item ">
 
-                                </p>
-                            </a>
-                        </li>
+                        <a href="index.html" class="nav-link">
+                            <i class="fa-solid fa-house"></i>
+                            <p>
+                                Dashboard
 
-                        <li class="nav-item">
-                            <a href="javascrip:;" class="nav-link"
-                                onclick="MudaVisualizacaoMenuCadastro('menu-lateral-toggle-cadastro');">
-                                <i class="fa-solid fa-clipboard"></i>
-                                <p>
-                                    Cadastros
+                            </p>
+                        </a>
 
-                                </p>
-                                <i id="seta-lado-cadastro" class="fa fa-angle-right" aria-hidden="true"></i>
-                            </a>
+                    </li>
 
-                            <style>
-                                #menu-lateral-toggle-cadastro li i {
-                                    color: #fff;
-                                    padding: 0 10px;
-                                }
-                            </style>
+                    <li class="nav-item nav-item-ativo menu-item-ativo ">
+                        <a href="javascrip:;" class="nav-link"
+                            onclick="MudaVisualizacaoMenuCadastro('menu-lateral-toggle-cadastro');">
+                            <i class="fa-solid fa-clipboard"></i>
+                            <p>
+                                Cadastros
 
-                            <ul id="menu-lateral-toggle-cadastro">
-                                
-                                <li><i class="fa-solid fa-genderless"></i><a href="cadastro-contatos.html">Contato</a>
-                                </li>
-                                <li><i class="fa-solid fa-genderless"></i><a
-                                        href="cadastro-informacoes.html">Informações</a>
-                                </li>
-                            </ul>
-                        </li>
+                            </p>
+                            <i id="seta-lado-cadastro" class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
 
-                        <li class="nav-item">
-                            <a href="comentarios.html" class="nav-link">
-                                <i class="fa-solid fa-comment"></i>
-                                <p>
-                                    Comentarios
+                        <style>
+                            #menu-lateral-toggle-cadastro li i {
+                                color: #fff;
+                                padding: 0 10px;
+                            }
+                        </style>
 
-                                </p>
-                            </a>
-                        </li>
+                        <ul id="menu-lateral-toggle-cadastro">
+                            <li><i class="fa-solid fa-genderless"></i><a href="cadastro-contatos.html">Contato</a>
+                            </li>
+                            <li><i class="fa-solid fa-genderless"></i><a
+                                    href="cadastro-informacoes.html">Informações</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                        <li class="nav-item">
-                            <a href="pacotes.html" class="nav-link">
-                                <i class="fa-solid fa-shuffle"></i>
-                                <p>
-                                    Troca de pacote
+                    <li class="nav-item">
+                        <a href="comentarios.html" class="nav-link">
+                            <i class="fa-solid fa-comment"></i>
+                            <p>
+                                Comentarios
 
-                                </p>
-                            </a>
-                        </li>
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="pacotes.html" class="nav-link">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <p>
+                                Troca de pacote
+
+                            </p>
+                        </a>
+                    </li>
 
 
+
+                    <style>
+                        #menu-lateral-toggle-suporte li i {
+                            color: #fff;
+                            padding: 0 10px;
+                        }
+                    </style>
+
+                    <li class="nav-item">
+                        <a href="javascrip:;" class="nav-link"
+                            onclick="MudaVisualizacaoMenuSuporte('menu-lateral-toggle-suporte');">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>
+                                Suporte
+                            </p>
+                            <i id="seta-lado-suporte" class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
 
                         <style>
                             #menu-lateral-toggle-suporte li i {
@@ -189,48 +207,31 @@
                             }
                         </style>
 
-                        <li class="nav-item">
-                            <a href="javascrip:;" class="nav-link"
-                                onclick="MudaVisualizacaoMenuSuporte('menu-lateral-toggle-suporte');">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <p>
-                                    Suporte
-                                </p>
-                                <i id="seta-lado-suporte" class="fa fa-angle-right" aria-hidden="true"></i>
-                            </a>
-
-                            <style>
-                                #menu-lateral-toggle-suporte li i {
-                                    color: #fff;
-                                    padding: 0 10px;
-                                }
-                            </style>
-
-                            <ul id="menu-lateral-toggle-suporte">
-                                <li>
-                                    <i class="fa-solid fa-genderless"></i>
-                                    <a href="mensagens-suporte.html">Mensagens</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <ul id="menu-lateral-toggle-suporte">
+                            <li>
+                                <i class="fa-solid fa-genderless"></i>
+                                <a href="mensagens-suporte.html">Mensagens</a>
+                            </li>
+                        </ul>
+                    </li>
 
 
 
-                        </li>
+                    </li>
 
 
 
 
 
 
-                        <li class="nav-item" style="text-align: center;">
-                            <a href="pagamento-carrinho.html" class="nav-link">
-                                <button class="btn" style="width: 100%;">SEJA PREMIUM</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item" style="text-align: center;">
+                        <a href="pagamento-carrinho.html" class="nav-link">
+                            <button class="btn" style="width: 100%;">SEJA PREMIUM</button>
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </div>
 
 
             <div style="background-color: #fff;position:relative" >
@@ -305,17 +306,14 @@ display: none;
                 height: 100vh;">
                     <div class="conteudo">
                         <div class="breadcrumb">
-                            <h1>Dashboard</h1>
-                            <p>Home / Dashboard</p>
+                            <h1>Cadastro contato</h1>
+                            <p>Home / Cadastro contato</p>
                         </div>
                       
 
                         <form action="" method="get">
-                            <div class="col-2-grid">
-                                <div class="form-cadastro">
-                                    <label for="">Site</label>
-                                    <input type="text">
-                                </div>
+                            <div class="col-1-grid">
+                              
                                 <div class="form-cadastro">
                                     <label for="">E-mail</label>
                                     <input type="text">
@@ -332,38 +330,7 @@ display: none;
                                 </div>
                             </div>
         
-                            <div class="col-2-grid">
-                                <div class="form-cadastro">
-                                    <label for="">Whatsapp</label>
-                                    <input type="text">
-                                </div>
-                                <div class="form-cadastro">
-                                    <label for="">Facebook</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-        
-                            <div class="col-2-grid">
-                                <div class="form-cadastro">
-                                    <label for="">Instagram</label>
-                                    <input type="text">
-                                </div>
-                                <div class="form-cadastro">
-                                    <label for="">Titulo</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-        
-                            <div class="col-2-grid">
-                                <div class="form-cadastro">
-                                    <label for="">Texto</label>
-                                    <input type="text">
-                                </div>
-                                <div class="form-cadastro">
-                                    <label for="">Titulo</label>
-                                    <input type="text">
-                                </div>
-                            </div>
+                           
                          
         
                             <input type="submit" value="Salvar" class="btn">
