@@ -7,7 +7,7 @@
     <meta name="description" content="Classificados de comércios regionais">
     <meta name="keywords" content="Classificados">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo, Pedro">
+    <meta name="author" content="Diego Rodrigues, Gabriel, Marcelo N.Aggio, Pedro">
     <title>Pacotes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="imagens/logo_icone.png" sizes="64x64">
@@ -16,39 +16,171 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        .cont-p {
+            font-size: 1.188rem;
+        }
+
+        .titulo {
+            margin-top: 0;
+            text-align: left;
+        }
+
+        /* .cont-pub {
+            margin: 0 1rem;
+        } */
+
+        .contatos-info iframe {
+            margin-top: 1rem;
+        }
+
+        .mt {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-preco {
+            display: inline-block;
+            border: 0.125rem solid #0fbcf9;
+            color: black;
+            padding: 0.7rem 1.25rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+        }
+
+        .ml {
+            margin-left: 1rem;
+        }
+
+        .col-cupom {
+            background-color: white;
+            border: 0.125rem solid #0fbcf9;
+            border-radius: 1rem;
+        }
+
+
+
+        .col-cupom {
+            background-color: white;
+            border: 0.125rem solid #0fbcf9;
+            border-radius: 1rem;
+            background-color: #0f1833;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-preco-pct-cup {
+            border: 0.125rem solid white;
+            color: white;
+            background-color: #0f1833;
+            padding: 1.125rem 1.25rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-preco-pct-cup:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border: 0.125rem solid black;
+            /* teste  */
+        }
+
+        .btn-preco-pct {
+            border: 0.125rem solid #0fbcf9;
+            color: white;
+            background-color: #0f1833;
+            padding: 1.125rem 1.25rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .contato-info-grid {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            column-gap: 15px;
+        }
+
+        .btn-pag-info {
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .col-grid-4 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 15px;
+            }
+
+            .contato-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="menu-superior">
-          <div class="container container-menu container_flex-space-around">
-    
-            <a id="logo" href="index.html"><img src="imagens/logo-tem-na-esquina-branco.png" alt="Logomarca"></a>
-            <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
+            <div class="container container-menu container_flex-space-around">
+
+                <a id="logo" href="index.html"><img src="imagens/logo-tem-na-esquina-branco.png" alt="Logomarca"></a>
+                <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
             line-height: 64px;
             text-align: end;
             top: 4px;
             position: absolute;
             right: 24px;"></i>
-            <nav>
-                <ul>
-                    <a href="index.html" class="item-menu-superior"><li class="menu-caixa" >Home</li></a>
-        
-                    <a href="categorias.html" class="item-menu-superior">  <li class="menu-caixa">Categoria</li></a>
-        
-                    <a href="sobre.html" class="item-menu-superior"><li class="menu-caixa">Sobre</li></a>
-        
-                    <a href="pacotes.html" class="item-menu-superior"><li class="menu-caixa" id="item-menu-ativo">Seja parceiro</li></a>
+                <nav>
+                    <ul>
+                        <a href="index.html" class="item-menu-superior">
+                            <li class="menu-caixa">Home</li>
+                        </a>
 
-                    <a href="contato.html" class="item-menu-superior"> <li class="menu-caixa">Contato</li></a>
-        
-                    <a href="sistema-premium/login.html" target="_blank" class="item-menu-superior"><li class="menu-caixa">Login</li></a>
-        
-                  </ul>
-            </nav>
-          </div>
+                        <a href="categorias.html" class="item-menu-superior">
+                            <li class="menu-caixa">Categoria</li>
+                        </a>
+
+                        <a href="sobre.html" class="item-menu-superior">
+                            <li class="menu-caixa">Sobre</li>
+                        </a>
+
+                        <a href="pacotes.html" class="item-menu-superior">
+                            <li class="menu-caixa" id="item-menu-ativo">Seja parceiro</li>
+                        </a>
+
+                        <a href="contato.html" class="item-menu-superior">
+                            <li class="menu-caixa">Contato</li>
+                        </a>
+
+                        <a href="sistema-premium/login.html" target="_blank" class="item-menu-superior">
+                            <li class="menu-caixa">Login</li>
+                        </a>
+
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </header>
+    </header>
+
     <div class="social-caixa">
         <div class="social-icons">
             <i class="fa-brands fa-facebook-f"></i>
@@ -61,201 +193,598 @@
         </div>
     </div>
 
+
     <section>
         <div class=" margin-header">
-     
-           
+            <div class="">
+                <div>
+                    <div class="container">
+                        <div class="">
 
-
-          
-
-            <div class="" >
-                
-                <div >
-                    <div class="container " style="background-color:white ;padding: 15px;">
-                        <h2>Nome da empresa</h2>
-                        <h3>CATEGORIA</h3>
-
-                        <hr>
+                            <div style="background-color:white ;padding: 15px;">
+                                <h2>Petshop Legal</h2>
+                                <h3>Petshop</h3>
+                            </div>
+                        </div>
+                        <!-- <hr> -->
                     </div>
-
                     <div class="banner-pag-cliente"></div>
+                    <div class="container">
+                        <div class="">
+                            <div class="info-empresa cont-pub">
+                                <p class="">A Petshop Legal foi inaugurada em 1994, com apenas um consultório. Com o
+                                    aumento de clientes, o espaço se tornou pequeno e as nossas instalações e serviços
+                                    foram ampliados, visando atender todas as necessidades dos pets de estimação.<br>
 
-                    <div class="info-empresa container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti vero
-                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit eos
-                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat vitae?
-                        </p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti vero
-                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit eos
-                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat vitae?
-                        </p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam ea vel deleniti vero
-                            nostrum error adipisci nisi eum, voluptatibus porro, libero assumenda enim corrupti
-                            voluptate consectetur omnis sunt temporibus. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Tempore corporis ad minus ut quae reiciendis eum, ullam, reprehenderit eos
-                            dignissimos, tempora sit provident quibusdam excepturi quia dicta repudiandae placeat vitae?
-                        </p>
-
-
-                    </div>
-                    <div class="contatos-info container">
-                        <div class="col-2 pAll">
-                            <div>
-                                <h2>Contatos</h2>
-                                <p><a href="">Telefone (11) 99999-9999</a></p>
-                                <p><a href="">Celular (11) 99999-9999</a></p>
-                                <p><a href="">Whatsapp (11) 99999-9999</a></p>
-                                <p><a href="">Site www.seu-site.com.br</a></p>
-                                <p><a href="">Email contato@seu-site.com.br</a></p>
+                                    Dessa forma, estabeleceu-se um vínculo de confiança com os tutores, que tornaram-se
+                                    clientes fiéis e contribuíram para o crescimento da empresa.
+                                </p>
                             </div>
+                            <div class="contatos-info">
+                                <div class=" pAll contato-info-grid">
+                                    <div>
+                                        <h3 class="titulo">Contatos</h3>
+                                        <p class="cont-pub"><a href="" class="cont-p">Telefone (11) 99999-9999</a></p>
+                                        <p class="cont-pub"><a href="" class="cont-p">Celular (11) 99999-9999</a></p>
 
-                            <div>
-                                <h3>siga-nos</h3>
-                                <p><a href="">Facebook</a></p>
-                                <p><a href="">Instagram</a></p>
-                                <p><a href="">Twitter</a></p>
-                            </div>
-
-
-
-
-                        </div>
-                       
-                    </div>
-
-                    <div class="endereco-info">
-                        <div class="container">
-                        <h2>Endereço</h2>
-                        <p> Rua Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</p>
-                    </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                    <div class="produtos-info container">
-                        <h2>Produtos</h2>
-                        <div class="col-grid-4">
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4>R$ 50,00</h4>
-                            </div>
-
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4>R$ 50,00</h4>
-                            </div>
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4>R$ 50,00</h4>
-                            </div>
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4>R$ 50,00</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="produtos-info container">
-                        <h2>Ofertas</h2>
-                        <div class="col-grid-4">
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4 class="valor-desconto">R$ 50,00</h4>
-                                <h4>R$ 45,00</h4>
-                            </div>
-
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4 class="valor-desconto">R$ 50,00</h4>
-                                <h4>R$ 45,00</h4>
-                            </div>
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4 class="valor-desconto">R$ 50,00</h4>
-                                <h4>R$ 45,00</h4>
-                            </div>
-                            <div>
-                                <img src="imagens/layoutminimercado.png" alt="">
-                                <h3>Nome do produto</h3>
-                                <h4 class="valor-desconto">R$ 50,00</h4>
-                                <h4>R$ 45,00</h4>
-                            </div>
-                        </div>
-                    </div>
+                                        <div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <h3 class="titulo">Siga-nos</h3>
+                                            <p class="cont-pub"><a href="" class="cont-p">Facebook</a></p>
+                                            <p class="cont-pub"><a href="" class="cont-p">Instagram</a></p>
+                                            <p class="cont-pub"><a href="" class="cont-p">Twitter</a></p>
+                                        </div>
+                                    </div>
 
 
-                    <div class="cupom ">
-                        <div class="col-cupom container">
-                           
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta perferendis natus unde
-                                corrupti repellat consectetur, a at ipsa ducimus culpa est quod ratione totam expedita
-                                sit
-                                rerum quos ad ullam.</p>
-                                <div style="text-align: center;">
-                                    <h2 style="width: 100%;border: 1px dotted black;border-radius: 0.25rem;">LEVA15</h2>
-                                    <p>Clique para gerar cupom</p>
+                                    <div>
+                                        <h3 class="titulo">Endereço</h3>
+                                        <p class="cont-p"><a
+                                                href="https://www.google.com/search?q=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&oq=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&aqs=chrome..69i57j0i546l5.572j0j7&sourceid=chrome&ie=UTF-8"
+                                                target="_blank"> Rua Tito, 54 - Vila Romana, São Paulo - SP,
+                                                05051-000</a></p>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
+                                            width="100%" height="350" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
                                 </div>
-                          
-                        </div>
-                    </div>
-
-                    <div class="comentarios-info container">
-                        <h2>Comentarios</h2>
-                        <div class="comentario-pag-info">
-                            <img src="imagens/layoutminimercado.png" alt="">
-                            <div  class="pl">
-                                <h2>Nome </h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
-                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                                    vero,
-                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
                             </div>
                         </div>
 
-                        <div class="comentario-pag-info">
-                            <img src="imagens/layoutminimercado.png" alt="">
-                            <div  class="pl">
-                                <h2>Nome </h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
-                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                                    vero,
-                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                        <!------------------------Produtos---------------------->
+                        <div class="produtos-info ">
+                            <h2 class="titulo">Produtos</h2>
+                            <div class="col-grid-4">
+                                <div>
+                                    <img src="imagens-nova/produtos/petshop-1.jpg" alt="">
+                                    <h3>Pedigree</h3>
+                                    <h4>R$ 50,00</h4>
+                                </div>
+
+                                <div>
+                                    <img src="imagens-nova/produtos/petshop-2.jpg" alt="">
+                                    <h3>Magnus</h3>
+                                    <h4>R$ 50,00</h4>
+                                </div>
+                                <div>
+                                    <img src="imagens-nova/produtos/petshop-3.jpg" alt="">
+                                    <h3>Friskies</h3>
+                                    <h4>R$ 50,00</h4>
+                                </div>
+                                <div>
+                                    <img src="imagens-nova/produtos/petshop-4.jpg" alt="">
+                                    <h3>Pipicat</h3>
+                                    <h4>R$ 50,00</h4>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="comentario-pag-info">
-                            <img src="imagens/layoutminimercado.png" alt="">
-                            <div  class="pl">
-                                <h2>Nome </h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
-                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                                    vero,
-                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                        <div class="produtos-info ">
+                            <h2 class="titulo mt">Ofertas</h2>
+                            <div class="col-grid-4">
+                                <div>
+                                    <img src="imagens-nova/produtos/petshop-5.jpg" alt="">
+                                    <h3>Baw Waw</h3>
+                                    <h4 class="valor-desconto">R$ 50,00</h4>
+                                    <h4>R$ 45,00</h4>
+                                </div>
+
+                                <div>
+                                    <img src="imagens-nova/produtos/petshop-6.jpg" alt="">
+                                    <h3>Sanol</h3>
+                                    <h4 class="valor-desconto">R$ 50,00</h4>
+                                    <h4>R$ 45,00</h4>
+                                </div>
+                                <div>
+                                    <img src="imagens-nova/produtos/petshop-7.jpg" alt="">
+                                    <h3>Bolinha</h3>
+                                    <h4 class="valor-desconto">R$ 50,00</h4>
+                                    <h4>R$ 45,00</h4>
+                                </div>
+                                <div>
+                                    <img src="imagens-nova/produtos/petshop-8.jpg" alt="">
+                                    <h3>Special Cat</h3>
+                                    <h4 class="valor-desconto">R$ 50,00</h4>
+                                    <h4>R$ 45,00</h4>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <br>
+                        <div class="cupom mt">
+                            <div class="col-cupom  mt">
 
-                    <div class="btn-pag-info contianer">
-                        <button class="btn">Ver mais</button>
-                        <button class="btn">Fale direto com a empresa</button>
-                        <button class="btn">Comentar</button>
+                                <p class="cont-p">Este cupom lhe Garante X% de Desconto em "produto" Para participar da
+                                    promoção clique em "Gerar" , Lembrando que para participar é necesario alguns dados</p>
+                                <div class="ml" style="text-align: center;">
+                                    <h2 style="width: 100%;border: 1px dotted #fff;border-radius: 0.25rem;">LEVA15</h2>
+                                    <p>Cupom gerado</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class=" ">
+                            <h2 class="titulo mt">Comentarios</h2>
+                            <div class="comentario-pag-info br">
+                                <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="pl">
+                                    <h2 class="ml">Maria </h2>
+                                    <p class="cont-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+                                        numquam amet itaque
+                                        assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                        vero,
+                                        laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                                </div>
+                            </div>
+
+                            <div class="comentario-pag-info br">
+                                <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="pl">
+                                    <h2 class="ml">José </h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
+                                        itaque
+                                        assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                        vero,
+                                        laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                                </div>
+                            </div>
+                            <style>
+                                .item-comentario {
+                                    display: none;
+                                }
+                            </style>
+
+                            <div class="comentario-pag-info br ">
+                                <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="pl">
+                                    <h2 class="ml">Diego </h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
+                                        itaque
+                                        assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                        vero,
+                                        laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                                </div>
+                            </div>
+
+                            <div class="comentario-pag-info br item-comentario">
+                                <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="pl">
+                                    <h2 class="ml">Marcelo </h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
+                                        itaque
+                                        assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                        vero,
+                                        laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                                </div>
+                            </div>
+
+                            <div class="comentario-pag-info br item-comentario">
+                                <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="pl">
+                                    <h2 class="ml">Pedro </h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
+                                        itaque
+                                        assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                        vero,
+                                        laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                                </div>
+                            </div>
+
+                            <div class="comentario-pag-info br item-comentario">
+                                <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="pl">
+                                    <h2 class="ml">Gabriel </h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet
+                                        itaque
+                                        assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                        vero,
+                                        laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-pag-info">
+                            <button type="button" onclick="maisComentarios()" class="btn-preco-pct">Ver mais</button>
+                            <button type="button" class="btn-preco-pct" id="open-modal-1">Fale direto com a empresa</button>
+                            <button type="button" class="btn-preco-pct" id="open-modal">Comentar</button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+
+
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>comentario</h2>
+            <p id="close-modal">X</p>
+        </div>
+        <div class="modal-body">
+            <p>
+                Deixe seu comentario
+            </p>
+
+
+            <form action="">
+                <div class="form-cadastro" style="background-color: #fff;">
+                    <label for="nome-comentario" style="color: #000;">Nome</label>
+                    <input type="text" name="" id="nome-comentario">
+                </div>
+                <div class="form-cadastro" style="background-color: #fff;">
+                    <label for="mensagem-comentario" style="color: #000;">Comentario</label>
+                    <textarea name="" id="mensagem-comentario"></textarea>
+                </div>
+            </form>
+            <hr>
+
+
+            <div class="modal-footer mt">
+                <button id="remove-modal" class="btn-preco-pct">Fechar</button>
+                <button id="save-modal" class="btn-preco-pct">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #open-modal {
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 1;
+        }
+
+        #fade {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 5;
+        }
+
+        #modal {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            max-width: 90%;
+            background-color: #fff;
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            z-index: 10;
+        }
+
+        #fade,
+        #modal {
+            transition: 0.5s;
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .modal-body p {
+            margin-bottom: 1rem;
+        }
+
+        #modal.hide,
+        #fade.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #modal.hide {
+            top: 0;
+        }
+    </style>
+
+
+<div id="fade-1" class="hide-1"></div>
+<div id="modal-1" class="hide-1">
+    <div class="modal-header-1">
+        <h2>Mensagem</h2>
+        <p id="close-modal-1">X</p>
+    </div>
+    <div class="modal-body-1">
+        <p>
+            Fale direto com a empresa
+        </p>
+
+
+        <form action="">
+            <div class="form-cadastro" style="background-color: #fff;">
+                <label for="nome-empresa" style="color: #000;">Nome</label>
+                <input type="text" name="" id="nome-empresa">
+            </div>
+            <div class="form-cadastro" style="background-color: #fff;">
+                <label for="mensagem-empresa" style="color: #000;">Mensagem</label>
+                <textarea name="" id="mensagem-empresa"></textarea>
+            </div>
+        </form>
+        <hr>
+
+
+        <div class="modal-footer-1 mt">
+            <button id="remove-modal-1" class="btn-preco-pct">Fechar</button>
+            <button id="save-modal-1" class="btn-preco-pct">Enviar</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    #open-modal-1 {
+        cursor: pointer;
+    }
+
+  
+
+    #fade-1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 5;
+    }
+
+    #modal-1 {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        max-width: 90%;
+        background-color: #fff;
+        padding: 1.2rem;
+        border-radius: 0.5rem;
+        z-index: 10;
+    }
+
+    #fade-1,
+    #modal-1 {
+        transition: 0.5s;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .modal-header-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .modal-body-1 p {
+        margin-bottom: 1rem;
+    }
+
+    #modal-1.hide-1,
+    #fade-1.hide-1 {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #modal-1.hide-1 {
+        top: 0;
+    }
+</style>
+
+<div id="fade-2" class="hide-2"></div>
+<div id="modal-2" class="hide-2">
+    <div class="modal-header-2">
+        <h2>Cupom</h2>
+        <p id="close-modal-2">X</p>
+    </div>
+    <div class="modal-body-2">
+        <p>
+            Gerar cupom
+        </p>
+
+
+        <form action="">
+            <div class="form-cadastro" style="background-color: #fff;">
+                <label for="nome-cupom" style="color: #000;">Nome</label>
+                <input type="text" name="" id="nome-cupom">
+            </div>
+
+            <div class="form-cadastro" style="background-color: #fff;">
+                <label for="email-cupom" style="color: #000;">Email</label>
+                <input type="text" name="" id="email-cupom">
+            </div>
+            <div class="form-cadastro" style="background-color: #fff;">
+                <label for="telefone-cupom" style="color: #000;">Telefone</label>
+                <input type="text" name="" id="telefone-cupom">
+            </div>
+            
+        </form>
+        <hr>
+
+
+        <div class="modal-footer-2 mt">
+            <button id="remove-modal-2" class="btn-preco-pct">Fechar</button>
+            <a href="pacote-premium-cupom.html" id="save-modal-2" class="btn-preco-pct">Enviar</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    #open-modal-2 {
+        cursor: pointer;
+    }
+
+  
+
+    #fade-2 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 5;
+    }
+
+    #modal-2 {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        max-width: 90%;
+        background-color: #fff;
+        padding: 1.2rem;
+        border-radius: 0.5rem;
+        z-index: 10;
+    }
+
+    #fade-2,
+    #modal-2 {
+        transition: 0.5s;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .modal-header-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .modal-body-2 p {
+        margin-bottom: 1rem;
+    }
+
+    #modal-2.hide-2,
+    #fade-2.hide-2 {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #modal-2.hide-2 {
+        top: 0;
+    }
+</style>
     <footer>
 
         <div>
@@ -297,5 +826,90 @@
 
         }
     </script>
+
+    <script>
+        function maisComentarios() {
+            var comentario = document.getElementsByClassName('item-comentario');
+
+            for (let i = 0; i < comentario.length; i++) {
+                comentario[i].style.display = 'grid';
+
+            }
+        }
+    </script>
+
+    <script>
+        // modal comentario
+        const openModalButton = document.querySelector("#open-modal");
+        const closeModalButton = document.querySelector("#close-modal");
+        const removeModalButton = document.querySelector("#remove-modal");
+        const modal = document.querySelector("#modal");
+        const fade = document.querySelector("#fade");
+
+        const toggleModal = () => {
+            modal.classList.toggle("hide");
+            fade.classList.toggle("hide");
+        };
+
+
+
+        [openModalButton, closeModalButton, fade].forEach((el) => {
+            el.addEventListener("click", () => toggleModal());
+        });
+
+
+        [removeModalButton, fade].forEach((el) => {
+            el.addEventListener("click", () => toggleModal());
+        });
+    </script>
+      <script>
+        // modal fale direto com a empresa
+        const openModalButton1 = document.querySelector("#open-modal-1");
+        const closeModalButton1 = document.querySelector("#close-modal-1");
+        const removeModalButton1 = document.querySelector("#remove-modal-1");
+        const modal1 = document.querySelector("#modal-1");
+        const fade1 = document.querySelector("#fade-1");
+
+        const toggleModal1 = () => {
+            modal1.classList.toggle("hide-1");
+            fade1.classList.toggle("hide-1");
+        };
+
+
+
+        [openModalButton1, closeModalButton1, fade1].forEach((el) => {
+            el.addEventListener("click", () => toggleModal1());
+        });
+
+
+        [removeModalButton1, fade1].forEach((el) => {
+            el.addEventListener("click", () => toggleModal1());
+        });
+    </script>
+
+<script>
+    // modal gerar cupom
+    const openModalButton2 = document.querySelector("#open-modal-2");
+    const closeModalButton2 = document.querySelector("#close-modal-2");
+    const removeModalButton2 = document.querySelector("#remove-modal-2");
+    const modal2 = document.querySelector("#modal-2");
+    const fade2 = document.querySelector("#fade-2");
+
+    const toggleModal2 = () => {
+        modal2.classList.toggle("hide-2");
+        fade2.classList.toggle("hide-2");
+    };
+
+
+
+    [openModalButton2, closeModalButton2, fade2].forEach((el) => {
+        el.addEventListener("click", () => toggleModal2());
+    });
+
+
+    [removeModalButton2, fade2].forEach((el) => {
+        el.addEventListener("click", () => toggleModal2());
+    });
+</script>
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
 </body>
