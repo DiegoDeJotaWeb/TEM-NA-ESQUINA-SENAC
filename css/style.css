@@ -1544,7 +1544,7 @@ produtos-info {
     padding: 7px 0 7px 15px;
   }
   .mt-titulo{
-    margin-top: 110px;
+    margin-top: 110px!important;
   }
   .mb{
     margin-bottom: 15px;
