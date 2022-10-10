@@ -681,6 +681,10 @@ a {
         margin: 0 40px 0 0;
     }
 
+    .carousel-menu-categoria{
+        height: 175px;
+    }
+
     .detail,
     .button {
         font-size: 16px;

@@ -244,12 +244,12 @@ let span = document.getElementsByClassName('btn-menu-categoria');
         let logoCategoria_page = Math.ceil(logoCategoria.length / 4);
         let l = 0;
         let movePer = 14.5;
-        let maxMove = 101.5;
+        let maxMove = 87;
         // mobile_view	
         let mob_view = window.matchMedia("(max-width: 768px)");
         if (mob_view.matches) {
-            movePer = 50.36;
-            maxMove = 504;
+            movePer = 30;
+            maxMove = 280;
         }
 
         let right_mover = () => {
