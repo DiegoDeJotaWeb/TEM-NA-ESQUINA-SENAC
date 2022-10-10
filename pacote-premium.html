@@ -18,23 +18,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <style>
-        .cont-p{
+        .cont-p {
             font-size: 1.188rem;
         }
-        .titulo{
+
+        .titulo {
             margin-top: 0;
             text-align: left;
         }
-        .cont-pub{
-        margin: 0 1rem;
+
+        /* .cont-pub {
+            margin: 0 1rem;
+        } */
+
+        .contatos-info iframe {
+            margin-top: 1rem;
         }
-        .contatos-info iframe{
-        margin-top: 1rem;
-        }
-        .mt{
+
+        .mt {
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
+
         .btn-preco {
             display: inline-block;
             border: 0.125rem solid #0fbcf9;
@@ -44,16 +49,90 @@
             text-transform: uppercase;
             font-weight: 500;
             transition: .3s linear;
-            font-family:  'Montserrat', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: white;
         }
-        .ml{
+
+        .ml {
             margin-left: 1rem;
         }
-        .col-cupom{
+
+        .col-cupom {
             background-color: white;
             border: 0.125rem solid #0fbcf9;
             border-radius: 1rem;
+        }
+
+
+
+        .col-cupom {
+            background-color: white;
+            border: 0.125rem solid #0fbcf9;
+            border-radius: 1rem;
+            background-color: #0f1833;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-preco-pct-cup {
+            border: 0.125rem solid white;
+            color: white;
+            background-color: #0f1833;
+            padding: 1.125rem 1.25rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-preco-pct-cup:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border: 0.125rem solid black;
+            /* teste  */
+        }
+
+        .btn-preco-pct {
+            border: 0.125rem solid #0fbcf9;
+            color: white;
+            background-color: #0f1833;
+            padding: 1.125rem 1.25rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s linear;
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .contato-info-grid {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            column-gap: 15px;
+        }
+
+        .btn-pag-info {
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .col-grid-4 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 15px;
+            }
+
+            .contato-info-grid {
+                grid-template-columns: 1fr;
+            }
+
         }
     </style>
 </head>
@@ -61,34 +140,46 @@
 <body>
     <header>
         <div class="menu-superior">
-          <div class="container container-menu container_flex-space-around">
-    
-            <a id="logo" href="index.html"><img src="imagens/logo-tem-na-esquina-branco.png" alt="Logomarca"></a>
-            <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
+            <div class="container container-menu container_flex-space-around">
+
+                <a id="logo" href="index.html"><img src="imagens/logo-tem-na-esquina-branco.png" alt="Logomarca"></a>
+                <i class="fas fa-bars cursor-pointer " id="icon-menu" onclick="menuSuperior()" aria-hidden="true" style="font-size: 24px;
             line-height: 64px;
             text-align: end;
             top: 4px;
             position: absolute;
             right: 24px;"></i>
-            <nav>
-                <ul>
-                    <a href="index.html" class="item-menu-superior"><li class="menu-caixa">Home</li></a>
-        
-                    <a href="categorias.html" class="item-menu-superior">  <li class="menu-caixa">Categoria</li></a>
-               
-                    <a href="sobre.html" class="item-menu-superior"><li class="menu-caixa">Sobre</li></a>
-        
-                    <a href="pacotes.html" class="item-menu-superior"><li class="menu-caixa" id="item-menu-ativo">Seja parceiro</li></a>
-                    
-                    <a href="contato.html" class="item-menu-superior"> <li class="menu-caixa">Contato</li></a>
-        
-                    <a href="sistema-premium/login.html" target="_blank" class="item-menu-superior"><li class="menu-caixa">Login</li></a>
-        
-                  </ul>
-            </nav>
-          </div>
+                <nav>
+                    <ul>
+                        <a href="index.html" class="item-menu-superior">
+                            <li class="menu-caixa">Home</li>
+                        </a>
+
+                        <a href="categorias.html" class="item-menu-superior">
+                            <li class="menu-caixa">Categoria</li>
+                        </a>
+
+                        <a href="sobre.html" class="item-menu-superior">
+                            <li class="menu-caixa">Sobre</li>
+                        </a>
+
+                        <a href="pacotes.html" class="item-menu-superior">
+                            <li class="menu-caixa" id="item-menu-ativo">Seja parceiro</li>
+                        </a>
+
+                        <a href="contato.html" class="item-menu-superior">
+                            <li class="menu-caixa">Contato</li>
+                        </a>
+
+                        <a href="sistema-premium/login.html" target="_blank" class="item-menu-superior">
+                            <li class="menu-caixa">Login</li>
+                        </a>
+
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </header>
+    </header>
 
     <div class="social-caixa">
         <div class="social-icons">
@@ -102,170 +193,302 @@
         </div>
     </div>
 
+
     <section>
-        <div class="margin-header">
-            <div class="container">
+        <div class=" margin-header">
+            <div class="">
+                <div>
+                    <div class="container">
+                        <div class="">
 
-                <div style="background-color:white ;padding: 15px;">
-                    <h2>Nome da empresa</h2>
-                    <h3>CATEGORIA</h3>
-                </div>
-            </div>
-            <hr>
-            <div class="banner-pag-cliente"></div>
-            <div class="container">
-                <div class="info-empresa cont-pub">
-                        <p class="cont-p">Descrição da sua empresa; Por exemplo: "Nossa empresa tem foco no ramo de supermercado, temos horti-fruit, acogue e Padaria, Alem da grande variedade de produtos, Preços justos e que cabem no bolso do consumidor. Estamos no mercado desde 1999"
-                        </p>
+                            <div style="background-color:white ;padding: 15px;">
+                                <h2>Petshop Legal</h2>
+                                <h3>Petshop</h3>
+                            </div>
+                        </div>
+                        <!-- <hr> -->
                     </div>
-                    <div class="contatos-info">
-                        <div class=" pAll" style="    display: grid;
-                        grid-template-columns: 3fr 9fr;column-gap: 15px;">
-                            <div>
-                                <h3 class="titulo">Contatos</h3>
-                                <p class="cont-pub"><a href="" class="cont-p">Telefone (11) 99999-9999</a></p>
-                                <p class="cont-pub"><a href="" class="cont-p">Celular (11) 99999-9999</a></p>
+                    <div class="banner-pag-cliente"></div>
+                    <div class="container">
+                        <div class="">
+                            <div class="info-empresa cont-pub">
+                                <p class="">A Petshop Legal foi inaugurada em 1994, com apenas um consultório. Com o
+                                    aumento de clientes, o espaço se tornou pequeno e as nossas instalações e serviços
+                                    foram ampliados, visando atender todas as necessidades dos pets de estimação.<br>
 
-                                <div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>    
-                                    <h3 class="titulo">Siga-nos</h3>
-                                    <p class="cont-pub"><a href="" class="cont-p">Facebook</a></p>
-                                    <p class="cont-pub"><a href="" class="cont-p">Instagram</a></p>
-                                    <p class="cont-pub"><a href="" class="cont-p">Twitter</a></p>
+                                    Dessa forma, estabeleceu-se um vínculo de confiança com os tutores, que tornaram-se
+                                    clientes fiéis e contribuíram para o crescimento da empresa.
+                                </p>
+                            </div>
+                            <div class="contatos-info">
+                                <div class=" pAll contato-info-grid">
+                                    <div>
+                                        <h3 class="titulo">Contatos</h3>
+                                        <p class="cont-pub"><a href="" class="cont-p">Telefone (11) 99999-9999</a></p>
+                                        <p class="cont-pub"><a href="" class="cont-p">Celular (11) 99999-9999</a></p>
+
+                                        <div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <h3 class="titulo">Siga-nos</h3>
+                                            <p class="cont-pub"><a href="" class="cont-p">Facebook</a></p>
+                                            <p class="cont-pub"><a href="" class="cont-p">Instagram</a></p>
+                                            <p class="cont-pub"><a href="" class="cont-p">Twitter</a></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <h3 class="titulo">Endereço</h3>
+                                        <p class="cont-p"><a
+                                                href="https://www.google.com/search?q=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&oq=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&aqs=chrome..69i57j0i546l5.572j0j7&sourceid=chrome&ie=UTF-8"
+                                                target="_blank"> Rua Tito, 54 - Vila Romana, São Paulo - SP,
+                                                05051-000</a></p>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
+                                            width="100%" height="350" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
                                 </div>
                             </div>
-
+                        </div>
+                   
+                    <!------------------------Produtos---------------------->
+                    <div class="produtos-info ">
+                        <h2 class="titulo">Produtos</h2>
+                        <div class="col-grid-4">
+                            <div>
+                                <img src="imagens-nova/produtos/petshop-1.jpg" alt="">
+                                <h3>Pedigree</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
 
                             <div>
-                                <h3 class="titulo">Endereço</h3>
-                                <p class="cont-p"><a href="https://www.google.com/search?q=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&oq=Rua+Tito%2C+54+-+Vila+Romana%2C+S%C3%A3o+Paulo+-+SP%2C+05051-000&aqs=chrome..69i57j0i546l5.572j0j7&sourceid=chrome&ie=UTF-8" target="_blank"> Rua Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</a></p>
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.490274675807!2d-46.6918154!3d-23.5280936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1663788738404!5m2!1spt-BR!2sbr"
-                                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <img src="imagens-nova/produtos/petshop-2.jpg" alt="">
+                                <h3>Magnus</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens-nova/produtos/petshop-3.jpg" alt="">
+                                <h3>Friskies</h3>
+                                <h4>R$ 50,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens-nova/produtos/petshop-4.jpg" alt="">
+                                <h3>Pipicat</h3>
+                                <h4>R$ 50,00</h4>
                             </div>
                         </div>
-                </div>
-            </div>
-        </div>
-<!------------------------Produtos---------------------->        
-        <div class="produtos-info container">
-        <h2 class="titulo">Produtos</h2>
-        <div class="col-grid-4">
-        <div>
-            <img src="imagens/layoutminimercado.png" alt="">
-            <h3>Nome do produto</h3>
-            <h4>R$ 50,00</h4>
-        </div>
-        
-        <div>
-            <img src="imagens/layoutminimercado.png" alt="">
-            <h3>Nome do produto</h3>
-            <h4>R$ 50,00</h4>
-        </div>
-        <div>
-            <img src="imagens/layoutminimercado.png" alt="">
-            <h3>Nome do produto</h3>
-            <h4>R$ 50,00</h4>
-        </div>
-        <div>
-            <img src="imagens/layoutminimercado.png" alt="">
-            <h3>Nome do produto</h3>
-            <h4>R$ 50,00</h4>
-        </div>
-    </div>
-</div>
-
-<div class="produtos-info container">
-    <h2 class="titulo mt">Ofertas</h2>
-    <div class="col-grid-4">
-        <div>
-            <img src="imagens/layoutminimercado.png" alt="">
-            <h3>Nome do produto</h3>
-            <h4 class="valor-desconto">R$ 50,00</h4>
-            <h4>R$ 45,00</h4>
-        </div>
-        
-        <div>
-            <img src="imagens/layoutminimercado.png" alt="">
-            <h3>Nome do produto</h3>
-            <h4 class="valor-desconto">R$ 50,00</h4>
-            <h4>R$ 45,00</h4>
-        </div>
-        <div>
-            <img src="imagens/layoutminimercado.png" alt="">
-            <h3>Nome do produto</h3>
-            <h4 class="valor-desconto">R$ 50,00</h4>
-            <h4>R$ 45,00</h4>
-        </div>
-        <div>
-            <img src="imagens/layoutminimercado.png" alt="">
-            <h3>Nome do produto</h3>
-            <h4 class="valor-desconto">R$ 50,00</h4>
-            <h4>R$ 45,00</h4>
-        </div>
-    </div>
-</div>
-
-
-<div class="cupom mt">
-    <div class="col-cupom container mt">
-        
-        <p class="cont-p">Este cupom lhe Garante X% de Desconto em "produto" Para participar da promoção clique em "Gerar" , Lembrando que para participar é necesario Login</p>
-            <div class="ml">
-                <a href="pacote-premium-cupom.html" class="btn-preco">Gerar</a>
-                <p>Clique para gerar cupom</p>
-            </div>
-            
-        </div>
-    </div>
-    
-    <div class="comentarios-info container">
-        <h2>Comentarios</h2>
-        <div class="comentario-pag-info">
-            <img src="imagens/layoutminimercado.png" alt="">
-            <div  class="pl">
-                <h2>Nome </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
-                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                    vero,
-                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
-                </div>
-            </div>
-            
-            <div class="comentario-pag-info">
-                <img src="imagens/layoutminimercado.png" alt="">
-                <div  class="pl">
-                    <h2>Nome </h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
-                        assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                        vero,
-                        laboriosam dolore! Illum ipsum nemo sequi odio.</p>
                     </div>
-                </div>
-                
-                <div class="comentario-pag-info">
-                    <img src="imagens/layoutminimercado.png" alt="">
-                    <div  class="pl">
-                        <h2>Nome </h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
-                            assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
-                            vero,
-                            laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+
+                    <div class="produtos-info ">
+                        <h2 class="titulo mt">Ofertas</h2>
+                        <div class="col-grid-4">
+                            <div>
+                                <img src="imagens-nova/produtos/petshop-5.jpg" alt="">
+                                <h3>Baw Waw</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+
+                            <div>
+                                <img src="imagens-nova/produtos/petshop-6.jpg" alt="">
+                                <h3>Sanol</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens-nova/produtos/petshop-7.jpg" alt="">
+                                <h3>Bolinha</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
+                            <div>
+                                <img src="imagens-nova/produtos/petshop-8.jpg" alt="">
+                                <h3>Special Cat</h3>
+                                <h4 class="valor-desconto">R$ 50,00</h4>
+                                <h4>R$ 45,00</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="btn-pag-info container">
-                    <button class="btn">Ver mais</button>
-                    <button class="btn">Fale direto com a empresa</button>
-                    <button class="btn">Comentar</button>
+                    <br>
+                    <div class="cupom mt">
+                        <div class="col-cupom  mt">
+
+                            <p class="cont-p">Este cupom lhe Garante X% de Desconto em "produto" Para participar da
+                                promoção clique em "Gerar" , Lembrando que para participar é necesario Login</p>
+                            <div class="ml" style="text-align: center;">
+                                <a href="pacote-premium-cupom.html" class="btn-preco-pct-cup">Gerar</a>
+                                <p>Clique para gerar cupom</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" ">
+                        <h2 class="titulo mt">Comentarios</h2>
+                        <div class="comentario-pag-info br">
+                            <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="pl">
+                                <h2 class="ml">Maria </h2>
+                                <p class="cont-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+                                    numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+
+                        <div class="comentario-pag-info br">
+                            <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="pl">
+                                <h2 class="ml">José </h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+                        <style>
+                            .item-comentario {
+                                display: none;
+                            }
+                        </style>
+
+                        <div class="comentario-pag-info br ">
+                            <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="pl">
+                                <h2 class="ml">Diego </h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+
+                        <div class="comentario-pag-info br item-comentario">
+                            <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="pl">
+                                <h2 class="ml">Marcelo </h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+
+                        <div class="comentario-pag-info br item-comentario">
+                            <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="pl">
+                                <h2 class="ml">Pedro </h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+
+                        <div class="comentario-pag-info br item-comentario">
+                            <div style="text-align: center;
+                            background: #f9f9f9;
+                            border-radius: 100%;
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            align-items: center;
+                            font-size: 43px;
+                        ">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="pl">
+                                <h2 class="ml">Gabriel </h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor numquam amet itaque
+                                    assumenda aspernatur inventore explicabo a molestias sint soluta facere voluptas
+                                    vero,
+                                    laboriosam dolore! Illum ipsum nemo sequi odio.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-pag-info">
+                        <button type="button" onclick="maisComentarios()" class="btn-preco-pct">Ver mais</button>
+                        <button type="button" class="btn-preco-pct">Fale direto com a empresa</button>
+                        <button type="button" class="btn-preco-pct">Comentar</button>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <footer>
 
@@ -306,6 +529,17 @@
             document.getElementById('pacote-2').style.display = "none";
             document.getElementById('pacote-3').style.display = "grid";
 
+        }
+    </script>
+
+    <script>
+        function maisComentarios() {
+            var comentario = document.getElementsByClassName('item-comentario');
+
+            for (let i = 0; i < comentario.length; i++) {
+                comentario[i].style.display = 'grid';
+
+            }
         }
     </script>
     <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
