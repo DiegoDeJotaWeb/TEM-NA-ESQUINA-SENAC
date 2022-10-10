@@ -249,7 +249,7 @@ let span = document.getElementsByClassName('btn-menu-categoria');
         let mob_view = window.matchMedia("(max-width: 768px)");
         if (mob_view.matches) {
             movePer = 30;
-            maxMove = 280;
+            maxMove = 300;
         }
 
         let right_mover = () => {
